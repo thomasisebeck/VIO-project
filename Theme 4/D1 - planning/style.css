@@ -1,0 +1,361 @@
+/*ANIMATE STAGE */
+
+#stage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  /*temporary*/
+  display: none;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-image: url("images_website/background.jpg");
+    background-size: 150px;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6 {
+    position: relative;
+}
+
+
+.panel {
+    width: calc(4138px / 5);
+}
+
+#mainMenu {
+  max-width: 1000px;
+  height: 562px;
+  margin: 0 auto;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(202,202,202,1) 22%, rgba(255,255,255,1) 48%); 
+  position: relative;
+  outline: 5px solid #837b6e;
+  border-radius: 5px;
+}
+
+#dialogueImage {
+  position: absolute;
+  left: 26%; 
+  top: 5%;
+  width: 40%;
+}
+
+#seeTrailer {
+  position: absolute;
+  left: 36px;
+  top: -62px;
+  transform: scale(0.3);
+}
+
+#goToComic {
+  position: absolute;
+  left: -186px;
+  top: -111px;
+  transform: scale(0.3);
+}
+
+#MCStting {
+  position: absolute;
+  left: 51px;
+  top: -91px;
+  transform: scale(0.5);
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 100%;
+  }
+
+  20% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+  
+}
+
+#WomanSitting {
+  position: absolute;
+  left: 415px;
+  top: -73px;
+  transform: scale(0.45);
+  animation-name: flicker;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#cloudsWrapper {
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  overflow:hidden;
+}
+
+#clouds {
+  width: 103%;
+  overflow:hidden;
+  position: relative;
+  left: -10px;
+  top: -1px;
+}
+
+#prev, #next {
+  cursor: pointer;
+}
+
+#prev {
+  transform: rotate(180deg) translateX(180px);
+}
+
+#next {
+  transform: translateX(180px);
+}
+
+/* paper flip effect */
+.flipped .front, 
+.flipped .back {
+  transition: transform 1s;
+  transform: rotateY(-180deg);
+}
+
+#bookComic {
+  width: 100%;
+  height: 500px;
+  width: calc((2 * (500px / 1.414))f + (48px * 2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: powderblue;
+  margin: 0 auto;
+
+  /*temporary*/
+  display: none;
+}
+
+
+
+.book {
+  position: relative;
+  width: 350px;
+  height: 494.55px;
+  margin: 10px;
+}
+
+.flipped {
+  position: absolute; /* overlap papers */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  
+}
+
+@keyframes shift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(175px);
+  }
+}
+
+.shiftRight {
+  animation-name: shift;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.front, .back {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5;
+  border-radius: 5px;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  z-index: 0;
+}
+
+.rotated {
+  transform: rotate3d(90deg);
+}
+
+.back-content {
+  transform: scaleX(-1);
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-0.05rem, 0, 0);
+      }
+
+      20%, 80% {
+        transform: translate3d(0.08rem, 0, 0);
+      }
+
+      30%, 50%, 70% {
+        transform: translate3d(-0.08rem, 0, 0);
+      }
+
+      40%, 60% {
+        transform: translate3d(0.08rem, 0, 0);
+      }
+}
+
+.p1f1 {
+    width: calc(564px / 5 * 3);
+    position: absolute;
+    left: 16px;
+    top: 13px;
+    animation-delay: 1.5s;
+}
+
+.p1f2 {
+    width: calc(741px / 5 * 3);
+    position: absolute;
+    left: 371px;
+    top: 16px;
+
+    animation-delay: 1s;
+}
+
+.p2f3 {
+    width: calc(664px / 5 * 3);
+    position: absolute;
+    left: 15px;
+    top: 391px;
+}
+
+.p2f6 {
+    width: calc(634px / 5 * 3);
+    position: absolute;
+    left: 434px;
+    top: 837px;
+}
+
+.p3f1 {
+    width: calc(509px / 5 * 3);
+    position: absolute;
+    left: 23px;
+    top: 11px;
+}
+
+.p3f9 {
+    width: calc(695px / 5 * 3);
+    position: absolute;
+    left: 401px;
+    top: 974px;
+}
+
+.p4f9 {
+    width: calc(628px / 5 * 3);
+    position: absolute;
+    left: 436px;
+    top: 708px;
+}
+
+.p1f3 {
+    width: calc(741px / 5 * 3);
+    position: absolute;
+    left: 371px;
+    top: 230px;
+}
+
+.p4f4 {
+  width: calc(432px / 5 * 3);
+  position: absolute;
+  left: 556px;
+  top: 169px;
+}
+
+.p5f4 {
+  width: calc(500px / 5 * 3);
+  position: absolute;
+  left: 289px;
+  top: 265px;
+}
+
+.p5f8 {
+  width: calc(500px / 5 * 3);
+  position: absolute;
+  left: 11px;
+  top: 814px;
+}
+
+.p6f4 {
+  width: calc(655px / 5 * 3);
+  position: absolute;
+  left: 426px;
+  top: 281px;
+}
+
+.p6f11 {
+  width: calc(363px / 5 * 3);
+  position: absolute;
+  left: 601px;
+  top: 838px;
+}
+
+.frame:hover {
+    animation: none;
+}
+
+
+.frame {
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+  animation-direction:  both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-name: shake;
+  animation-iteration-count: infinite;
+}*/
+
+/*div by 3 in photoshop first ! */
+/* pitch bend: 3, 10 */
