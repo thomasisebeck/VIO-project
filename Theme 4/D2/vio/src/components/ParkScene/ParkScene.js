@@ -115,14 +115,6 @@ export class ParkScene extends React.Component {
           <img id="goToComic" src="images_website/goToComic.png"/>
         }
 
-
-        
-
-        {/* <img id="WomanSitting" src="images/woman_idle.gif" onMouseOver="changeImage(this, 'images/woman_idler.gif', 'images/woman_hover.gif')" onMouseOut="changeImage(this, 'images/woman_hover.gif', 'images/woman_idle.gif')"/> */}
-        {/* <img id="seeTrailer" src="images/seeTrailer.png" class="hidden" /> */}
-        {/* <img id="goToComic" src="images/goToComic.png" class="hidden" /> */}
-        {/* <img id="dialogueImage" /> */}
-
       </div>
     );
   }

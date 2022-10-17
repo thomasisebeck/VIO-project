@@ -8,8 +8,9 @@
 
 .MCSitting {
     position: absolute;
-    top: 251px; 
-    left: 251px;
+    top: 23%;
+    left: 14%;
+    width: 20%;
 }
 
 .WomanSitting img {
