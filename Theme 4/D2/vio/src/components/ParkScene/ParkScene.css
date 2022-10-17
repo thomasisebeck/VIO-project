@@ -8,7 +8,7 @@
 
 .MCSitting {
     position: absolute;
-    top: 166px; 
+    top: 251px; 
     left: 251px;
 }
 
@@ -24,4 +24,25 @@
     top: 0;
     width: 105%;
     left: -2.5%;
+}
+
+#dialogueImage {
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    width: 41%;
+}
+
+#seeTrailer {
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    width: 22%;
+}
+
+#goToComic {
+    position: absolute;
+    top: 12%;
+    left: 26%;
+    width: 44%;
 }

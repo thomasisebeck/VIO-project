@@ -9,7 +9,6 @@ class ChangingImage extends React.Component {
     this.setState ({
       source: newSource
     })
-    console.log(this.state.source);
   }
 
   constructor(props) {
