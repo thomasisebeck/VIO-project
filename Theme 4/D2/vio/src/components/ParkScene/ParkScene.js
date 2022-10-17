@@ -8,15 +8,24 @@ export class ParkScene extends React.Component {
     return (
       <div className="ParkScene">
 
-        {/* <img src="images/background.svg" /> */}
+         <img src="images_website/background.svg" />
 
-        {/* <div id="cloudsWrapper"> */}
-          {/* <img id="clouds" src="images/clouds.gif" /> */}
-        {/* </div> */}
 
-        <ChangingImage id="MCStting"  movingimage='images_website/MC_hover.gif' staticimage='images_website/MC_idle.gif' />
+        <div id="cloudsWrapper"> 
+          <img id="clouds" src="images_website/clouds.gif" />
+        </div> 
+        
 
-        {/* <img id="MCStting" movingimage='./images/MC_idle.gif' staticimage='./images/MC_hover.gif'/> */}
+        <div className='MCSitting'>
+          <ChangingImage movingimage='images_website/MC_hover.gif' staticimage='images_website/MC_idle.gif' />
+        </div>
+
+        <div className='WomanSitting'>
+          <ChangingImage movingimage='images_website/woman_hover.gif' staticimage='images_website/woman_idle.gif' />
+        </div>
+
+        
+
         {/* <img id="WomanSitting" src="images/woman_idle.gif" onMouseOver="changeImage(this, 'images/woman_idler.gif', 'images/woman_hover.gif')" onMouseOut="changeImage(this, 'images/woman_hover.gif', 'images/woman_idle.gif')"/> */}
         {/* <img id="seeTrailer" src="images/seeTrailer.png" class="hidden" /> */}
         {/* <img id="goToComic" src="images/goToComic.png" class="hidden" /> */}

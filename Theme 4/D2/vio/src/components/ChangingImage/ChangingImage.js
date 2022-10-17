@@ -17,7 +17,7 @@ class ChangingImage extends React.Component {
     this.state = {
       staticimage: props.staticimage,
       movingimage: props.movingimage,
-      source: props.movingimage
+      source: props.staticimage
     }
    }
 

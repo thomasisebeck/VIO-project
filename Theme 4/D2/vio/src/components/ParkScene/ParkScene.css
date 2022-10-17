@@ -1,1 +1,27 @@
-.ParkScene {}
+.ParkScene {
+    max-width: 1844.9px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.MCSitting {
+    position: absolute;
+    top: 166px; 
+    left: 251px;
+}
+
+.WomanSitting img {
+    position: absolute;
+    top: 27%;
+    left: 53%;
+    width: 20%;
+}
+
+#cloudsWrapper {
+    position: absolute;
+    top: 0;
+    width: 105%;
+    left: -2.5%;
+}
