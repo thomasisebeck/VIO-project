@@ -29,7 +29,7 @@ export class  ParkScene extends React.Component {
 
       if (this.state.dialogueShown)
         this.setState({ dialogueShown: false })
-      else 
+      else if (!(this.state.goToComic || this.state.seeTrailer))
         this.setState({ dialogueShown: true })
 
         this.setState({ currentImage: 1 })
