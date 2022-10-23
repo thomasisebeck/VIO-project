@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './ChangingImage.css';
 
 
@@ -26,7 +25,7 @@ class ChangingImage extends React.Component {
         onMouseOver={() => {this.changeImage(this.state.movingimage)}} 
         onMouseLeave={() => {this.changeImage(this.state.staticimage)}}
       >
-        <img src={this.state.source} />
+        <img src={this.state.source} alt=""/>
       </div>
     );
   }
