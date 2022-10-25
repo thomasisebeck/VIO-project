@@ -105,8 +105,8 @@ export class  ParkScene extends React.Component {
         </div>
 
         <div className="Title">
-          <img src='images_website/splash/bottomTitleCard.png'/>
-          <img src='images_website/splash/topTitleCard.png'/>
+          <img src='images_website/splash/bottomTitleCard.png' alt=""/>
+          <img src='images_website/splash/topTitleCard.png' alt=""/>
         </div>
 
       </div>

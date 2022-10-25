@@ -1,0 +1,17 @@
+.Desk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 200px;
+}
+
+.Desk img {
+    width: 40%;
+    min-width: 950px;
+    height: auto;
+}
+
+.rotated {
+    transform: rotate(15deg);
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ParkScene from './components/ParkScene/ParkScene';
-import Book from './components/Book/Book';
+import Desk from './components/Desk/Desk';
 
 //npx generate-react-cli component MyComponent
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <React.Fragment>
       <ParkScene />
-      <Book/>
+      <Desk />
     </React.Fragment>
   );
 }
