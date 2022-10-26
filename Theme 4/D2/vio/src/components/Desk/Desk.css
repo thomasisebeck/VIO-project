@@ -1,17 +1,39 @@
 .Desk {
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 200px;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 200px;
+    background: rgb(115,115,115);
+    background: linear-gradient(90deg, rgba(115,115,115,0.7) 0%, rgba(238,238,238,0.7) 60%); 
 }
 
-.Desk img {
-    width: 40%;
-    min-width: 950px;
+.desk {
+    width: 950px;
     height: auto;
 }
 
 .rotated {
     transform: rotate(15deg);
+}
+
+.comic {
+    position: absolute;
+    left: 44%;
+    top: 20%;
+    width: 344px;
+}
+
+.hat {
+    position: absolute;
+    left: 60%;
+    width: 344px;
+}
+
+.letter {
+    position: absolute;
+    left: 29%;
+    top: 20%;
+    width: 344px;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Frame.css';
 
-export class Frame extends React.Component {
+class Frame extends React.Component {
 
   render() {
 

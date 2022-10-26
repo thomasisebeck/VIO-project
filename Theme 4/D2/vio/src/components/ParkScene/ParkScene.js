@@ -69,6 +69,13 @@ export class  ParkScene extends React.Component {
     })
   }
 
+  scrollToComic() {
+    window.scrollTo({
+      top: 1050,
+      behavior: 'smooth',
+  });
+  }
+
 
   render() {
 
@@ -87,7 +94,7 @@ export class  ParkScene extends React.Component {
             <ChangingImage movingimage='images_website/splash/MC_hover.gif' staticimage='images_website/splash/MC_idle.gif' />
           </div>
 
-          <div className='WomanSitting' onMouseOver={() => this.displayComicDialogue()} onMouseLeave={() => this.undisplayComicDialogue()}>
+          <div className='WomanSitting' onClick={() => this.scrollToComic() } onMouseOver={() => this.displayComicDialogue()} onMouseLeave={() => this.undisplayComicDialogue()}>
             <ChangingImage movingimage='images_website/splash/woman_hover.gif' staticimage='images_website/splash/woman_idle.gif' />
           </div>
 

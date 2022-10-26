@@ -19,22 +19,25 @@
 }
 
 .Book {
-    width: 100%;
-    height: 700px;
-    width: calc((2 * (500px / 1.414))f + (48px * 2));
+    width: 70%;
+    padding-top: 100px;
+    height: 0;
+    width: calc((2 * (500px / 1.414)) + (48px * 2));
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: powderblue;
+    outline: 1000px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
+    position: absolute;
 }
-
 
 
 .book {
     position: relative;
     width: 700px;
     margin: 10px;
+    top: -200px;
 }
 
 .flipped {
