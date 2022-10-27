@@ -14,26 +14,30 @@
     height: auto;
 }
 
+.innerDesk {
+    position: relative;
+}
+
 .rotated {
     transform: rotate(15deg);
 }
 
 .comic {
     position: absolute;
-    left: 44%;
-    top: 20%;
+    left: 316px;
+    top: 33px;
     width: 344px;
 }
 
 .hat {
     position: absolute;
-    left: 60%;
+    left: 637px;
     width: 344px;
 }
 
 .letter {
     position: absolute;
-    left: 29%;
-    top: 20%;
+    left: 52px;
+    top: 28px;
     width: 344px;
 }

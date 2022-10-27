@@ -17,6 +17,30 @@
     width: 16%;
 }
 
+@keyframes flicker {
+    0% {
+        opacity: 100%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+}
+
+.WomanSitting {
+    animation-name: flicker;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
 .WomanSitting img {
     position: absolute;
     bottom: calc(0.32*66%);

@@ -15,7 +15,7 @@ export class  Desk extends React.Component {
   showComic() {
     console.log('showing');
     window.scrollTo({
-        top: 1050,
+        top: 810,
         behavior: 'smooth',
     });
     this.setState({

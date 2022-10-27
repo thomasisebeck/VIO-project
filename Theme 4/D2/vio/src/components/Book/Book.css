@@ -1,14 +1,23 @@
 #prev,
 #next {
     cursor: pointer;
+    width: 80px;
+}
+
+.arrowContainer {
+    position: relative;
+    top: -205px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #prev {
-    transform: rotate(180deg) translateX(400px);
+    transform: rotate(180deg) translateX(300px);
 }
 
 #next {
-    transform: translateX(400px);
+    transform: translateX(300px) translateY(-200px);
 }
 
 /* paper flip effect */
@@ -18,26 +27,35 @@
     transform: rotateY(-180deg);
 }
 
+.flipBack .front, 
+.flipBack .back {
+    transition: transform 1s;
+    transform: rotateY(180);
+}
+
 .Book {
-    width: 70%;
-    padding-top: 100px;
+    height: 60vh;
+    padding-top: 5%;
+    
     height: 0;
-    width: calc((2 * (500px / 1.414)) + (48px * 2));
+    width: calc(((2 * (500px / 1.414)) + (48px * 2))*0.75);
     display: flex;
     justify-content: center;
     align-items: center;
     outline: 1000px solid rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
+    margin-top: 400px;
     position: absolute;
 }
 
 
 .book {
     position: relative;
+    height: 70vh;
     width: 700px;
     margin: 10px;
-    top: -200px;
+    top: -250px;
 }
 
 .flipped {
@@ -54,7 +72,7 @@
     }
 
     100% {
-        transform: translateX(350px);
+        transform: translateX(210px);
     }
 }
 

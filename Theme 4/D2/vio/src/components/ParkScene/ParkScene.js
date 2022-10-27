@@ -10,16 +10,15 @@ export class  ParkScene extends React.Component {
       source: 'images_website/splash/dialogue/1.png', 
       currentImage: 1, 
       dialogueShown: true, 
-      MAX_IMAGES: 7, 
+      MAX_IMAGES: 8, 
       seeTrailer: false, 
       goToComic: false
     }
 
+
     setInterval(() => {
         this.loopDialogue();
-    }, 500);
-
-
+    }, 2500);
 
   }
 
@@ -71,7 +70,7 @@ export class  ParkScene extends React.Component {
 
   scrollToComic() {
     window.scrollTo({
-      top: 1050,
+      top: 810,
       behavior: 'smooth',
   });
   }

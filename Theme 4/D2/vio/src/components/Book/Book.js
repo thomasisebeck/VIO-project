@@ -36,7 +36,6 @@ export class Book extends React.Component {
               document.querySelector('#b2').classList.add('top');
 
               let b1 = document.querySelector('#p1');
-              b1.style.position = 'relative'; 
               b1.style.zIndex = '-1';
 
               setTimeout(() => {
@@ -73,6 +72,38 @@ export class Book extends React.Component {
     }
   }
 
+  prevPage() {
+    if (this.state.currentLocation >= 0) {
+      switch(this.state.currentLocation) {
+        case 3:
+          document.querySelector('#b2p').classList.remove('hidden');
+          document.querySelector('#p3').classList.add('flipBack');
+          document.querySelector('#p3').classList.remove('flipped');
+          this.setState({
+            currentLocation: this.state.currentLocation - 1
+          })
+          break;
+        case 2: 
+          document.querySelector('#p2').classList.add('flipBack');
+          document.querySelector('#p2').classList.remove('flipped');
+
+            document.querySelector('#f4p').classList.add('hidden');
+
+          let b2 = document.querySelector('#p2');
+          b2.style.zIndex = '5';
+
+          document.querySelector('#b1p').classList.remove('hidden');
+  
+
+          this.setState({
+            currentLocation: this.state.currentLocation + 1
+          })
+          break;
+          
+      }
+    }
+  }
+
   /*
 
   render() {
@@ -96,7 +127,9 @@ export class Book extends React.Component {
     return (
       <div className="Book">
 
-        <img id="prev" src="images_website/next.png" alt=""/>
+        <div className='arrowContainer'>
+          <img id="prev" onClick={() => this.prevPage()} src="images_website/comic/arrow.png" alt=""/>
+        </div>
 
         <div id="book" className="book">
 
@@ -165,7 +198,7 @@ export class Book extends React.Component {
 
         </div>
 
-        <img id="next" onClick={() => this.nextPage()} src="images_website/next.png" alt=""/>
+        <img id="next" onClick={() => this.nextPage()} src="images_website/comic/arrow.png" alt=""/>
 
       </div>
     )
