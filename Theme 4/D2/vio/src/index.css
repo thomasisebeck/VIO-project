@@ -10,10 +10,16 @@ body {
 }
 
 #animation_container {
-  width: 100px;
+  width: 100px !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+#stage {
+  display: flex;
+  justify-content: center;
 }

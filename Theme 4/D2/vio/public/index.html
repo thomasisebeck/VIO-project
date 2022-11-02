@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMIC</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMIC</title>
+ 
 
-   
-<!-- 1: paste this code -->
+
+
+<script src="main.js" defer></script>
+
+</head>
+<body onload="init()">
+
+<div id="root"></div>
+
+<!-- Delete node_modules/.cache/gh-pages before deployment -->
+<!-- Then: 
+	npm run deploy
+	url: https://thomasisebeck.github.io/ 
+-->
+
+<!----------- TRAILER ----------->
+
+<div id="stageWrapper">
+
+	<div id="stage">
+
+	<!-- 2: paste this code -->
+	
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00);">
+		<canvas id="canvas" width="1920" height="1080" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1080px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+
+	<!-- 2: paste this code -->
+
+</div>
+
+</div>
+
+<!-------------------------------> 
+<!-- write your code here -->
+
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script>
 (function (cjs, an) {
@@ -32,614 +67,614 @@ lib.ssMetadata = [];
 	}
 }).prototype = p = new cjs.MovieClip();
 // symbols:
-(lib.BMP_00e27f44_8dd7_4b3e_8318_8712e750da20 = function() {
-	this.initialize(img.BMP_00e27f44_8dd7_4b3e_8318_8712e750da20);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,719);
-(lib.BMP_01227e54_2d12_428c_b16d_5d784fafb768 = function() {
-	this.initialize(img.BMP_01227e54_2d12_428c_b16d_5d784fafb768);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,719);
-(lib.BMP_015493b3_e654_49ad_94d7_ebafd965dd84 = function() {
-	this.initialize(img.BMP_015493b3_e654_49ad_94d7_ebafd965dd84);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,395,717);
-(lib.BMP_01a6cceb_9a5a_4460_aa6d_f54c78f95d19 = function() {
-	this.initialize(img.BMP_01a6cceb_9a5a_4460_aa6d_f54c78f95d19);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,704);
-(lib.BMP_0225a578_a5cd_4163_9057_1093e4941df3 = function() {
-	this.initialize(img.BMP_0225a578_a5cd_4163_9057_1093e4941df3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,390,714);
-(lib.BMP_02b494b3_4dcc_4597_b0d5_a4d5e2736577 = function() {
-	this.initialize(img.BMP_02b494b3_4dcc_4597_b0d5_a4d5e2736577);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,396,718);
-(lib.BMP_036f24ca_8880_4226_9de7_a9d6c4ea8c63 = function() {
-	this.initialize(img.BMP_036f24ca_8880_4226_9de7_a9d6c4ea8c63);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,381,696);
-(lib.BMP_047b1544_53b7_4d32_96e9_ff17795f5482 = function() {
-	this.initialize(img.BMP_047b1544_53b7_4d32_96e9_ff17795f5482);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,710);
-(lib.BMP_050b0aa5_f432_47a4_abda_ac63b421d6ba = function() {
-	this.initialize(img.BMP_050b0aa5_f432_47a4_abda_ac63b421d6ba);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,410,739);
-(lib.BMP_05a032b8_2f04_4605_9c26_1b5a93d4d320 = function() {
-	this.initialize(img.BMP_05a032b8_2f04_4605_9c26_1b5a93d4d320);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,382,718);
-(lib.BMP_05b6bf3c_f311_490f_bdfa_c422727ef320 = function() {
-	this.initialize(img.BMP_05b6bf3c_f311_490f_bdfa_c422727ef320);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,715);
-(lib.BMP_07eef410_bf5d_4112_bf59_45c6b3b8c228 = function() {
-	this.initialize(img.BMP_07eef410_bf5d_4112_bf59_45c6b3b8c228);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,384,717);
-(lib.BMP_0b3cf72c_7f36_447c_92cd_d99d1b699b4d = function() {
-	this.initialize(img.BMP_0b3cf72c_7f36_447c_92cd_d99d1b699b4d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,383,699);
-(lib.BMP_0b4a73f1_8789_40af_9b11_8c66300dc587 = function() {
-	this.initialize(img.BMP_0b4a73f1_8789_40af_9b11_8c66300dc587);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,393,717);
-(lib.BMP_0b543a47_0050_4588_a708_771a1dde4c2b = function() {
-	this.initialize(img.BMP_0b543a47_0050_4588_a708_771a1dde4c2b);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,722);
-(lib.BMP_0b58928e_0454_416d_bf72_9ca18c508f9b = function() {
-	this.initialize(img.BMP_0b58928e_0454_416d_bf72_9ca18c508f9b);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,714);
-(lib.BMP_0c4ae931_1f99_42d2_825e_18dfc88a919e = function() {
-	this.initialize(img.BMP_0c4ae931_1f99_42d2_825e_18dfc88a919e);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,717);
-(lib.BMP_10e1652d_5212_48f6_9837_c700b65039cc = function() {
-	this.initialize(img.BMP_10e1652d_5212_48f6_9837_c700b65039cc);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,395,718);
-(lib.BMP_12fd156a_c055_47a1_a01e_a0596ecb1f69 = function() {
-	this.initialize(img.BMP_12fd156a_c055_47a1_a01e_a0596ecb1f69);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,392,697);
-(lib.BMP_13ee6329_78b9_4f82_bc6e_e55ee8a9d9bd = function() {
-	this.initialize(img.BMP_13ee6329_78b9_4f82_bc6e_e55ee8a9d9bd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,407,734);
-(lib.BMP_16396348_49f6_439b_adf1_ee414b838979 = function() {
-	this.initialize(img.BMP_16396348_49f6_439b_adf1_ee414b838979);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,705);
-(lib.BMP_166844eb_3716_4693_b309_128541cfc70e = function() {
-	this.initialize(img.BMP_166844eb_3716_4693_b309_128541cfc70e);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,381,698);
-(lib.BMP_17e583bb_c178_4816_91c9_1c5fa50272ae = function() {
-	this.initialize(img.BMP_17e583bb_c178_4816_91c9_1c5fa50272ae);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,395,719);
-(lib.BMP_22813483_33a4_4b27_bc4b_4eee86f5c384 = function() {
-	this.initialize(img.BMP_22813483_33a4_4b27_bc4b_4eee86f5c384);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,390,714);
-(lib.BMP_23ddd47a_129f_4177_ada8_a80fbc511657 = function() {
-	this.initialize(img.BMP_23ddd47a_129f_4177_ada8_a80fbc511657);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,704);
-(lib.BMP_240ff96f_86ec_4364_94b6_7a40ff06164f = function() {
-	this.initialize(img.BMP_240ff96f_86ec_4364_94b6_7a40ff06164f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,393,718);
-(lib.BMP_266dbae3_b8af_4922_b1e3_76eb907d7ea9 = function() {
-	this.initialize(img.BMP_266dbae3_b8af_4922_b1e3_76eb907d7ea9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,381,698);
-(lib.BMP_26e4f250_05ac_45a4_a84e_d6cb4f871ad6 = function() {
-	this.initialize(img.BMP_26e4f250_05ac_45a4_a84e_d6cb4f871ad6);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,394,732);
-(lib.BMP_28bb6e3b_696f_428b_bff9_288d96215fcf = function() {
-	this.initialize(img.BMP_28bb6e3b_696f_428b_bff9_288d96215fcf);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,386,714);
-(lib.BMP_29ad7632_b274_40bc_af44_bd9a8d794e8d = function() {
-	this.initialize(img.BMP_29ad7632_b274_40bc_af44_bd9a8d794e8d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,398,718);
-(lib.BMP_2a0cb1a3_b2ab_42f0_b764_034cf7b54360 = function() {
-	this.initialize(img.BMP_2a0cb1a3_b2ab_42f0_b764_034cf7b54360);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,721);
-(lib.BMP_2ac54338_93b5_4a22_8112_519472e91d44 = function() {
-	this.initialize(img.BMP_2ac54338_93b5_4a22_8112_519472e91d44);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,383,718);
-(lib.BMP_2af62c64_8bfa_4326_921c_bd1e875d1967 = function() {
-	this.initialize(img.BMP_2af62c64_8bfa_4326_921c_bd1e875d1967);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,703);
-(lib.BMP_2b485636_2921_4550_9043_b2776d504784 = function() {
-	this.initialize(img.BMP_2b485636_2921_4550_9043_b2776d504784);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,706);
-(lib.BMP_2e93c18b_2b94_42b7_8152_c7aa7aaa36f4 = function() {
-	this.initialize(img.BMP_2e93c18b_2b94_42b7_8152_c7aa7aaa36f4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,411,741);
-(lib.BMP_30fabe71_94a5_4ac3_a05c_e851cd1402d4 = function() {
-	this.initialize(img.BMP_30fabe71_94a5_4ac3_a05c_e851cd1402d4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,390,717);
-(lib.BMP_329d0096_5d10_4f21_994e_c7c778f4d52d = function() {
-	this.initialize(img.BMP_329d0096_5d10_4f21_994e_c7c778f4d52d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,392,727);
-(lib.BMP_35916021_e3e6_486c_b46d_051b4c18bb87 = function() {
-	this.initialize(img.BMP_35916021_e3e6_486c_b46d_051b4c18bb87);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,383,718);
-(lib.BMP_39a5ba90_46c2_4633_a3b2_84e5e5cd0ee0 = function() {
-	this.initialize(img.BMP_39a5ba90_46c2_4633_a3b2_84e5e5cd0ee0);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,396,712);
-(lib.BMP_3ae965ba_5b7f_413e_b455_9d2eda2eca81 = function() {
-	this.initialize(img.BMP_3ae965ba_5b7f_413e_b455_9d2eda2eca81);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,384,710);
-(lib.BMP_3f03f4f5_5a16_4c8a_8e1c_8e959f09089d = function() {
-	this.initialize(img.BMP_3f03f4f5_5a16_4c8a_8e1c_8e959f09089d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,720);
-(lib.BMP_3f19969c_0f08_4963_9e3c_037a86779d5e = function() {
-	this.initialize(img.BMP_3f19969c_0f08_4963_9e3c_037a86779d5e);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,704);
-(lib.BMP_41b7e8f7_a416_490a_bd32_4f80e06a9480 = function() {
-	this.initialize(img.BMP_41b7e8f7_a416_490a_bd32_4f80e06a9480);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,393,719);
-(lib.BMP_446c865f_178b_4139_a917_d90ea343dbbf = function() {
-	this.initialize(img.BMP_446c865f_178b_4139_a917_d90ea343dbbf);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,392,715);
-(lib.BMP_488b6b85_5c3a_47b3_8b9d_c6de60b2b7df = function() {
-	this.initialize(img.BMP_488b6b85_5c3a_47b3_8b9d_c6de60b2b7df);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,713);
-(lib.BMP_49229ed8_1c3f_4f64_973a_207f4fbb1bfa = function() {
-	this.initialize(img.BMP_49229ed8_1c3f_4f64_973a_207f4fbb1bfa);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,712);
-(lib.BMP_4b03283c_1515_4b6c_a37e_96570b6e5039 = function() {
-	this.initialize(img.BMP_4b03283c_1515_4b6c_a37e_96570b6e5039);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,719);
-(lib.BMP_4e17a591_56f6_4814_9a72_f155e4fd43b4 = function() {
-	this.initialize(img.BMP_4e17a591_56f6_4814_9a72_f155e4fd43b4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,389,723);
-(lib.BMP_4e25e066_0af8_457e_9193_6d9d3aea643c = function() {
-	this.initialize(img.BMP_4e25e066_0af8_457e_9193_6d9d3aea643c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,384,706);
-(lib.BMP_4feafe0c_73c2_4cfd_a98a_a6d1393a0509 = function() {
-	this.initialize(img.BMP_4feafe0c_73c2_4cfd_a98a_a6d1393a0509);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,409,736);
-(lib.BMP_51cb26a9_4d72_4dff_a153_7d1617d8168c = function() {
-	this.initialize(img.BMP_51cb26a9_4d72_4dff_a153_7d1617d8168c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,715);
-(lib.BMP_53901e70_c200_4ad1_abb6_a9b69cdb69f8 = function() {
-	this.initialize(img.BMP_53901e70_c200_4ad1_abb6_a9b69cdb69f8);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,394,715);
-(lib.BMP_548c8e8a_3c25_439c_a3c6_e855b31f80f0 = function() {
-	this.initialize(img.BMP_548c8e8a_3c25_439c_a3c6_e855b31f80f0);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,394,716);
-(lib.BMP_55400050_07cd_4a46_a498_9eaf9e8d6ff7 = function() {
-	this.initialize(img.BMP_55400050_07cd_4a46_a498_9eaf9e8d6ff7);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,388,717);
-(lib.BMP_5563b1a3_bdb3_4df6_82d9_f8c048548312 = function() {
-	this.initialize(img.BMP_5563b1a3_bdb3_4df6_82d9_f8c048548312);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,392,714);
-(lib.BMP_56e8841c_5ceb_4d75_b1df_5385a8a0d1d9 = function() {
-	this.initialize(img.BMP_56e8841c_5ceb_4d75_b1df_5385a8a0d1d9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,715);
-(lib.BMP_574a5ce1_d8da_47b9_97f1_a235067f3b8a = function() {
-	this.initialize(img.BMP_574a5ce1_d8da_47b9_97f1_a235067f3b8a);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,721);
-(lib.BMP_5c79d07a_eadb_4b10_a015_2416232dd423 = function() {
-	this.initialize(img.BMP_5c79d07a_eadb_4b10_a015_2416232dd423);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,708);
-(lib.BMP_5e07561c_9fba_4c29_8d9a_4b2dd8cb50c0 = function() {
-	this.initialize(img.BMP_5e07561c_9fba_4c29_8d9a_4b2dd8cb50c0);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,714);
-(lib.BMP_5ff2811c_0e15_4515_9d01_73b3841e1420 = function() {
-	this.initialize(img.BMP_5ff2811c_0e15_4515_9d01_73b3841e1420);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,388,714);
-(lib.BMP_6462ddfc_db29_4e7d_ba65_92d02c37e0f4 = function() {
-	this.initialize(img.BMP_6462ddfc_db29_4e7d_ba65_92d02c37e0f4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,725);
-(lib.BMP_6467192f_cb91_4529_a256_575478ad43f7 = function() {
-	this.initialize(img.BMP_6467192f_cb91_4529_a256_575478ad43f7);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,394,714);
-(lib.BMP_6516efa4_198d_4619_9d1c_39ed4b2f3751 = function() {
-	this.initialize(img.BMP_6516efa4_198d_4619_9d1c_39ed4b2f3751);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,398,706);
-(lib.BMP_679ee30a_9371_431f_85ac_7e302df8056f = function() {
-	this.initialize(img.BMP_679ee30a_9371_431f_85ac_7e302df8056f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,409,737);
-(lib.BMP_69107159_d06f_4662_8944_7d41ca8eb14c = function() {
-	this.initialize(img.BMP_69107159_d06f_4662_8944_7d41ca8eb14c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,706);
-(lib.BMP_69cde0a9_240a_4c70_bb3d_245efd4bdcff = function() {
-	this.initialize(img.BMP_69cde0a9_240a_4c70_bb3d_245efd4bdcff);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,381,695);
-(lib.BMP_6b25f8eb_2bcc_4b3d_a31d_80ceb13f82cd = function() {
-	this.initialize(img.BMP_6b25f8eb_2bcc_4b3d_a31d_80ceb13f82cd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,719);
-(lib.BMP_6b8e026d_f150_4484_87b5_a65349e91f7d = function() {
-	this.initialize(img.BMP_6b8e026d_f150_4484_87b5_a65349e91f7d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,393,716);
-(lib.BMP_6c12913c_2cb4_42d0_bf6c_b65168fee97e = function() {
-	this.initialize(img.BMP_6c12913c_2cb4_42d0_bf6c_b65168fee97e);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,705);
-(lib.BMP_73276533_66b3_466e_aa1e_509f3e0cc241 = function() {
-	this.initialize(img.BMP_73276533_66b3_466e_aa1e_509f3e0cc241);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,404,714);
-(lib.BMP_75925805_abc5_480f_9af7_29755a21cd5f = function() {
-	this.initialize(img.BMP_75925805_abc5_480f_9af7_29755a21cd5f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,385,717);
-(lib.BMP_795d8743_c8fc_4098_b550_f36e08b353c0 = function() {
-	this.initialize(img.BMP_795d8743_c8fc_4098_b550_f36e08b353c0);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,392,720);
-(lib.BMP_79f9d6ea_615c_40e3_8c57_f19999c0acd5 = function() {
-	this.initialize(img.BMP_79f9d6ea_615c_40e3_8c57_f19999c0acd5);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,383,699);
-(lib.BMP_7b32f657_6e6d_4d24_9d74_a0278c1427cc = function() {
-	this.initialize(img.BMP_7b32f657_6e6d_4d24_9d74_a0278c1427cc);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,724);
-(lib.BMP_7da6b254_0189_4ee6_8933_e6e5be800ed3 = function() {
-	this.initialize(img.BMP_7da6b254_0189_4ee6_8933_e6e5be800ed3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,711);
-(lib.BMP_7e4e38ae_4e21_4aeb_8097_105a319c911d = function() {
-	this.initialize(img.BMP_7e4e38ae_4e21_4aeb_8097_105a319c911d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,713);
-(lib.BMP_7f6e1500_21f2_4831_8970_ce1099680558 = function() {
-	this.initialize(img.BMP_7f6e1500_21f2_4831_8970_ce1099680558);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,727);
-(lib.BMP_81a1f10d_d03c_4366_99b5_a93d0b2ca199 = function() {
-	this.initialize(img.BMP_81a1f10d_d03c_4366_99b5_a93d0b2ca199);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,392,717);
-(lib.BMP_8254f00a_bec3_40fa_861f_6b62bf0bb11d = function() {
-	this.initialize(img.BMP_8254f00a_bec3_40fa_861f_6b62bf0bb11d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,712);
-(lib.BMP_829a256c_955a_4396_a303_1a7eaa74d318 = function() {
-	this.initialize(img.BMP_829a256c_955a_4396_a303_1a7eaa74d318);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,715);
-(lib.BMP_832346ac_2a79_4ab5_96c1_06824a7e357d = function() {
-	this.initialize(img.BMP_832346ac_2a79_4ab5_96c1_06824a7e357d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,708);
-(lib.BMP_8324d277_d5fb_43cf_a5e5_3b1ccd52a3ab = function() {
-	this.initialize(img.BMP_8324d277_d5fb_43cf_a5e5_3b1ccd52a3ab);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,709);
-(lib.BMP_83270492_6328_4a8e_8b3d_a75f125f474c = function() {
-	this.initialize(img.BMP_83270492_6328_4a8e_8b3d_a75f125f474c);
+(lib.BMP_0162b842_91de_48ec_8da2_438cdbc8a99a = function() {
+	this.initialize(img.BMP_0162b842_91de_48ec_8da2_438cdbc8a99a);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,385,718);
-(lib.BMP_8866bf19_2ef9_4d68_a774_ffd548f3112c = function() {
-	this.initialize(img.BMP_8866bf19_2ef9_4d68_a774_ffd548f3112c);
+(lib.BMP_0178bf7a_9cf9_4ecf_8ea8_b30613cde6f1 = function() {
+	this.initialize(img.BMP_0178bf7a_9cf9_4ecf_8ea8_b30613cde6f1);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,708);
-(lib.BMP_8945983e_80be_425c_9bbe_94993f801a6f = function() {
-	this.initialize(img.BMP_8945983e_80be_425c_9bbe_94993f801a6f);
+p.nominalBounds = new cjs.Rectangle(0,0,392,720);
+(lib.BMP_035ba339_93c0_4366_823b_20e8ef113832 = function() {
+	this.initialize(img.BMP_035ba339_93c0_4366_823b_20e8ef113832);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,398,715);
-(lib.BMP_8d81915b_6e3f_4a93_ba76_7e071c949318 = function() {
-	this.initialize(img.BMP_8d81915b_6e3f_4a93_ba76_7e071c949318);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,404,713);
-(lib.BMP_9000059b_94e4_4028_94a1_bb61f76743ec = function() {
-	this.initialize(img.BMP_9000059b_94e4_4028_94a1_bb61f76743ec);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,381,695);
-(lib.BMP_92e91306_307e_4d3f_acb2_5a58375672c2 = function() {
-	this.initialize(img.BMP_92e91306_307e_4d3f_acb2_5a58375672c2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,737);
-(lib.BMP_9636b7a0_97db_4097_821d_347dc374c293 = function() {
-	this.initialize(img.BMP_9636b7a0_97db_4097_821d_347dc374c293);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,717);
-(lib.BMP_97e9de2a_ab83_43b6_bedd_7782b747a649 = function() {
-	this.initialize(img.BMP_97e9de2a_ab83_43b6_bedd_7782b747a649);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,395,715);
-(lib.BMP_9824de2f_7b0c_4dbf_87ea_f3f9ffbe099f = function() {
-	this.initialize(img.BMP_9824de2f_7b0c_4dbf_87ea_f3f9ffbe099f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,381,698);
-(lib.BMP_9c493a87_5104_47dc_b662_6e8dbe7a2ffe = function() {
-	this.initialize(img.BMP_9c493a87_5104_47dc_b662_6e8dbe7a2ffe);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,723);
-(lib.BMP_a1a2986f_8ba0_44fc_b0db_0353904327c3 = function() {
-	this.initialize(img.BMP_a1a2986f_8ba0_44fc_b0db_0353904327c3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,405,727);
-(lib.BMP_a2b2e800_e25a_49eb_a713_4904c74b67c5 = function() {
-	this.initialize(img.BMP_a2b2e800_e25a_49eb_a713_4904c74b67c5);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,389,717);
-(lib.BMP_a5c1052c_6315_4e5c_8fac_1d807a6d8be0 = function() {
-	this.initialize(img.BMP_a5c1052c_6315_4e5c_8fac_1d807a6d8be0);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,704);
-(lib.BMP_a5cc5558_97a8_4eab_9216_121ed03b2b5c = function() {
-	this.initialize(img.BMP_a5cc5558_97a8_4eab_9216_121ed03b2b5c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,382,699);
-(lib.BMP_a5f858a8_34ef_4706_8cf6_61a1e77dad73 = function() {
-	this.initialize(img.BMP_a5f858a8_34ef_4706_8cf6_61a1e77dad73);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,710);
-(lib.BMP_a6891c40_bc45_4036_a1ae_22cc272e2b41 = function() {
-	this.initialize(img.BMP_a6891c40_bc45_4036_a1ae_22cc272e2b41);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,712);
-(lib.BMP_ab87c9bc_81ee_4d12_835d_e7cf30c13b0f = function() {
-	this.initialize(img.BMP_ab87c9bc_81ee_4d12_835d_e7cf30c13b0f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,713);
-(lib.BMP_ad9689dd_72cc_4c02_9b0c_377896c3ed0b = function() {
-	this.initialize(img.BMP_ad9689dd_72cc_4c02_9b0c_377896c3ed0b);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,395,716);
-(lib.BMP_ade67792_50ab_4f4c_a5eb_e08dd167fc54 = function() {
-	this.initialize(img.BMP_ade67792_50ab_4f4c_a5eb_e08dd167fc54);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,706);
-(lib.BMP_ae1fec38_175f_4d28_a7e5_cf9154ddea85 = function() {
-	this.initialize(img.BMP_ae1fec38_175f_4d28_a7e5_cf9154ddea85);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,714);
-(lib.BMP_aecb1cc7_306c_4b9f_a836_2cb076f28cf6 = function() {
-	this.initialize(img.BMP_aecb1cc7_306c_4b9f_a836_2cb076f28cf6);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,406,725);
-(lib.BMP_b0b85401_de88_4b2d_aadb_f532248fe4e0 = function() {
-	this.initialize(img.BMP_b0b85401_de88_4b2d_aadb_f532248fe4e0);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,404,719);
-(lib.BMP_b0ef910f_8a55_44de_b5b3_c5834c625625 = function() {
-	this.initialize(img.BMP_b0ef910f_8a55_44de_b5b3_c5834c625625);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,720);
-(lib.BMP_b1e00ab8_2205_413d_a050_54d2c78040cc = function() {
-	this.initialize(img.BMP_b1e00ab8_2205_413d_a050_54d2c78040cc);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,398,707);
-(lib.BMP_b26aa273_4d35_4b84_8388_6db0082224bb = function() {
-	this.initialize(img.BMP_b26aa273_4d35_4b84_8388_6db0082224bb);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,385,714);
-(lib.BMP_b6ef83c9_d15d_4b2e_982e_422fb9b75269 = function() {
-	this.initialize(img.BMP_b6ef83c9_d15d_4b2e_982e_422fb9b75269);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,384,703);
-(lib.BMP_b84c70ce_fabd_4cbf_b942_3465ec9a0c7e = function() {
-	this.initialize(img.BMP_b84c70ce_fabd_4cbf_b942_3465ec9a0c7e);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,395,717);
-(lib.BMP_b9cdfea6_450e_4e0f_a2ae_28bfeddc4ac3 = function() {
-	this.initialize(img.BMP_b9cdfea6_450e_4e0f_a2ae_28bfeddc4ac3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,384,718);
-(lib.BMP_bf33e066_838b_4d7e_a3bf_bdaa1af36f69 = function() {
-	this.initialize(img.BMP_bf33e066_838b_4d7e_a3bf_bdaa1af36f69);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,722);
-(lib.BMP_bf99584b_1bae_4209_8a89_1f75a303e02c = function() {
-	this.initialize(img.BMP_bf99584b_1bae_4209_8a89_1f75a303e02c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,405,729);
-(lib.BMP_c0c359eb_3d10_4122_8c9f_bd96a9ad4007 = function() {
-	this.initialize(img.BMP_c0c359eb_3d10_4122_8c9f_bd96a9ad4007);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,404,708);
-(lib.BMP_c432c02b_3ddb_44be_b8e3_85585dc7eb3f = function() {
-	this.initialize(img.BMP_c432c02b_3ddb_44be_b8e3_85585dc7eb3f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,702);
-(lib.BMP_c79203c5_ad76_421a_899b_ba86969c6b5c = function() {
-	this.initialize(img.BMP_c79203c5_ad76_421a_899b_ba86969c6b5c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,710);
-(lib.BMP_c7e90f02_60b2_48c9_8fba_f41b05219382 = function() {
-	this.initialize(img.BMP_c7e90f02_60b2_48c9_8fba_f41b05219382);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,722);
-(lib.BMP_c8d98eaa_ad77_453c_936e_6cb785c217ad = function() {
-	this.initialize(img.BMP_c8d98eaa_ad77_453c_936e_6cb785c217ad);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,398,720);
-(lib.BMP_c917d0e5_b8a9_4fca_afd1_bf318ace7266 = function() {
-	this.initialize(img.BMP_c917d0e5_b8a9_4fca_afd1_bf318ace7266);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,384,716);
-(lib.BMP_ca230660_57f7_457d_963d_50d1b1a17d5c = function() {
-	this.initialize(img.BMP_ca230660_57f7_457d_963d_50d1b1a17d5c);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,717);
-(lib.BMP_cd340c32_a64d_45d0_b9bf_ec9d387ee5fb = function() {
-	this.initialize(img.BMP_cd340c32_a64d_45d0_b9bf_ec9d387ee5fb);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,404,708);
-(lib.BMP_ceb42b02_4768_48f5_a285_5acf51fe5c50 = function() {
-	this.initialize(img.BMP_ceb42b02_4768_48f5_a285_5acf51fe5c50);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,387,696);
-(lib.BMP_cee70e7c_4069_4179_8b64_13e95651e955 = function() {
-	this.initialize(img.BMP_cee70e7c_4069_4179_8b64_13e95651e955);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,705);
-(lib.BMP_d13baa14_16f9_45b7_9a65_1d7eaa453a6f = function() {
-	this.initialize(img.BMP_d13baa14_16f9_45b7_9a65_1d7eaa453a6f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,406,731);
-(lib.BMP_d20a4c6e_4686_4782_95d2_1e04f62af692 = function() {
-	this.initialize(img.BMP_d20a4c6e_4686_4782_95d2_1e04f62af692);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,723);
-(lib.BMP_d46ea5e8_434a_4980_a928_ba4b44845694 = function() {
-	this.initialize(img.BMP_d46ea5e8_434a_4980_a928_ba4b44845694);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,396,719);
-(lib.BMP_d517cf65_fa2b_4233_a979_5643f08fbf40 = function() {
-	this.initialize(img.BMP_d517cf65_fa2b_4233_a979_5643f08fbf40);
+p.nominalBounds = new cjs.Rectangle(0,0,402,727);
+(lib.BMP_0530041e_1c4c_4ee5_997b_307c50e4011b = function() {
+	this.initialize(img.BMP_0530041e_1c4c_4ee5_997b_307c50e4011b);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,405,723);
-(lib.BMP_d68d3b36_684e_4f06_82e2_b0cb0fddcb57 = function() {
-	this.initialize(img.BMP_d68d3b36_684e_4f06_82e2_b0cb0fddcb57);
+(lib.BMP_061c4eb2_7099_4f77_b234_e2d0749ba454 = function() {
+	this.initialize(img.BMP_061c4eb2_7099_4f77_b234_e2d0749ba454);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,708);
-(lib.BMP_d75f4899_3204_433d_8d28_466dd67c26ef = function() {
-	this.initialize(img.BMP_d75f4899_3204_433d_8d28_466dd67c26ef);
+p.nominalBounds = new cjs.Rectangle(0,0,403,713);
+(lib.BMP_06256582_d60e_4ee2_9e41_7d7b574f1823 = function() {
+	this.initialize(img.BMP_06256582_d60e_4ee2_9e41_7d7b574f1823);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,713);
-(lib.BMP_d92296ae_2ef0_4a59_97cb_2905a62781a0 = function() {
-	this.initialize(img.BMP_d92296ae_2ef0_4a59_97cb_2905a62781a0);
+p.nominalBounds = new cjs.Rectangle(0,0,397,715);
+(lib.BMP_07d768aa_3b51_4f96_8a9b_2ef2f7776d75 = function() {
+	this.initialize(img.BMP_07d768aa_3b51_4f96_8a9b_2ef2f7776d75);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,710);
-(lib.BMP_d932069d_7e3d_499e_8b22_034174ed2d64 = function() {
-	this.initialize(img.BMP_d932069d_7e3d_499e_8b22_034174ed2d64);
+p.nominalBounds = new cjs.Rectangle(0,0,403,712);
+(lib.BMP_07d9fbc6_729c_4048_ae1e_1cdb93804749 = function() {
+	this.initialize(img.BMP_07d9fbc6_729c_4048_ae1e_1cdb93804749);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,383,718);
-(lib.BMP_d994f805_7393_4ff6_aa13_ce83a7c93d4a = function() {
-	this.initialize(img.BMP_d994f805_7393_4ff6_aa13_ce83a7c93d4a);
+p.nominalBounds = new cjs.Rectangle(0,0,384,716);
+(lib.BMP_0a8edf71_87e8_4af7_aac9_ad6007d37b87 = function() {
+	this.initialize(img.BMP_0a8edf71_87e8_4af7_aac9_ad6007d37b87);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,391,721);
+(lib.BMP_0b5ea16f_8cc0_4e98_b6df_8960fece1f18 = function() {
+	this.initialize(img.BMP_0b5ea16f_8cc0_4e98_b6df_8960fece1f18);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,404,708);
+(lib.BMP_0e2b6eb9_4f0d_4b1f_9bd8_3ab4e9d15941 = function() {
+	this.initialize(img.BMP_0e2b6eb9_4f0d_4b1f_9bd8_3ab4e9d15941);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,704);
+(lib.BMP_0ef76598_23ef_4cab_a297_60beba3d26a6 = function() {
+	this.initialize(img.BMP_0ef76598_23ef_4cab_a297_60beba3d26a6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,383,699);
+(lib.BMP_0fd0f583_34d4_4ff7_afaa_d88f775b0ac4 = function() {
+	this.initialize(img.BMP_0fd0f583_34d4_4ff7_afaa_d88f775b0ac4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,393,719);
+(lib.BMP_111cab29_6ba9_4c6b_a020_097b500a21a5 = function() {
+	this.initialize(img.BMP_111cab29_6ba9_4c6b_a020_097b500a21a5);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,384,717);
+(lib.BMP_11b36620_9ccf_4015_a5d9_40c9803ea4a5 = function() {
+	this.initialize(img.BMP_11b36620_9ccf_4015_a5d9_40c9803ea4a5);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,706);
+(lib.BMP_14f604cb_5f0d_402b_bbc1_ed14b9a3f151 = function() {
+	this.initialize(img.BMP_14f604cb_5f0d_402b_bbc1_ed14b9a3f151);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,720);
+(lib.BMP_166a759d_fdb0_42c9_9d6f_7f2982890a82 = function() {
+	this.initialize(img.BMP_166a759d_fdb0_42c9_9d6f_7f2982890a82);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,714);
+(lib.BMP_172157ba_887b_4597_92aa_1b35de726372 = function() {
+	this.initialize(img.BMP_172157ba_887b_4597_92aa_1b35de726372);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,382,699);
+(lib.BMP_1790ec33_7ec6_4f35_bf07_a7bdf7174281 = function() {
+	this.initialize(img.BMP_1790ec33_7ec6_4f35_bf07_a7bdf7174281);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,394,716);
+(lib.BMP_18314a37_9c0a_44a0_9100_3768cc2432b4 = function() {
+	this.initialize(img.BMP_18314a37_9c0a_44a0_9100_3768cc2432b4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,388,714);
+(lib.BMP_18a005b1_9ff0_43ee_9b4a_79d53b4af427 = function() {
+	this.initialize(img.BMP_18a005b1_9ff0_43ee_9b4a_79d53b4af427);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,715);
+(lib.BMP_19875f97_3a13_4e59_b057_8d52ed98d6c2 = function() {
+	this.initialize(img.BMP_19875f97_3a13_4e59_b057_8d52ed98d6c2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,720);
+(lib.BMP_1a2372a5_9775_4697_814d_7706aff9a5d4 = function() {
+	this.initialize(img.BMP_1a2372a5_9775_4697_814d_7706aff9a5d4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,407,734);
+(lib.BMP_1af5df60_1b3b_4200_8c66_42fd0ee7a604 = function() {
+	this.initialize(img.BMP_1af5df60_1b3b_4200_8c66_42fd0ee7a604);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,706);
+(lib.BMP_1af9dc8a_b6c7_4699_98ef_4244e3ec2065 = function() {
+	this.initialize(img.BMP_1af9dc8a_b6c7_4699_98ef_4244e3ec2065);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,389,717);
+(lib.BMP_1c84c9e9_6561_4666_9fb1_05d7c6feb5c9 = function() {
+	this.initialize(img.BMP_1c84c9e9_6561_4666_9fb1_05d7c6feb5c9);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,396,713);
+(lib.BMP_1e26a599_ae95_406f_aeb6_8cc410fc39bb = function() {
+	this.initialize(img.BMP_1e26a599_ae95_406f_aeb6_8cc410fc39bb);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,713);
+(lib.BMP_1ed8e844_66ab_4d01_a5ed_36ba30b42a0d = function() {
+	this.initialize(img.BMP_1ed8e844_66ab_4d01_a5ed_36ba30b42a0d);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,406,731);
+(lib.BMP_1fe29378_e9a2_4137_85d7_384f28c6694a = function() {
+	this.initialize(img.BMP_1fe29378_e9a2_4137_85d7_384f28c6694a);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,704);
+(lib.BMP_257124d6_0392_413d_94a6_44a6c8449cd7 = function() {
+	this.initialize(img.BMP_257124d6_0392_413d_94a6_44a6c8449cd7);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,709);
+(lib.BMP_262b48d8_5f6f_4138_891d_c773aa9829da = function() {
+	this.initialize(img.BMP_262b48d8_5f6f_4138_891d_c773aa9829da);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,390,717);
+(lib.BMP_274f26e9_d97e_43de_aeb3_ad5c700443ab = function() {
+	this.initialize(img.BMP_274f26e9_d97e_43de_aeb3_ad5c700443ab);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,702);
+(lib.BMP_27effba8_b4be_42f4_aa45_14edbccc647c = function() {
+	this.initialize(img.BMP_27effba8_b4be_42f4_aa45_14edbccc647c);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,394,715);
+(lib.BMP_2a88aa43_4f5c_4c8d_b064_19ca79216861 = function() {
+	this.initialize(img.BMP_2a88aa43_4f5c_4c8d_b064_19ca79216861);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,722);
+(lib.BMP_2b24a2c2_cb89_4306_8a0c_51542c0fa717 = function() {
+	this.initialize(img.BMP_2b24a2c2_cb89_4306_8a0c_51542c0fa717);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,384,718);
+(lib.BMP_2c353ac7_670b_40f0_90cf_d6eeb5011cf8 = function() {
+	this.initialize(img.BMP_2c353ac7_670b_40f0_90cf_d6eeb5011cf8);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,721);
+(lib.BMP_2ef39d8e_5d66_45a9_9b5c_bb2484a46842 = function() {
+	this.initialize(img.BMP_2ef39d8e_5d66_45a9_9b5c_bb2484a46842);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,404,708);
+(lib.BMP_32df0f17_68c6_40ce_800b_6ee881512016 = function() {
+	this.initialize(img.BMP_32df0f17_68c6_40ce_800b_6ee881512016);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,394,732);
+(lib.BMP_37a0dcde_1482_4453_b6ab_6c311c654fe2 = function() {
+	this.initialize(img.BMP_37a0dcde_1482_4453_b6ab_6c311c654fe2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,384,706);
+(lib.BMP_3c87206f_acd6_4b97_bb8a_8bd178b838b4 = function() {
+	this.initialize(img.BMP_3c87206f_acd6_4b97_bb8a_8bd178b838b4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,708);
+(lib.BMP_3d69b7f1_f038_4aa0_b794_0c0748126411 = function() {
+	this.initialize(img.BMP_3d69b7f1_f038_4aa0_b794_0c0748126411);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,724);
+(lib.BMP_3e90a64a_43a8_40e5_ab10_586d315f24a2 = function() {
+	this.initialize(img.BMP_3e90a64a_43a8_40e5_ab10_586d315f24a2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,386,714);
+(lib.BMP_41978e07_bec1_49d4_b885_8c9cedff7707 = function() {
+	this.initialize(img.BMP_41978e07_bec1_49d4_b885_8c9cedff7707);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,714);
+(lib.BMP_42711924_0097_4002_9d9f_8b46335bec07 = function() {
+	this.initialize(img.BMP_42711924_0097_4002_9d9f_8b46335bec07);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,719);
+(lib.BMP_42e7571c_ce0f_465f_819c_04693f4997d3 = function() {
+	this.initialize(img.BMP_42e7571c_ce0f_465f_819c_04693f4997d3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,398,715);
+(lib.BMP_43d288c4_85dc_492a_8f66_e42a94a82d54 = function() {
+	this.initialize(img.BMP_43d288c4_85dc_492a_8f66_e42a94a82d54);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,712);
+(lib.BMP_4581042b_14ba_46b4_b1cd_eb6646a75646 = function() {
+	this.initialize(img.BMP_4581042b_14ba_46b4_b1cd_eb6646a75646);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,397,721);
+(lib.BMP_458bf4d6_a410_4e9b_a5e5_923dc0b48001 = function() {
+	this.initialize(img.BMP_458bf4d6_a410_4e9b_a5e5_923dc0b48001);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,392,727);
+(lib.BMP_466b9520_7812_4046_b757_b43f0edcb4e9 = function() {
+	this.initialize(img.BMP_466b9520_7812_4046_b757_b43f0edcb4e9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,381,698);
+(lib.BMP_47728ce9_aa2b_4c0a_a5a9_f55e7648c925 = function() {
+	this.initialize(img.BMP_47728ce9_aa2b_4c0a_a5a9_f55e7648c925);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,707);
+(lib.BMP_487df19f_b467_41b5_8e95_3ac0a29356c4 = function() {
+	this.initialize(img.BMP_487df19f_b467_41b5_8e95_3ac0a29356c4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,388,714);
+(lib.BMP_48d6861b_fb86_4313_8ae5_48f9d18c3742 = function() {
+	this.initialize(img.BMP_48d6861b_fb86_4313_8ae5_48f9d18c3742);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,725);
+(lib.BMP_48e7de50_c104_4ce1_86c1_b8a386f048d3 = function() {
+	this.initialize(img.BMP_48e7de50_c104_4ce1_86c1_b8a386f048d3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,717);
+(lib.BMP_49e4e701_ad78_4dca_83cd_8c5e33d6d6c6 = function() {
+	this.initialize(img.BMP_49e4e701_ad78_4dca_83cd_8c5e33d6d6c6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,395,718);
+(lib.BMP_4b201453_d76c_4714_b915_f3ac5a8769a0 = function() {
+	this.initialize(img.BMP_4b201453_d76c_4714_b915_f3ac5a8769a0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,714);
+(lib.BMP_4ccffb6c_9559_44db_9a9d_eea0d95c710b = function() {
+	this.initialize(img.BMP_4ccffb6c_9559_44db_9a9d_eea0d95c710b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,711);
+(lib.BMP_4d3ce136_0824_42aa_b8f0_e84f9fd704d9 = function() {
+	this.initialize(img.BMP_4d3ce136_0824_42aa_b8f0_e84f9fd704d9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,398,704);
+(lib.BMP_512dd26a_a747_442a_911c_2b7adb52eea1 = function() {
+	this.initialize(img.BMP_512dd26a_a747_442a_911c_2b7adb52eea1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,396,712);
+(lib.BMP_52f07ac1_04f9_4daa_8f61_b5ab26ce6aa2 = function() {
+	this.initialize(img.BMP_52f07ac1_04f9_4daa_8f61_b5ab26ce6aa2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,381,695);
+(lib.BMP_544d0992_1fe9_402d_a5ec_3e8da50b2a9e = function() {
+	this.initialize(img.BMP_544d0992_1fe9_402d_a5ec_3e8da50b2a9e);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,395,716);
+(lib.BMP_54e8812b_72a2_45e0_b34c_4d3888a1e6dd = function() {
+	this.initialize(img.BMP_54e8812b_72a2_45e0_b34c_4d3888a1e6dd);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,708);
+(lib.BMP_556879df_6e18_4b31_9333_651d19bf234b = function() {
+	this.initialize(img.BMP_556879df_6e18_4b31_9333_651d19bf234b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,719);
+(lib.BMP_57a5cb91_8476_4496_90a2_8811114815b8 = function() {
+	this.initialize(img.BMP_57a5cb91_8476_4496_90a2_8811114815b8);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,723);
+(lib.BMP_596050af_693f_44c1_bfcd_c9bcbe5872e8 = function() {
+	this.initialize(img.BMP_596050af_693f_44c1_bfcd_c9bcbe5872e8);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,381,698);
+(lib.BMP_5dc93a6a_2a8b_4dac_ad08_658de4ad5aa2 = function() {
+	this.initialize(img.BMP_5dc93a6a_2a8b_4dac_ad08_658de4ad5aa2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,395,719);
+(lib.BMP_5fdebdc6_4302_453d_a99c_cdcc8c7ffeec = function() {
+	this.initialize(img.BMP_5fdebdc6_4302_453d_a99c_cdcc8c7ffeec);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,398,706);
+(lib.BMP_640eb1b6_727d_48f6_9878_3e135de0858e = function() {
+	this.initialize(img.BMP_640eb1b6_727d_48f6_9878_3e135de0858e);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,397,705);
+(lib.BMP_65acce37_bc86_4416_a2b2_d390e09c5b44 = function() {
+	this.initialize(img.BMP_65acce37_bc86_4416_a2b2_d390e09c5b44);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,710);
+(lib.BMP_685c7813_9f38_4441_a19e_ec2e1de4a2f5 = function() {
+	this.initialize(img.BMP_685c7813_9f38_4441_a19e_ec2e1de4a2f5);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,397,706);
+(lib.BMP_6fa5f0ec_b1b6_4d7f_ba63_132ffc31d475 = function() {
+	this.initialize(img.BMP_6fa5f0ec_b1b6_4d7f_ba63_132ffc31d475);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,710);
+(lib.BMP_71bffcbf_c79f_4b0c_875b_68cd616f4aca = function() {
+	this.initialize(img.BMP_71bffcbf_c79f_4b0c_875b_68cd616f4aca);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,717);
+(lib.BMP_72e5582d_2d54_427a_bc16_004bd2a3ec36 = function() {
+	this.initialize(img.BMP_72e5582d_2d54_427a_bc16_004bd2a3ec36);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,410,739);
+(lib.BMP_734a0f5a_6a84_419f_80f2_91485c2d073e = function() {
+	this.initialize(img.BMP_734a0f5a_6a84_419f_80f2_91485c2d073e);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,385,717);
+(lib.BMP_750ebcf5_352d_4d36_923c_f833f8409311 = function() {
+	this.initialize(img.BMP_750ebcf5_352d_4d36_923c_f833f8409311);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,396,711);
+(lib.BMP_7773869c_1c80_4da3_84c8_4544e3f2e73b = function() {
+	this.initialize(img.BMP_7773869c_1c80_4da3_84c8_4544e3f2e73b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,722);
+(lib.BMP_77d6f2a4_2ad8_479e_815e_d8329c2da0a9 = function() {
+	this.initialize(img.BMP_77d6f2a4_2ad8_479e_815e_d8329c2da0a9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,393,717);
+(lib.BMP_793d5956_44ff_481d_bcd1_31f7fe6a8908 = function() {
+	this.initialize(img.BMP_793d5956_44ff_481d_bcd1_31f7fe6a8908);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,722);
+(lib.BMP_7a140cf0_e795_4e7b_a1fd_6248da36cf2f = function() {
+	this.initialize(img.BMP_7a140cf0_e795_4e7b_a1fd_6248da36cf2f);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,390,714);
+(lib.BMP_7a475611_46c7_4a24_a3e1_9d3fae9006c4 = function() {
+	this.initialize(img.BMP_7a475611_46c7_4a24_a3e1_9d3fae9006c4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,717);
+(lib.BMP_7aa13c8e_e7f3_4236_b6a6_9b1d8e4b51c6 = function() {
+	this.initialize(img.BMP_7aa13c8e_e7f3_4236_b6a6_9b1d8e4b51c6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,708);
+(lib.BMP_7cfd5d30_f94a_4b88_8cb6_a98f9cf39510 = function() {
+	this.initialize(img.BMP_7cfd5d30_f94a_4b88_8cb6_a98f9cf39510);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,384,703);
+(lib.BMP_7d28c196_b4d4_4bba_b53d_c89e8810c44f = function() {
+	this.initialize(img.BMP_7d28c196_b4d4_4bba_b53d_c89e8810c44f);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,404,719);
+(lib.BMP_7f550613_bab9_47c1_973f_e70cb218c695 = function() {
+	this.initialize(img.BMP_7f550613_bab9_47c1_973f_e70cb218c695);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,719);
+(lib.BMP_81da43f2_3189_468d_ba36_4534347ee10d = function() {
+	this.initialize(img.BMP_81da43f2_3189_468d_ba36_4534347ee10d);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,706);
+(lib.BMP_8621ef06_fe47_49d4_aad4_ed7162487cd2 = function() {
+	this.initialize(img.BMP_8621ef06_fe47_49d4_aad4_ed7162487cd2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,409,737);
+(lib.BMP_8884eb25_7497_4c0c_b10d_611d0505bc16 = function() {
+	this.initialize(img.BMP_8884eb25_7497_4c0c_b10d_611d0505bc16);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,395,717);
+(lib.BMP_88a21dd6_aec1_4746_9013_35649dc08042 = function() {
+	this.initialize(img.BMP_88a21dd6_aec1_4746_9013_35649dc08042);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,406,725);
+(lib.BMP_8fda2aee_2aaf_426f_9019_aa91d4f02070 = function() {
+	this.initialize(img.BMP_8fda2aee_2aaf_426f_9019_aa91d4f02070);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,399,705);
+(lib.BMP_929c1e0e_47b6_443f_ae37_6576023c3548 = function() {
+	this.initialize(img.BMP_929c1e0e_47b6_443f_ae37_6576023c3548);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,707);
+(lib.BMP_9386ba6e_209c_4201_b647_a6942bc135bf = function() {
+	this.initialize(img.BMP_9386ba6e_209c_4201_b647_a6942bc135bf);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,396,719);
+(lib.BMP_94cc5a31_301d_4212_a3cd_3d5cb0d350d4 = function() {
+	this.initialize(img.BMP_94cc5a31_301d_4212_a3cd_3d5cb0d350d4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,715);
+(lib.BMP_9566f8b3_9915_4ced_843d_71746f158286 = function() {
+	this.initialize(img.BMP_9566f8b3_9915_4ced_843d_71746f158286);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,385,714);
+(lib.BMP_961b5fe4_845b_4941_bc29_86566fe65fa0 = function() {
+	this.initialize(img.BMP_961b5fe4_845b_4941_bc29_86566fe65fa0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,383,718);
+(lib.BMP_962d8bbb_4eb6_4c07_b7d9_0cc2cf7d7951 = function() {
+	this.initialize(img.BMP_962d8bbb_4eb6_4c07_b7d9_0cc2cf7d7951);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,393,718);
+(lib.BMP_98db79e0_8a8b_4283_b71a_8cec4136cf68 = function() {
+	this.initialize(img.BMP_98db79e0_8a8b_4283_b71a_8cec4136cf68);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,396,699);
+(lib.BMP_9b9920e0_dd6e_4904_9d06_41909cdb3847 = function() {
+	this.initialize(img.BMP_9b9920e0_dd6e_4904_9d06_41909cdb3847);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,388,717);
+(lib.BMP_9dfe4cc7_e6ec_4f4a_be72_e0fa21446ce0 = function() {
+	this.initialize(img.BMP_9dfe4cc7_e6ec_4f4a_be72_e0fa21446ce0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,404,711);
+(lib.BMP_a1c2ffbd_5c9b_4c0a_8d9c_6b77d659741b = function() {
+	this.initialize(img.BMP_a1c2ffbd_5c9b_4c0a_8d9c_6b77d659741b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,392,714);
+(lib.BMP_a1ef7fba_b69f_41b0_b8e0_fa4db9007682 = function() {
+	this.initialize(img.BMP_a1ef7fba_b69f_41b0_b8e0_fa4db9007682);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,381,695);
+(lib.BMP_a22b7e2e_0abc_4749_bd99_9b58604ced4a = function() {
+	this.initialize(img.BMP_a22b7e2e_0abc_4749_bd99_9b58604ced4a);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,384,710);
+(lib.BMP_a771713e_8bb1_4dd8_87dd_bfe9f7ea73c9 = function() {
+	this.initialize(img.BMP_a771713e_8bb1_4dd8_87dd_bfe9f7ea73c9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,392,715);
+(lib.BMP_a7859688_c855_4f6e_9a35_8f0fa5698d3f = function() {
+	this.initialize(img.BMP_a7859688_c855_4f6e_9a35_8f0fa5698d3f);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,704);
+(lib.BMP_a8575f9b_6bfb_4ce0_bdaa_280a00ae1706 = function() {
+	this.initialize(img.BMP_a8575f9b_6bfb_4ce0_bdaa_280a00ae1706);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,395,717);
+(lib.BMP_ac84fda0_9ccf_4c22_b7ed_1f43d30cea0a = function() {
+	this.initialize(img.BMP_ac84fda0_9ccf_4c22_b7ed_1f43d30cea0a);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,711);
+(lib.BMP_ae83bc86_28c9_4f2f_a5c8_855809d8fbfd = function() {
+	this.initialize(img.BMP_ae83bc86_28c9_4f2f_a5c8_855809d8fbfd);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,393,716);
+(lib.BMP_b21817e7_18dd_49b2_a686_3df723b527d1 = function() {
+	this.initialize(img.BMP_b21817e7_18dd_49b2_a686_3df723b527d1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,411,741);
+(lib.BMP_b3e565be_d217_46b3_ab40_4b291873fdf0 = function() {
+	this.initialize(img.BMP_b3e565be_d217_46b3_ab40_4b291873fdf0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,713);
+(lib.BMP_b74411e5_d5ca_4b67_b7f7_e7571cfa5858 = function() {
+	this.initialize(img.BMP_b74411e5_d5ca_4b67_b7f7_e7571cfa5858);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,405,729);
+(lib.BMP_b9a2a4a4_b501_4570_a7b0_c67452e27810 = function() {
+	this.initialize(img.BMP_b9a2a4a4_b501_4570_a7b0_c67452e27810);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,382,718);
+(lib.BMP_bac4e16c_b01b_48a0_99d1_99796dac8098 = function() {
+	this.initialize(img.BMP_bac4e16c_b01b_48a0_99d1_99796dac8098);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,405,727);
+(lib.BMP_baf956ae_95cf_4e45_8614_4684a5aaa854 = function() {
+	this.initialize(img.BMP_baf956ae_95cf_4e45_8614_4684a5aaa854);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,383,718);
+(lib.BMP_bdb8e5f6_6812_4966_8c77_d4206b2466ed = function() {
+	this.initialize(img.BMP_bdb8e5f6_6812_4966_8c77_d4206b2466ed);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,381,698);
+(lib.BMP_c0b9a123_156e_4d4e_83ed_2f15b273e381 = function() {
+	this.initialize(img.BMP_c0b9a123_156e_4d4e_83ed_2f15b273e381);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,389,723);
+(lib.BMP_c1dd1ab9_5757_478c_b9a5_34fe041aaf7b = function() {
+	this.initialize(img.BMP_c1dd1ab9_5757_478c_b9a5_34fe041aaf7b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,398,718);
+(lib.BMP_c3c426b8_ca37_46e1_b108_c673ea6b6b0d = function() {
+	this.initialize(img.BMP_c3c426b8_ca37_46e1_b108_c673ea6b6b0d);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,390,714);
+(lib.BMP_c544578a_5249_4dc0_b85f_70e7c9719ffd = function() {
+	this.initialize(img.BMP_c544578a_5249_4dc0_b85f_70e7c9719ffd);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,397,716);
+(lib.BMP_c8a82ed4_57c0_48bf_8450_708e9112f7d3 = function() {
+	this.initialize(img.BMP_c8a82ed4_57c0_48bf_8450_708e9112f7d3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,409,736);
+(lib.BMP_c9b2d973_3ddd_4a02_947f_bb15de837b41 = function() {
+	this.initialize(img.BMP_c9b2d973_3ddd_4a02_947f_bb15de837b41);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,395,715);
+(lib.BMP_cb043d3c_39c3_47fa_b2b1_97d2c59dcd0c = function() {
+	this.initialize(img.BMP_cb043d3c_39c3_47fa_b2b1_97d2c59dcd0c);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,715);
+(lib.BMP_cd124573_a026_4b02_8d8b_33283e3d4035 = function() {
+	this.initialize(img.BMP_cd124573_a026_4b02_8d8b_33283e3d4035);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,710);
+(lib.BMP_cdaaced7_60cd_49db_9d74_38c2d36b3a9e = function() {
+	this.initialize(img.BMP_cdaaced7_60cd_49db_9d74_38c2d36b3a9e);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,723);
+(lib.BMP_cf43f49d_8361_43f2_9bcd_006967f98396 = function() {
+	this.initialize(img.BMP_cf43f49d_8361_43f2_9bcd_006967f98396);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,397,710);
+(lib.BMP_cf55cdeb_4df6_4f7a_b63d_8716bd69b718 = function() {
+	this.initialize(img.BMP_cf55cdeb_4df6_4f7a_b63d_8716bd69b718);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,703);
+(lib.BMP_d0ae5407_561c_4eb0_9f8a_909e7953c542 = function() {
+	this.initialize(img.BMP_d0ae5407_561c_4eb0_9f8a_909e7953c542);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,712);
+(lib.BMP_d157937a_6106_4f76_b8a4_acc2411f915a = function() {
+	this.initialize(img.BMP_d157937a_6106_4f76_b8a4_acc2411f915a);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,383,699);
+(lib.BMP_d399d0f2_e66a_44e3_8947_880d6476b07b = function() {
+	this.initialize(img.BMP_d399d0f2_e66a_44e3_8947_880d6476b07b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,404,713);
+(lib.BMP_d8f5721c_aec5_416d_a4a7_cad213a158e6 = function() {
+	this.initialize(img.BMP_d8f5721c_aec5_416d_a4a7_cad213a158e6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,713);
+(lib.BMP_d9654eab_de9f_4baa_8e95_bf1ff070e3b2 = function() {
+	this.initialize(img.BMP_d9654eab_de9f_4baa_8e95_bf1ff070e3b2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,401,713);
+(lib.BMP_dab7635b_e4ee_4cb0_af60_edcd13d82b44 = function() {
+	this.initialize(img.BMP_dab7635b_e4ee_4cb0_af60_edcd13d82b44);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,400,719);
 (lib.BMP_dac03e00_cdb5_4c97_bf2a_c45e285d1cf1 = function() {
 	this.initialize(img.BMP_dac03e00_cdb5_4c97_bf2a_c45e285d1cf1);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,404,701);
-(lib.BMP_dcdf7999_6c7b_4fb1_844c_43f2085e9061 = function() {
-	this.initialize(img.BMP_dcdf7999_6c7b_4fb1_844c_43f2085e9061);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,716);
-(lib.BMP_de3ce22f_2870_46f1_9c2f_171d894fe7bb = function() {
-	this.initialize(img.BMP_de3ce22f_2870_46f1_9c2f_171d894fe7bb);
+(lib.BMP_dac73940_737d_4c34_8ea9_33e1d8af4b38 = function() {
+	this.initialize(img.BMP_dac73940_737d_4c34_8ea9_33e1d8af4b38);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,393,717);
-(lib.BMP_df179efc_044e_46b1_9389_70f58273e72f = function() {
-	this.initialize(img.BMP_df179efc_044e_46b1_9389_70f58273e72f);
+(lib.BMP_de6a008e_cb8b_481e_b603_d052daf36b6e = function() {
+	this.initialize(img.BMP_de6a008e_cb8b_481e_b603_d052daf36b6e);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,397,715);
-(lib.BMP_e21f984a_282a_4712_9d87_9c36d30205b3 = function() {
-	this.initialize(img.BMP_e21f984a_282a_4712_9d87_9c36d30205b3);
+p.nominalBounds = new cjs.Rectangle(0,0,383,718);
+(lib.BMP_e3b4123a_2cd7_46d9_ad86_93b3bd506632 = function() {
+	this.initialize(img.BMP_e3b4123a_2cd7_46d9_ad86_93b3bd506632);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,396,699);
-(lib.BMP_e49d875a_54e0_47f5_b869_165508f1f4bd = function() {
-	this.initialize(img.BMP_e49d875a_54e0_47f5_b869_165508f1f4bd);
+p.nominalBounds = new cjs.Rectangle(0,0,400,704);
+(lib.BMP_e521ce5a_5a46_4b12_b8a6_69b42e947568 = function() {
+	this.initialize(img.BMP_e521ce5a_5a46_4b12_b8a6_69b42e947568);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,396,711);
-(lib.BMP_e5d397bb_fa1f_4015_b2e9_68ed1c29987d = function() {
-	this.initialize(img.BMP_e5d397bb_fa1f_4015_b2e9_68ed1c29987d);
+p.nominalBounds = new cjs.Rectangle(0,0,381,696);
+(lib.BMP_e6330d1d_f54d_4a10_90da_686ef11c4b0e = function() {
+	this.initialize(img.BMP_e6330d1d_f54d_4a10_90da_686ef11c4b0e);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,388,714);
-(lib.BMP_e7f2603e_481f_4aac_aad6_a50bb70eda4a = function() {
-	this.initialize(img.BMP_e7f2603e_481f_4aac_aad6_a50bb70eda4a);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,404,711);
-(lib.BMP_e95403db_8df2_4aa3_947b_220c6ea17d8f = function() {
-	this.initialize(img.BMP_e95403db_8df2_4aa3_947b_220c6ea17d8f);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,705);
-(lib.BMP_ed5d0e1c_101a_48c2_b8bc_03a179c934cb = function() {
-	this.initialize(img.BMP_ed5d0e1c_101a_48c2_b8bc_03a179c934cb);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,725);
-(lib.BMP_f15d9a13_ff8c_43b7_945b_454d87aa1719 = function() {
-	this.initialize(img.BMP_f15d9a13_ff8c_43b7_945b_454d87aa1719);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,398,704);
-(lib.BMP_f1cfbebd_c6f9_4ce5_9906_e422e9911b3d = function() {
-	this.initialize(img.BMP_f1cfbebd_c6f9_4ce5_9906_e422e9911b3d);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,707);
-(lib.BMP_f4927c00_bc9d_4b9c_9911_e56b2432eb1e = function() {
-	this.initialize(img.BMP_f4927c00_bc9d_4b9c_9911_e56b2432eb1e);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,706);
-(lib.BMP_f7b12907_3778_4788_a5ea_1f3dbdbf7ae1 = function() {
-	this.initialize(img.BMP_f7b12907_3778_4788_a5ea_1f3dbdbf7ae1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,715);
-(lib.BMP_fa372121_2261_4a50_8be3_6fb3cdfc3580 = function() {
-	this.initialize(img.BMP_fa372121_2261_4a50_8be3_6fb3cdfc3580);
+p.nominalBounds = new cjs.Rectangle(0,0,392,717);
+(lib.BMP_e663f67a_605c_4701_90d3_70d110986c24 = function() {
+	this.initialize(img.BMP_e663f67a_605c_4701_90d3_70d110986c24);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,400,719);
-(lib.BMP_fb3a060b_c42c_4e1c_9208_7b40c6cdb23f = function() {
-	this.initialize(img.BMP_fb3a060b_c42c_4e1c_9208_7b40c6cdb23f);
+(lib.BMP_e7d5dfd9_b947_47e7_94cb_2476fdb55450 = function() {
+	this.initialize(img.BMP_e7d5dfd9_b947_47e7_94cb_2476fdb55450);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,711);
-(lib.BMP_fbba40e6_523e_4a30_9660_6707e5a2311a = function() {
-	this.initialize(img.BMP_fbba40e6_523e_4a30_9660_6707e5a2311a);
+p.nominalBounds = new cjs.Rectangle(0,0,387,696);
+(lib.BMP_e8a0cc6a_a0d0_41a6_8136_432075013940 = function() {
+	this.initialize(img.BMP_e8a0cc6a_a0d0_41a6_8136_432075013940);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,403,713);
-(lib.BMP_fc234705_f0db_41aa_9472_b47f7577f713 = function() {
-	this.initialize(img.BMP_fc234705_f0db_41aa_9472_b47f7577f713);
+p.nominalBounds = new cjs.Rectangle(0,0,402,737);
+(lib.BMP_edfe6710_23b2_4103_afcd_3b06d6b801b3 = function() {
+	this.initialize(img.BMP_edfe6710_23b2_4103_afcd_3b06d6b801b3);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,401,707);
-(lib.BMP_fcf6fb66_3f6a_441b_8d51_54e41febb080 = function() {
-	this.initialize(img.BMP_fcf6fb66_3f6a_441b_8d51_54e41febb080);
+p.nominalBounds = new cjs.Rectangle(0,0,399,705);
+(lib.BMP_ee6dcf4a_a387_4b6d_99dd_9229e03aea7f = function() {
+	this.initialize(img.BMP_ee6dcf4a_a387_4b6d_99dd_9229e03aea7f);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,402,714);
-(lib.BMP_fd0a476d_6f48_4d51_90c0_3b88fdb9379a = function() {
-	this.initialize(img.BMP_fd0a476d_6f48_4d51_90c0_3b88fdb9379a);
+p.nominalBounds = new cjs.Rectangle(0,0,399,705);
+(lib.BMP_ef50c097_f84e_4d58_9a09_96717c36d76e = function() {
+	this.initialize(img.BMP_ef50c097_f84e_4d58_9a09_96717c36d76e);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,391,721);
-(lib.BMP_fe281bdf_36fc_46bf_aaa5_2817236b4999 = function() {
-	this.initialize(img.BMP_fe281bdf_36fc_46bf_aaa5_2817236b4999);
+p.nominalBounds = new cjs.Rectangle(0,0,397,708);
+(lib.BMP_f079b05d_db75_4bcf_9d13_4c5117809df7 = function() {
+	this.initialize(img.BMP_f079b05d_db75_4bcf_9d13_4c5117809df7);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,399,706);
+p.nominalBounds = new cjs.Rectangle(0,0,400,715);
+(lib.BMP_f206ae00_0148_428a_a1b5_b3d8f5e02d23 = function() {
+	this.initialize(img.BMP_f206ae00_0148_428a_a1b5_b3d8f5e02d23);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,392,697);
+(lib.BMP_f22ce7db_0ee1_4ac5_99d8_ad04e7e2e49d = function() {
+	this.initialize(img.BMP_f22ce7db_0ee1_4ac5_99d8_ad04e7e2e49d);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,706);
+(lib.BMP_f49cd9e8_a3a5_4384_bcd9_6b65ef7baf1b = function() {
+	this.initialize(img.BMP_f49cd9e8_a3a5_4384_bcd9_6b65ef7baf1b);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,714);
+(lib.BMP_f5f28788_1f2b_4be0_8260_c6e1d9ef5ba0 = function() {
+	this.initialize(img.BMP_f5f28788_1f2b_4be0_8260_c6e1d9ef5ba0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,394,714);
+(lib.BMP_f6c22216_0510_4fca_b4de_1cbe801bfd85 = function() {
+	this.initialize(img.BMP_f6c22216_0510_4fca_b4de_1cbe801bfd85);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,402,725);
+(lib.BMP_f7379364_67ad_477f_808b_3187df23448c = function() {
+	this.initialize(img.BMP_f7379364_67ad_477f_808b_3187df23448c);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,404,714);
+(lib.BMP_fc183212_86e9_46a4_9ef7_00a3e77810b3 = function() {
+	this.initialize(img.BMP_fc183212_86e9_46a4_9ef7_00a3e77810b3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,396,718);
+(lib.BMP_fc2f7961_44bc_4403_a4fa_b6d7cbccb255 = function() {
+	this.initialize(img.BMP_fc2f7961_44bc_4403_a4fa_b6d7cbccb255);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,398,707);
+(lib.BMP_fc778c1b_9a2d_465b_bfd8_110efdad278e = function() {
+	this.initialize(img.BMP_fc778c1b_9a2d_465b_bfd8_110efdad278e);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,403,715);
+(lib.BMP_ff4b484d_8a6c_40e6_ab11_f26433b3f60d = function() {
+	this.initialize(img.BMP_ff4b484d_8a6c_40e6_ab11_f26433b3f60d);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,398,720);
 (lib.title = function() {
 	this.initialize(img.title);
 }).prototype = p = new cjs.Bitmap();
@@ -8094,6 +8129,48 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-303,-48.5,636.7,87.8);
+(lib.curtainsai = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000","#A71818"],[0,0.063,0.169,0.306,0.463,0.569,0.996],-40.1,0,36.6,0).s().p("EgHfBUYMAAAiovIO/AAMAAACovg");
+	this.shape.setTransform(713,541);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000","#A71818"],[0,0.063,0.169,0.306,0.463,0.569,0.996],-40.1,0,36.6,0).s().p("EgHfBUYMAAAiovIO/AAMAAACovg");
+	this.shape_1.setTransform(576,540);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000","#A71818"],[0,0.063,0.169,0.306,0.463,0.569,0.996],-40.1,0,36.6,0).s().p("EgHfBUYMAAAiovIO/AAMAAACovg");
+	this.shape_2.setTransform(451,540);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000","#A71818"],[0,0.063,0.169,0.306,0.463,0.569,0.996],-40.1,0,36.6,0).s().p("EgHfBUYMAAAiovIO/AAMAAACovg");
+	this.shape_3.setTransform(321,540);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000","#A71818"],[0,0.063,0.169,0.306,0.463,0.569,0.996],-40.1,0,36.6,0).s().p("EgHfBUYMAAAiovIO/AAMAAACovg");
+	this.shape_4.setTransform(181,540);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000"],[0,0.086,0.227,0.412,0.624,0.761],-37,0,37,0).s().p("EgFxBUYMAAAiovILjAAMAAACovgEgFnBUOILPAAMAAAiobIrPAAg");
+	this.shape_5.setTransform(805,540);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000"],[0.376,0.435,0.537,0.663,0.812,0.91],-30.9,0,28.2,0).s().p("EgFxBUYMAAAiovILjAAMAAACovg");
+	this.shape_6.setTransform(805,540);
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.lf(["#A71818","#9E1617","#861314","#5E0E0E","#280607","#000000","#A71818"],[0,0.063,0.169,0.306,0.463,0.569,0.996],-40.1,0,36.6,0).s().p("EgHfBUYMAAAiovIO/AAMAAACovg");
+	this.shape_7.setTransform(56,540);
+	this.shape_8 = new cjs.Shape();
+	this.shape_8.graphics.f("#A71818").s().p("EhAIBUYMAAAiovMCARAAAMAAACovg");
+	this.shape_8.setTransform(410.5,540);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,842,1081);
 (lib.comicFallingai = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -19580,7 +19657,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-2.5,0,5765.5,1080);
+p.nominalBounds = new cjs.Rectangle(-2.5,0,5765.4,1080);
 (lib.restart = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -19616,13 +19693,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_6516efa4_198d_4619_9d1c_39ed4b2f3751();
+	this.instance_1 = new lib.BMP_5fdebdc6_4302_453d_a99c_cdcc8c7ffeec();
 	this.instance_1.setTransform(90.9,2.4);
-	this.instance_2 = new lib.BMP_f15d9a13_ff8c_43b7_945b_454d87aa1719();
+	this.instance_2 = new lib.BMP_4d3ce136_0824_42aa_b8f0_e84f9fd704d9();
 	this.instance_2.setTransform(89.3,4.15);
-	this.instance_3 = new lib.BMP_cee70e7c_4069_4179_8b64_13e95651e955();
+	this.instance_3 = new lib.BMP_640eb1b6_727d_48f6_9878_3e135de0858e();
 	this.instance_3.setTransform(89.75,2.15);
-	this.instance_4 = new lib.BMP_39a5ba90_46c2_4633_a3b2_84e5e5cd0ee0();
+	this.instance_4 = new lib.BMP_512dd26a_a747_442a_911c_2b7adb52eea1();
 	this.instance_4.setTransform(89.25,-4.5);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19640,15 +19717,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_d517cf65_fa2b_4233_a979_5643f08fbf40();
+	this.instance_1 = new lib.BMP_0530041e_1c4c_4ee5_997b_307c50e4011b();
 	this.instance_1.setTransform(94.9,-15.9);
-	this.instance_2 = new lib.BMP_01227e54_2d12_428c_b16d_5d784fafb768();
+	this.instance_2 = new lib.BMP_42711924_0097_4002_9d9f_8b46335bec07();
 	this.instance_2.setTransform(95.25,-11.7);
-	this.instance_3 = new lib.BMP_05b6bf3c_f311_490f_bdfa_c422727ef320();
+	this.instance_3 = new lib.BMP_f079b05d_db75_4bcf_9d13_4c5117809df7();
 	this.instance_3.setTransform(94.25,-7.25);
-	this.instance_4 = new lib.BMP_7da6b254_0189_4ee6_8933_e6e5be800ed3();
+	this.instance_4 = new lib.BMP_ac84fda0_9ccf_4c22_b7ed_1f43d30cea0a();
 	this.instance_4.setTransform(91.45,-3.15);
-	this.instance_5 = new lib.BMP_f1cfbebd_c6f9_4ce5_9906_e422e9911b3d();
+	this.instance_5 = new lib.BMP_929c1e0e_47b6_443f_ae37_6576023c3548();
 	this.instance_5.setTransform(88.75,0.9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19666,13 +19743,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_4e17a591_56f6_4814_9a72_f155e4fd43b4();
+	this.instance_1 = new lib.BMP_c0b9a123_156e_4d4e_83ed_2f15b273e381();
 	this.instance_1.setTransform(65.95,-17.2);
-	this.instance_2 = new lib.BMP_329d0096_5d10_4f21_994e_c7c778f4d52d();
+	this.instance_2 = new lib.BMP_458bf4d6_a410_4e9b_a5e5_923dc0b48001();
 	this.instance_2.setTransform(72.2,-21.15);
-	this.instance_3 = new lib.BMP_26e4f250_05ac_45a4_a84e_d6cb4f871ad6();
+	this.instance_3 = new lib.BMP_32df0f17_68c6_40ce_800b_6ee881512016();
 	this.instance_3.setTransform(79.6,-25.75);
-	this.instance_4 = new lib.BMP_92e91306_307e_4d3f_acb2_5a58375672c2();
+	this.instance_4 = new lib.BMP_e8a0cc6a_a0d0_41a6_8136_432075013940();
 	this.instance_4.setTransform(80.4,-30.2);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19690,11 +19767,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_2a0cb1a3_b2ab_42f0_b764_034cf7b54360();
+	this.instance_1 = new lib.BMP_4581042b_14ba_46b4_b1cd_eb6646a75646();
 	this.instance_1.setTransform(-14.55,-16.95);
-	this.instance_2 = new lib.BMP_d46ea5e8_434a_4980_a928_ba4b44845694();
+	this.instance_2 = new lib.BMP_9386ba6e_209c_4201_b647_a6942bc135bf();
 	this.instance_2.setTransform(-11.35,-14.95);
-	this.instance_3 = new lib.BMP_b84c70ce_fabd_4cbf_b942_3465ec9a0c7e();
+	this.instance_3 = new lib.BMP_a8575f9b_6bfb_4ce0_bdaa_280a00ae1706();
 	this.instance_3.setTransform(-8.2,-13);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19712,13 +19789,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_17e583bb_c178_4816_91c9_1c5fa50272ae();
+	this.instance_1 = new lib.BMP_5dc93a6a_2a8b_4dac_ad08_658de4ad5aa2();
 	this.instance_1.setTransform(-35.55,-17.65);
-	this.instance_2 = new lib.BMP_02b494b3_4dcc_4597_b0d5_a4d5e2736577();
+	this.instance_2 = new lib.BMP_fc183212_86e9_46a4_9ef7_00a3e77810b3();
 	this.instance_2.setTransform(-34.95,-15.95);
-	this.instance_3 = new lib.BMP_dcdf7999_6c7b_4fb1_844c_43f2085e9061();
+	this.instance_3 = new lib.BMP_c544578a_5249_4dc0_b85f_70e7c9719ffd();
 	this.instance_3.setTransform(-34.1,-13.1);
-	this.instance_4 = new lib.BMP_df179efc_044e_46b1_9389_70f58273e72f();
+	this.instance_4 = new lib.BMP_06256582_d60e_4ee2_9e41_7d7b574f1823();
 	this.instance_4.setTransform(-34.1,-11.55);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19736,11 +19813,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_a5f858a8_34ef_4706_8cf6_61a1e77dad73();
+	this.instance_1 = new lib.BMP_cd124573_a026_4b02_8d8b_33283e3d4035();
 	this.instance_1.setTransform(-41.55,-10.9);
-	this.instance_2 = new lib.BMP_5c79d07a_eadb_4b10_a015_2416232dd423();
+	this.instance_2 = new lib.BMP_54e8812b_72a2_45e0_b34c_4d3888a1e6dd();
 	this.instance_2.setTransform(-44.25,-9.3);
-	this.instance_3 = new lib.BMP_b1e00ab8_2205_413d_a050_54d2c78040cc();
+	this.instance_3 = new lib.BMP_fc2f7961_44bc_4403_a4fa_b6d7cbccb255();
 	this.instance_3.setTransform(-44.65,-7.45);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19758,13 +19835,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_4b03283c_1515_4b6c_a37e_96570b6e5039();
+	this.instance_1 = new lib.BMP_556879df_6e18_4b31_9333_651d19bf234b();
 	this.instance_1.setTransform(-26.2,-16.9);
-	this.instance_2 = new lib.BMP_fa372121_2261_4a50_8be3_6fb3cdfc3580();
+	this.instance_2 = new lib.BMP_dab7635b_e4ee_4cb0_af60_edcd13d82b44();
 	this.instance_2.setTransform(-28.8,-17.55);
-	this.instance_3 = new lib.BMP_b0ef910f_8a55_44de_b5b3_c5834c625625();
+	this.instance_3 = new lib.BMP_19875f97_3a13_4e59_b057_8d52ed98d6c2();
 	this.instance_3.setTransform(-30.95,-18.2);
-	this.instance_4 = new lib.BMP_00e27f44_8dd7_4b3e_8318_8712e750da20();
+	this.instance_4 = new lib.BMP_e663f67a_605c_4701_90d3_70d110986c24();
 	this.instance_4.setTransform(-30.95,-17.95);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19782,13 +19859,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_6b25f8eb_2bcc_4b3d_a31d_80ceb13f82cd();
+	this.instance_1 = new lib.BMP_7f550613_bab9_47c1_973f_e70cb218c695();
 	this.instance_1.setTransform(38.05,-15.8);
-	this.instance_2 = new lib.BMP_0c4ae931_1f99_42d2_825e_18dfc88a919e();
+	this.instance_2 = new lib.BMP_71bffcbf_c79f_4b0c_875b_68cd616f4aca();
 	this.instance_2.setTransform(31.8,-13.55);
-	this.instance_3 = new lib.BMP_51cb26a9_4d72_4dff_a153_7d1617d8168c();
+	this.instance_3 = new lib.BMP_18a005b1_9ff0_43ee_9b4a_79d53b4af427();
 	this.instance_3.setTransform(26.5,-11.65);
-	this.instance_4 = new lib.BMP_5e07561c_9fba_4c29_8d9a_4b2dd8cb50c0();
+	this.instance_4 = new lib.BMP_f49cd9e8_a3a5_4384_bcd9_6b65ef7baf1b();
 	this.instance_4.setTransform(22.65,-10.1);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19806,13 +19883,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_c79203c5_ad76_421a_899b_ba86969c6b5c();
+	this.instance_1 = new lib.BMP_6fa5f0ec_b1b6_4d7f_ba63_132ffc31d475();
 	this.instance_1.setTransform(10.05,-12.2);
-	this.instance_2 = new lib.BMP_8866bf19_2ef9_4d68_a774_ffd548f3112c();
+	this.instance_2 = new lib.BMP_7aa13c8e_e7f3_4236_b6a6_9b1d8e4b51c6();
 	this.instance_2.setTransform(12.3,-11);
-	this.instance_3 = new lib.BMP_832346ac_2a79_4ab5_96c1_06824a7e357d();
+	this.instance_3 = new lib.BMP_3c87206f_acd6_4b97_bb8a_8bd178b838b4();
 	this.instance_3.setTransform(16,-10.5);
-	this.instance_4 = new lib.BMP_047b1544_53b7_4d32_96e9_ff17795f5482();
+	this.instance_4 = new lib.BMP_65acce37_bc86_4416_a2b2_d390e09c5b44();
 	this.instance_4.setTransform(18.55,-12.65);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19830,11 +19907,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_ab87c9bc_81ee_4d12_835d_e7cf30c13b0f();
+	this.instance_1 = new lib.BMP_d8f5721c_aec5_416d_a4a7_cad213a158e6();
 	this.instance_1.setTransform(-4.45,-15.45);
-	this.instance_2 = new lib.BMP_8324d277_d5fb_43cf_a5e5_3b1ccd52a3ab();
+	this.instance_2 = new lib.BMP_257124d6_0392_413d_94a6_44a6c8449cd7();
 	this.instance_2.setTransform(-6.7,-11.7);
-	this.instance_3 = new lib.BMP_2b485636_2921_4550_9043_b2776d504784();
+	this.instance_3 = new lib.BMP_f22ce7db_0ee1_4ac5_99d8_ad04e7e2e49d();
 	this.instance_3.setTransform(-6.3,-9.5);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19852,9 +19929,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_73276533_66b3_466e_aa1e_509f3e0cc241();
+	this.instance_1 = new lib.BMP_f7379364_67ad_477f_808b_3187df23448c();
 	this.instance_1.setTransform(-15.5,-17.25);
-	this.instance_2 = new lib.BMP_8d81915b_6e3f_4a93_ba76_7e071c949318();
+	this.instance_2 = new lib.BMP_d399d0f2_e66a_44e3_8947_880d6476b07b();
 	this.instance_2.setTransform(-13.7,-16.65);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19872,17 +19949,17 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_69cde0a9_240a_4c70_bb3d_245efd4bdcff();
+	this.instance_1 = new lib.BMP_52f07ac1_04f9_4daa_8f61_b5ab26ce6aa2();
 	this.instance_1.setTransform(-7.1,3.8);
-	this.instance_2 = new lib.BMP_ceb42b02_4768_48f5_a285_5acf51fe5c50();
+	this.instance_2 = new lib.BMP_e7d5dfd9_b947_47e7_94cb_2476fdb55450();
 	this.instance_2.setTransform(-12.15,2.55);
-	this.instance_3 = new lib.BMP_12fd156a_c055_47a1_a01e_a0596ecb1f69();
+	this.instance_3 = new lib.BMP_f206ae00_0148_428a_a1b5_b3d8f5e02d23();
 	this.instance_3.setTransform(-17.85,1);
-	this.instance_4 = new lib.BMP_e21f984a_282a_4712_9d87_9c36d30205b3();
+	this.instance_4 = new lib.BMP_98db79e0_8a8b_4283_b71a_8cec4136cf68();
 	this.instance_4.setTransform(-21,-1.6);
-	this.instance_5 = new lib.BMP_c432c02b_3ddb_44be_b8e3_85585dc7eb3f();
+	this.instance_5 = new lib.BMP_274f26e9_d97e_43de_aeb3_ad5c700443ab();
 	this.instance_5.setTransform(-23.7,-4.5);
-	this.instance_6 = new lib.BMP_23ddd47a_129f_4177_ada8_a80fbc511657();
+	this.instance_6 = new lib.BMP_a7859688_c855_4f6e_9a35_8f0fa5698d3f();
 	this.instance_6.setTransform(-26.85,-7);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19900,21 +19977,21 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_b26aa273_4d35_4b84_8388_6db0082224bb();
+	this.instance_1 = new lib.BMP_9566f8b3_9915_4ced_843d_71746f158286();
 	this.instance_1.setTransform(17.5,-11.05);
-	this.instance_2 = new lib.BMP_3ae965ba_5b7f_413e_b455_9d2eda2eca81();
+	this.instance_2 = new lib.BMP_a22b7e2e_0abc_4749_bd99_9b58604ced4a();
 	this.instance_2.setTransform(17,-7.2);
-	this.instance_3 = new lib.BMP_4e25e066_0af8_457e_9193_6d9d3aea643c();
+	this.instance_3 = new lib.BMP_37a0dcde_1482_4453_b6ab_6c311c654fe2();
 	this.instance_3.setTransform(15.2,-3.3);
-	this.instance_4 = new lib.BMP_b6ef83c9_d15d_4b2e_982e_422fb9b75269();
+	this.instance_4 = new lib.BMP_7cfd5d30_f94a_4b88_8cb6_a98f9cf39510();
 	this.instance_4.setTransform(13.7,-0.5);
-	this.instance_5 = new lib.BMP_79f9d6ea_615c_40e3_8c57_f19999c0acd5();
+	this.instance_5 = new lib.BMP_d157937a_6106_4f76_b8a4_acc2411f915a();
 	this.instance_5.setTransform(12.6,2.5);
-	this.instance_6 = new lib.BMP_0b3cf72c_7f36_447c_92cd_d99d1b699b4d();
+	this.instance_6 = new lib.BMP_0ef76598_23ef_4cab_a297_60beba3d26a6();
 	this.instance_6.setTransform(11.45,1.9);
-	this.instance_7 = new lib.BMP_a5cc5558_97a8_4eab_9216_121ed03b2b5c();
+	this.instance_7 = new lib.BMP_172157ba_887b_4597_92aa_1b35de726372();
 	this.instance_7.setTransform(9.2,1.95);
-	this.instance_8 = new lib.BMP_266dbae3_b8af_4922_b1e3_76eb907d7ea9();
+	this.instance_8 = new lib.BMP_466b9520_7812_4046_b757_b43f0edcb4e9();
 	this.instance_8.setTransform(7.95,1.65);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19932,15 +20009,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_a2b2e800_e25a_49eb_a713_4904c74b67c5();
+	this.instance_1 = new lib.BMP_1af9dc8a_b6c7_4699_98ef_4244e3ec2065();
 	this.instance_1.setTransform(77.1,-12.4);
-	this.instance_2 = new lib.BMP_75925805_abc5_480f_9af7_29755a21cd5f();
+	this.instance_2 = new lib.BMP_734a0f5a_6a84_419f_80f2_91485c2d073e();
 	this.instance_2.setTransform(75.15,-12.65);
-	this.instance_3 = new lib.BMP_83270492_6328_4a8e_8b3d_a75f125f474c();
+	this.instance_3 = new lib.BMP_0162b842_91de_48ec_8da2_438cdbc8a99a();
 	this.instance_3.setTransform(70.45,-13.15);
-	this.instance_4 = new lib.BMP_b9cdfea6_450e_4e0f_a2ae_28bfeddc4ac3();
+	this.instance_4 = new lib.BMP_2b24a2c2_cb89_4306_8a0c_51542c0fa717();
 	this.instance_4.setTransform(66,-13.15);
-	this.instance_5 = new lib.BMP_2ac54338_93b5_4a22_8112_519472e91d44();
+	this.instance_5 = new lib.BMP_961b5fe4_845b_4941_bc29_86566fe65fa0();
 	this.instance_5.setTransform(61.4,-13.4);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19958,11 +20035,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_ade67792_50ab_4f4c_a5eb_e08dd167fc54();
+	this.instance_1 = new lib.BMP_1af5df60_1b3b_4200_8c66_42fd0ee7a604();
 	this.instance_1.setTransform(91.6,2.25);
-	this.instance_2 = new lib.BMP_fe281bdf_36fc_46bf_aaa5_2817236b4999();
+	this.instance_2 = new lib.BMP_11b36620_9ccf_4015_a5d9_40c9803ea4a5();
 	this.instance_2.setTransform(90.6,2.6);
-	this.instance_3 = new lib.BMP_f4927c00_bc9d_4b9c_9911_e56b2432eb1e();
+	this.instance_3 = new lib.BMP_81da43f2_3189_468d_ba36_4534347ee10d();
 	this.instance_3.setTransform(90.3,2.5);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -19980,11 +20057,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_bf99584b_1bae_4209_8a89_1f75a303e02c();
+	this.instance_1 = new lib.BMP_b74411e5_d5ca_4b67_b7f7_e7571cfa5858();
 	this.instance_1.setTransform(90.9,-21.9);
-	this.instance_2 = new lib.BMP_a1a2986f_8ba0_44fc_b0db_0353904327c3();
+	this.instance_2 = new lib.BMP_bac4e16c_b01b_48a0_99d1_99796dac8098();
 	this.instance_2.setTransform(92.65,-19.65);
-	this.instance_3 = new lib.BMP_aecb1cc7_306c_4b9f_a836_2cb076f28cf6();
+	this.instance_3 = new lib.BMP_88a21dd6_aec1_4746_9013_35649dc08042();
 	this.instance_3.setTransform(94.15,-18);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20002,11 +20079,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_41b7e8f7_a416_490a_bd32_4f80e06a9480();
+	this.instance_1 = new lib.BMP_0fd0f583_34d4_4ff7_afaa_d88f775b0ac4();
 	this.instance_1.setTransform(44.25,-12.5);
-	this.instance_2 = new lib.BMP_795d8743_c8fc_4098_b550_f36e08b353c0();
+	this.instance_2 = new lib.BMP_0178bf7a_9cf9_4ecf_8ea8_b30613cde6f1();
 	this.instance_2.setTransform(50.8,-13.75);
-	this.instance_3 = new lib.BMP_fd0a476d_6f48_4d51_90c0_3b88fdb9379a();
+	this.instance_3 = new lib.BMP_0a8edf71_87e8_4af7_aac9_ad6007d37b87();
 	this.instance_3.setTransform(57.15,-15.15);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20024,13 +20101,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_28bb6e3b_696f_428b_bff9_288d96215fcf();
+	this.instance_1 = new lib.BMP_3e90a64a_43a8_40e5_ab10_586d315f24a2();
 	this.instance_1.setTransform(17.1,-9.55);
-	this.instance_2 = new lib.BMP_e5d397bb_fa1f_4015_b2e9_68ed1c29987d();
+	this.instance_2 = new lib.BMP_487df19f_b467_41b5_8e95_3ac0a29356c4();
 	this.instance_2.setTransform(20.4,-9.3);
-	this.instance_3 = new lib.BMP_22813483_33a4_4b27_bc4b_4eee86f5c384();
+	this.instance_3 = new lib.BMP_c3c426b8_ca37_46e1_b108_c673ea6b6b0d();
 	this.instance_3.setTransform(21.75,-8.95);
-	this.instance_4 = new lib.BMP_5563b1a3_bdb3_4df6_82d9_f8c048548312();
+	this.instance_4 = new lib.BMP_a1c2ffbd_5c9b_4c0a_8d9c_6b77d659741b();
 	this.instance_4.setTransform(25.05,-9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20048,13 +20125,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_6b8e026d_f150_4484_87b5_a65349e91f7d();
+	this.instance_1 = new lib.BMP_ae83bc86_28c9_4f2f_a5c8_855809d8fbfd();
 	this.instance_1.setTransform(-4.2,-11.5);
-	this.instance_2 = new lib.BMP_446c865f_178b_4139_a917_d90ea343dbbf();
+	this.instance_2 = new lib.BMP_a771713e_8bb1_4dd8_87dd_bfe9f7ea73c9();
 	this.instance_2.setTransform(0.25,-10.3);
-	this.instance_3 = new lib.BMP_0225a578_a5cd_4163_9057_1093e4941df3();
+	this.instance_3 = new lib.BMP_7a140cf0_e795_4e7b_a1fd_6248da36cf2f();
 	this.instance_3.setTransform(5.4,-9.8);
-	this.instance_4 = new lib.BMP_5ff2811c_0e15_4515_9d01_73b3841e1420();
+	this.instance_4 = new lib.BMP_18314a37_9c0a_44a0_9100_3768cc2432b4();
 	this.instance_4.setTransform(10.95,-9.3);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20072,11 +20149,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_97e9de2a_ab83_43b6_bedd_7782b747a649();
+	this.instance_1 = new lib.BMP_c9b2d973_3ddd_4a02_947f_bb15de837b41();
 	this.instance_1.setTransform(-39,-14.15);
-	this.instance_2 = new lib.BMP_015493b3_e654_49ad_94d7_ebafd965dd84();
+	this.instance_2 = new lib.BMP_8884eb25_7497_4c0c_b10d_611d0505bc16();
 	this.instance_2.setTransform(-37.55,-15.6);
-	this.instance_3 = new lib.BMP_10e1652d_5212_48f6_9837_c700b65039cc();
+	this.instance_3 = new lib.BMP_49e4e701_ad78_4dca_83cd_8c5e33d6d6c6();
 	this.instance_3.setTransform(-36.35,-16.9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20094,9 +20171,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_6462ddfc_db29_4e7d_ba65_92d02c37e0f4();
+	this.instance_1 = new lib.BMP_48d6861b_fb86_4313_8ae5_48f9d18c3742();
 	this.instance_1.setTransform(-49.25,-25.8);
-	this.instance_2 = new lib.BMP_9636b7a0_97db_4097_821d_347dc374c293();
+	this.instance_2 = new lib.BMP_7a475611_46c7_4a24_a3e1_9d3fae9006c4();
 	this.instance_2.setTransform(-44.8,-17.9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20114,13 +20191,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_3f03f4f5_5a16_4c8a_8e1c_8e959f09089d();
+	this.instance_1 = new lib.BMP_14f604cb_5f0d_402b_bbc1_ed14b9a3f151();
 	this.instance_1.setTransform(-34.65,-19.7);
-	this.instance_2 = new lib.BMP_0b543a47_0050_4588_a708_771a1dde4c2b();
+	this.instance_2 = new lib.BMP_2a88aa43_4f5c_4c8d_b064_19ca79216861();
 	this.instance_2.setTransform(-39.5,-21.5);
-	this.instance_3 = new lib.BMP_d20a4c6e_4686_4782_95d2_1e04f62af692();
+	this.instance_3 = new lib.BMP_cdaaced7_60cd_49db_9d74_38c2d36b3a9e();
 	this.instance_3.setTransform(-42.55,-22.85);
-	this.instance_4 = new lib.BMP_7b32f657_6e6d_4d24_9d74_a0278c1427cc();
+	this.instance_4 = new lib.BMP_3d69b7f1_f038_4aa0_b794_0c0748126411();
 	this.instance_4.setTransform(-45.55,-24.05);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20138,13 +20215,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_56e8841c_5ceb_4d75_b1df_5385a8a0d1d9();
+	this.instance_1 = new lib.BMP_fc778c1b_9a2d_465b_bfd8_110efdad278e();
 	this.instance_1.setTransform(9.35,-11.65);
-	this.instance_2 = new lib.BMP_fcf6fb66_3f6a_441b_8d51_54e41febb080();
+	this.instance_2 = new lib.BMP_41978e07_bec1_49d4_b885_8c9cedff7707();
 	this.instance_2.setTransform(3.75,-10.85);
-	this.instance_3 = new lib.BMP_0b58928e_0454_416d_bf72_9ca18c508f9b();
+	this.instance_3 = new lib.BMP_166a759d_fdb0_42c9_9d6f_7f2982890a82();
 	this.instance_3.setTransform(-3,-11.6);
-	this.instance_4 = new lib.BMP_7e4e38ae_4e21_4aeb_8097_105a319c911d();
+	this.instance_4 = new lib.BMP_b3e565be_d217_46b3_ab40_4b291873fdf0();
 	this.instance_4.setTransform(-8.1,-10.55);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20162,11 +20239,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_a6891c40_bc45_4036_a1ae_22cc272e2b41();
+	this.instance_1 = new lib.BMP_07d768aa_3b51_4f96_8a9b_2ef2f7776d75();
 	this.instance_1.setTransform(18,-8.45);
-	this.instance_2 = new lib.BMP_49229ed8_1c3f_4f64_973a_207f4fbb1bfa();
+	this.instance_2 = new lib.BMP_43d288c4_85dc_492a_8f66_e42a94a82d54();
 	this.instance_2.setTransform(14.95,-8.5);
-	this.instance_3 = new lib.BMP_fbba40e6_523e_4a30_9660_6707e5a2311a();
+	this.instance_3 = new lib.BMP_061c4eb2_7099_4f77_b234_e2d0749ba454();
 	this.instance_3.setTransform(12.2,-9.9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20184,15 +20261,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_b0b85401_de88_4b2d_aadb_f532248fe4e0();
+	this.instance_1 = new lib.BMP_7d28c196_b4d4_4bba_b53d_c89e8810c44f();
 	this.instance_1.setTransform(46.5,-19.7);
-	this.instance_2 = new lib.BMP_574a5ce1_d8da_47b9_97f1_a235067f3b8a();
+	this.instance_2 = new lib.BMP_2c353ac7_670b_40f0_90cf_d6eeb5011cf8();
 	this.instance_2.setTransform(48.15,-20.3);
-	this.instance_3 = new lib.BMP_c7e90f02_60b2_48c9_8fba_f41b05219382();
+	this.instance_3 = new lib.BMP_7773869c_1c80_4da3_84c8_4544e3f2e73b();
 	this.instance_3.setTransform(49.15,-20.95);
-	this.instance_4 = new lib.BMP_9c493a87_5104_47dc_b662_6e8dbe7a2ffe();
+	this.instance_4 = new lib.BMP_57a5cb91_8476_4496_90a2_8811114815b8();
 	this.instance_4.setTransform(50.25,-21.4);
-	this.instance_5 = new lib.BMP_ed5d0e1c_101a_48c2_b8bc_03a179c934cb();
+	this.instance_5 = new lib.BMP_f6c22216_0510_4fca_b4de_1cbe801bfd85();
 	this.instance_5.setTransform(52.25,-22);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20210,11 +20287,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_8254f00a_bec3_40fa_861f_6b62bf0bb11d();
+	this.instance_1 = new lib.BMP_d0ae5407_561c_4eb0_9f8a_909e7953c542();
 	this.instance_1.setTransform(23.4,-14.8);
-	this.instance_2 = new lib.BMP_fb3a060b_c42c_4e1c_9208_7b40c6cdb23f();
+	this.instance_2 = new lib.BMP_4ccffb6c_9559_44db_9a9d_eea0d95c710b();
 	this.instance_2.setTransform(31.7,-12.65);
-	this.instance_3 = new lib.BMP_f7b12907_3778_4788_a5ea_1f3dbdbf7ae1();
+	this.instance_3 = new lib.BMP_cb043d3c_39c3_47fa_b2b1_97d2c59dcd0c();
 	this.instance_3.setTransform(39.05,-15.85);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20232,9 +20309,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_ae1fec38_175f_4d28_a7e5_cf9154ddea85();
+	this.instance_1 = new lib.BMP_4b201453_d76c_4714_b915_f3ac5a8769a0();
 	this.instance_1.setTransform(-8.9,-17.15);
-	this.instance_2 = new lib.BMP_488b6b85_5c3a_47b3_8b9d_c6de60b2b7df();
+	this.instance_2 = new lib.BMP_1e26a599_ae95_406f_aeb6_8cc410fc39bb();
 	this.instance_2.setTransform(-7.2,-15.6);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20252,15 +20329,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_6467192f_cb91_4529_a256_575478ad43f7();
+	this.instance_1 = new lib.BMP_f5f28788_1f2b_4be0_8260_c6e1d9ef5ba0();
 	this.instance_1.setTransform(26.4,-8.8);
-	this.instance_2 = new lib.BMP_53901e70_c200_4ad1_abb6_a9b69cdb69f8();
+	this.instance_2 = new lib.BMP_27effba8_b4be_42f4_aa45_14edbccc647c();
 	this.instance_2.setTransform(30.3,-9.35);
-	this.instance_3 = new lib.BMP_548c8e8a_3c25_439c_a3c6_e855b31f80f0();
+	this.instance_3 = new lib.BMP_1790ec33_7ec6_4f35_bf07_a7bdf7174281();
 	this.instance_3.setTransform(32.85,-9.75);
-	this.instance_4 = new lib.BMP_de3ce22f_2870_46f1_9c2f_171d894fe7bb();
+	this.instance_4 = new lib.BMP_dac73940_737d_4c34_8ea9_33e1d8af4b38();
 	this.instance_4.setTransform(37.15,-10.8);
-	this.instance_5 = new lib.BMP_240ff96f_86ec_4364_94b6_7a40ff06164f();
+	this.instance_5 = new lib.BMP_962d8bbb_4eb6_4c07_b7d9_0cc2cf7d7951();
 	this.instance_5.setTransform(41.15,-11.5);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20278,17 +20355,17 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_2af62c64_8bfa_4326_921c_bd1e875d1967();
+	this.instance_1 = new lib.BMP_cf55cdeb_4df6_4f7a_b63d_8716bd69b718();
 	this.instance_1.setTransform(86.4,4.75);
-	this.instance_2 = new lib.BMP_a5c1052c_6315_4e5c_8fac_1d807a6d8be0();
+	this.instance_2 = new lib.BMP_e3b4123a_2cd7_46d9_ad86_93b3bd506632();
 	this.instance_2.setTransform(88.85,4.35);
-	this.instance_3 = new lib.BMP_01a6cceb_9a5a_4460_aa6d_f54c78f95d19();
+	this.instance_3 = new lib.BMP_1fe29378_e9a2_4137_85d7_384f28c6694a();
 	this.instance_3.setTransform(88.5,4.2);
-	this.instance_4 = new lib.BMP_6c12913c_2cb4_42d0_bf6c_b65168fee97e();
+	this.instance_4 = new lib.BMP_edfe6710_23b2_4103_afcd_3b06d6b801b3();
 	this.instance_4.setTransform(89.5,3.65);
-	this.instance_5 = new lib.BMP_16396348_49f6_439b_adf1_ee414b838979();
+	this.instance_5 = new lib.BMP_8fda2aee_2aaf_426f_9019_aa91d4f02070();
 	this.instance_5.setTransform(90.4,3.25);
-	this.instance_6 = new lib.BMP_e95403db_8df2_4aa3_947b_220c6ea17d8f();
+	this.instance_6 = new lib.BMP_ee6dcf4a_a387_4b6d_99dd_9229e03aea7f();
 	this.instance_6.setTransform(90,3.1);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20306,15 +20383,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_69107159_d06f_4662_8944_7d41ca8eb14c();
+	this.instance_1 = new lib.BMP_685c7813_9f38_4441_a19e_ec2e1de4a2f5();
 	this.instance_1.setTransform(-46.25,-5.75);
-	this.instance_2 = new lib.BMP_d68d3b36_684e_4f06_82e2_b0cb0fddcb57();
+	this.instance_2 = new lib.BMP_ef50c097_f84e_4d58_9a09_96717c36d76e();
 	this.instance_2.setTransform(-45.05,-7.65);
-	this.instance_3 = new lib.BMP_d92296ae_2ef0_4a59_97cb_2905a62781a0();
+	this.instance_3 = new lib.BMP_cf43f49d_8361_43f2_9bcd_006967f98396();
 	this.instance_3.setTransform(-44.2,-9.6);
-	this.instance_4 = new lib.BMP_e49d875a_54e0_47f5_b869_165508f1f4bd();
+	this.instance_4 = new lib.BMP_750ebcf5_352d_4d36_923c_f833f8409311();
 	this.instance_4.setTransform(-41.9,-10.7);
-	this.instance_5 = new lib.BMP_d994f805_7393_4ff6_aa13_ce83a7c93d4a();
+	this.instance_5 = new lib.BMP_1c84c9e9_6561_4666_9fb1_05d7c6feb5c9();
 	this.instance_5.setTransform(-40.6,-12.45);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20332,11 +20409,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_d75f4899_3204_433d_8d28_466dd67c26ef();
+	this.instance_1 = new lib.BMP_d9654eab_de9f_4baa_8e95_bf1ff070e3b2();
 	this.instance_1.setTransform(-14.45,-10.8);
-	this.instance_2 = new lib.BMP_829a256c_955a_4396_a303_1a7eaa74d318();
+	this.instance_2 = new lib.BMP_94cc5a31_301d_4212_a3cd_3d5cb0d350d4();
 	this.instance_2.setTransform(-18.75,-12.95);
-	this.instance_3 = new lib.BMP_ca230660_57f7_457d_963d_50d1b1a17d5c();
+	this.instance_3 = new lib.BMP_48e7de50_c104_4ce1_86c1_b8a386f048d3();
 	this.instance_3.setTransform(-22.25,-14.5);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(3));
 	this._renderFirstFrame();
@@ -20354,13 +20431,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_166844eb_3716_4693_b309_128541cfc70e();
+	this.instance_1 = new lib.BMP_596050af_693f_44c1_bfcd_c9bcbe5872e8();
 	this.instance_1.setTransform(6.75,1.05);
-	this.instance_2 = new lib.BMP_9824de2f_7b0c_4dbf_87ea_f3f9ffbe099f();
+	this.instance_2 = new lib.BMP_bdb8e5f6_6812_4966_8c77_d4206b2466ed();
 	this.instance_2.setTransform(4.4,1.75);
-	this.instance_3 = new lib.BMP_036f24ca_8880_4226_9de7_a9d6c4ea8c63();
+	this.instance_3 = new lib.BMP_e521ce5a_5a46_4b12_b8a6_69b42e947568();
 	this.instance_3.setTransform(-1.05,3.15);
-	this.instance_4 = new lib.BMP_9000059b_94e4_4028_94a1_bb61f76743ec();
+	this.instance_4 = new lib.BMP_a1ef7fba_b69f_41b0_b8e0_fa4db9007682();
 	this.instance_4.setTransform(-4.3,3.8);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20378,15 +20455,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_05a032b8_2f04_4605_9c26_1b5a93d4d320();
+	this.instance_1 = new lib.BMP_b9a2a4a4_b501_4570_a7b0_c67452e27810();
 	this.instance_1.setTransform(56.55,-13.7);
-	this.instance_2 = new lib.BMP_35916021_e3e6_486c_b46d_051b4c18bb87();
+	this.instance_2 = new lib.BMP_baf956ae_95cf_4e45_8614_4684a5aaa854();
 	this.instance_2.setTransform(48.95,-13.45);
-	this.instance_3 = new lib.BMP_d932069d_7e3d_499e_8b22_034174ed2d64();
+	this.instance_3 = new lib.BMP_de6a008e_cb8b_481e_b603_d052daf36b6e();
 	this.instance_3.setTransform(40.9,-13.4);
-	this.instance_4 = new lib.BMP_07eef410_bf5d_4112_bf59_45c6b3b8c228();
+	this.instance_4 = new lib.BMP_111cab29_6ba9_4c6b_a020_097b500a21a5();
 	this.instance_4.setTransform(33.05,-12.9);
-	this.instance_5 = new lib.BMP_c917d0e5_b8a9_4fca_afd1_bf318ace7266();
+	this.instance_5 = new lib.BMP_07d9fbc6_729c_4048_ae1e_1cdb93804749();
 	this.instance_5.setTransform(25.35,-12.15);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20404,17 +20481,17 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_2e93c18b_2b94_42b7_8152_c7aa7aaa36f4();
+	this.instance_1 = new lib.BMP_b21817e7_18dd_49b2_a686_3df723b527d1();
 	this.instance_1.setTransform(80.35,-35.1);
-	this.instance_2 = new lib.BMP_050b0aa5_f432_47a4_abda_ac63b421d6ba();
+	this.instance_2 = new lib.BMP_72e5582d_2d54_427a_bc16_004bd2a3ec36();
 	this.instance_2.setTransform(82.15,-32.75);
-	this.instance_3 = new lib.BMP_679ee30a_9371_431f_85ac_7e302df8056f();
+	this.instance_3 = new lib.BMP_8621ef06_fe47_49d4_aad4_ed7162487cd2();
 	this.instance_3.setTransform(83.8,-30.8);
-	this.instance_4 = new lib.BMP_4feafe0c_73c2_4cfd_a98a_a6d1393a0509();
+	this.instance_4 = new lib.BMP_c8a82ed4_57c0_48bf_8450_708e9112f7d3();
 	this.instance_4.setTransform(86.05,-28.95);
-	this.instance_5 = new lib.BMP_13ee6329_78b9_4f82_bc6e_e55ee8a9d9bd();
+	this.instance_5 = new lib.BMP_1a2372a5_9775_4697_814d_7706aff9a5d4();
 	this.instance_5.setTransform(87.7,-26.55);
-	this.instance_6 = new lib.BMP_d13baa14_16f9_45b7_9a65_1d7eaa453a6f();
+	this.instance_6 = new lib.BMP_1ed8e844_66ab_4d01_a5ed_36ba30b42a0d();
 	this.instance_6.setTransform(89.4,-23.9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).wait(2));
 	this._renderFirstFrame();
@@ -20432,9 +20509,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_3f19969c_0f08_4963_9e3c_037a86779d5e();
+	this.instance_1 = new lib.BMP_0e2b6eb9_4f0d_4b1f_9bd8_3ab4e9d15941();
 	this.instance_1.setTransform(-5.25,-8.05);
-	this.instance_2 = new lib.BMP_fc234705_f0db_41aa_9472_b47f7577f713();
+	this.instance_2 = new lib.BMP_47728ce9_aa2b_4c0a_a5a9_f55e7648c925();
 	this.instance_2.setTransform(2.5,-9.8);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(3));
 	this._renderFirstFrame();
@@ -20452,15 +20529,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_ad9689dd_72cc_4c02_9b0c_377896c3ed0b();
+	this.instance_1 = new lib.BMP_544d0992_1fe9_402d_a5ec_3e8da50b2a9e();
 	this.instance_1.setTransform(91.4,-9.4);
-	this.instance_2 = new lib.BMP_0b4a73f1_8789_40af_9b11_8c66300dc587();
+	this.instance_2 = new lib.BMP_77d6f2a4_2ad8_479e_815e_d8329c2da0a9();
 	this.instance_2.setTransform(89.2,-10.25);
-	this.instance_3 = new lib.BMP_81a1f10d_d03c_4366_99b5_a93d0b2ca199();
+	this.instance_3 = new lib.BMP_e6330d1d_f54d_4a10_90da_686ef11c4b0e();
 	this.instance_3.setTransform(86.35,-10.8);
-	this.instance_4 = new lib.BMP_30fabe71_94a5_4ac3_a05c_e851cd1402d4();
+	this.instance_4 = new lib.BMP_262b48d8_5f6f_4138_891d_c773aa9829da();
 	this.instance_4.setTransform(84.15,-11.55);
-	this.instance_5 = new lib.BMP_55400050_07cd_4a46_a498_9eaf9e8d6ff7();
+	this.instance_5 = new lib.BMP_9b9920e0_dd6e_4904_9d06_41909cdb3847();
 	this.instance_5.setTransform(80.45,-12.45);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20478,11 +20555,11 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_8945983e_80be_425c_9bbe_94993f801a6f();
+	this.instance_1 = new lib.BMP_42e7571c_ce0f_465f_819c_04693f4997d3();
 	this.instance_1.setTransform(-34.9,-10.95);
-	this.instance_2 = new lib.BMP_29ad7632_b274_40bc_af44_bd9a8d794e8d();
+	this.instance_2 = new lib.BMP_c1dd1ab9_5757_478c_b9a5_34fe041aaf7b();
 	this.instance_2.setTransform(-27.35,-13.2);
-	this.instance_3 = new lib.BMP_c8d98eaa_ad77_453c_936e_6cb785c217ad();
+	this.instance_3 = new lib.BMP_ff4b484d_8a6c_40e6_ab11_f26433b3f60d();
 	this.instance_3.setTransform(-20.75,-15.2);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(2));
 	this._renderFirstFrame();
@@ -20500,9 +20577,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_7f6e1500_21f2_4831_8970_ce1099680558();
+	this.instance_1 = new lib.BMP_035ba339_93c0_4366_823b_20e8ef113832();
 	this.instance_1.setTransform(54.75,-23.2);
-	this.instance_2 = new lib.BMP_bf33e066_838b_4d7e_a3bf_bdaa1af36f69();
+	this.instance_2 = new lib.BMP_793d5956_44ff_481d_bcd1_31f7fe6a8908();
 	this.instance_2.setTransform(44.95,-19.05);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(3));
 	this._renderFirstFrame();
@@ -20520,7 +20597,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_cd340c32_a64d_45d0_b9bf_ec9d387ee5fb();
+	this.instance_1 = new lib.BMP_0b5ea16f_8cc0_4e98_b6df_8960fece1f18();
 	this.instance_1.setTransform(-28.25,-11.3);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
 	this._renderFirstFrame();
@@ -20538,9 +20615,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Layer_1
 	this.instance = new lib.WarpedAsset_1("synched",0);
-	this.instance_1 = new lib.BMP_c0c359eb_3d10_4122_8c9f_bd96a9ad4007();
+	this.instance_1 = new lib.BMP_2ef39d8e_5d66_45a9_9b5c_bb2484a46842();
 	this.instance_1.setTransform(-28.25,-11.3);
-	this.instance_2 = new lib.BMP_e7f2603e_481f_4aac_aad6_a50bb70eda4a();
+	this.instance_2 = new lib.BMP_9dfe4cc7_e6ec_4f4a_be72_e0fa21446ce0();
 	this.instance_2.setTransform(-22.95,-13.75);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(75));
 	this._renderFirstFrame();
@@ -21006,6 +21083,33 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-14,0,1940,1100.3);
+(lib.CurtainsMoving = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_55 = function() {
+		stage.removeChild(this);
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(55).call(this.frame_55).wait(1));
+	// curtains_ai
+	this.instance = new lib.curtainsai("synched",0);
+	this.instance.setTransform(963.1,-1,1.151,1);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:421,regY:540.5,x:1465.25,y:539.5},0).wait(1).to({x:1482.9},0).wait(1).to({x:1500.55},0).wait(1).to({x:1518.2},0).wait(1).to({x:1535.85},0).wait(1).to({x:1553.5},0).wait(1).to({x:1571.15},0).wait(1).to({x:1588.8},0).wait(1).to({x:1606.45},0).wait(1).to({x:1624.1},0).wait(1).to({x:1641.75},0).wait(1).to({x:1659.4},0).wait(1).to({x:1677.05},0).wait(1).to({x:1694.7},0).wait(1).to({x:1712.35},0).wait(1).to({x:1730},0).wait(1).to({x:1747.65},0).wait(1).to({x:1765.3},0).wait(1).to({x:1782.95},0).wait(1).to({x:1800.6},0).wait(1).to({x:1818.25},0).wait(1).to({x:1835.9},0).wait(1).to({x:1853.55},0).wait(1).to({x:1871.2},0).wait(1).to({x:1888.85},0).wait(1).to({x:1906.5},0).wait(1).to({x:1924.15},0).wait(1).to({x:1941.8},0).wait(1).to({x:1959.45},0).wait(1).to({x:1977.1},0).wait(1).to({x:1994.75},0).wait(1).to({x:2012.4},0).wait(1).to({x:2030.05},0).wait(1).to({x:2047.7},0).wait(1).to({x:2065.35},0).wait(1).to({x:2083},0).wait(1).to({x:2100.65},0).wait(1).to({x:2118.3},0).wait(1).to({x:2135.95},0).wait(1).to({x:2153.6},0).wait(1).to({x:2171.25},0).wait(1).to({x:2188.9},0).wait(1).to({x:2206.55},0).wait(1).to({x:2224.2},0).wait(1).to({x:2241.85},0).wait(1).to({x:2259.5},0).wait(1).to({x:2277.15},0).wait(1).to({x:2294.8},0).wait(1).to({x:2312.45},0).wait(1).to({x:2330.1},0).wait(1).to({x:2347.75},0).wait(1).to({x:2365.4},0).wait(1).to({x:2383.05},0).wait(1).to({x:2400.7},0).wait(1).to({x:2418.35},0).wait(1));
+	// curtains_ai
+	this.instance_1 = new lib.curtainsai("synched",0);
+	this.instance_1.setTransform(969.15,-1,1.151,1,0,0,180);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({regX:421,regY:540.5,x:467.05,y:539.5},0).wait(1).to({x:449.5},0).wait(1).to({x:431.95},0).wait(1).to({x:414.4},0).wait(1).to({x:396.9},0).wait(1).to({x:379.35},0).wait(1).to({x:361.8},0).wait(1).to({x:344.25},0).wait(1).to({x:326.7},0).wait(1).to({x:309.2},0).wait(1).to({x:291.65},0).wait(1).to({x:274.1},0).wait(1).to({x:256.55},0).wait(1).to({x:239.05},0).wait(1).to({x:221.5},0).wait(1).to({x:203.95},0).wait(1).to({x:186.4},0).wait(1).to({x:168.85},0).wait(1).to({x:151.35},0).wait(1).to({x:133.8},0).wait(1).to({x:116.25},0).wait(1).to({x:98.7},0).wait(1).to({x:81.2},0).wait(1).to({x:63.65},0).wait(1).to({x:46.1},0).wait(1).to({x:28.55},0).wait(1).to({x:11},0).wait(1).to({x:-6.5},0).wait(1).to({x:-24.05},0).wait(1).to({x:-41.6},0).wait(1).to({x:-59.15},0).wait(1).to({x:-76.7},0).wait(1).to({x:-94.2},0).wait(1).to({x:-111.75},0).wait(1).to({x:-129.3},0).wait(1).to({x:-146.85},0).wait(1).to({x:-164.35},0).wait(1).to({x:-181.9},0).wait(1).to({x:-199.45},0).wait(1).to({x:-217},0).wait(1).to({x:-234.55},0).wait(1).to({x:-252.05},0).wait(1).to({x:-269.6},0).wait(1).to({x:-287.15},0).wait(1).to({x:-304.7},0).wait(1).to({x:-322.2},0).wait(1).to({x:-339.75},0).wait(1).to({x:-357.3},0).wait(1).to({x:-374.85},0).wait(1).to({x:-392.4},0).wait(1).to({x:-409.9},0).wait(1).to({x:-427.45},0).wait(1).to({x:-445},0).wait(1).to({x:-462.55},0).wait(1).to({x:-480.05},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-964.6,-1,3867.5,1081);
 (lib.comic = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -22139,7 +22243,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:97.5,regY:107.8,rotation:-29.0592,x:781.7,y:-4.75,startPosition:1},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-28.1219,x:780.6,y:0.65,startPosition:2},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-27.1845,x:779.6,y:6,startPosition:3},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-26.2472,x:778.55,y:11.35,startPosition:4},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-25.3098,x:777.45,y:16.75,startPosition:5},0).wait(1).to({rotation:-24.3725,x:776.45,y:22.15,startPosition:6},0).wait(1).to({rotation:-23.4351,x:775.4,y:27.4,startPosition:7},0).wait(1).to({rotation:-22.4977,x:774.3,y:32.75,startPosition:8},0).wait(1).to({rotation:-21.5604,x:773.25,y:38.05,startPosition:9},0).wait(1).to({rotation:-20.623,x:772.2,y:43.3,startPosition:10},0).wait(1).to({rotation:-19.6857,x:771.15,y:48.5,startPosition:11},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-18.7483,x:770.05,y:53.8,startPosition:12},0).wait(1).to({rotation:-17.811,x:769,y:59,startPosition:13},0).wait(1).to({rotation:-16.8736,x:768,y:64.2,startPosition:14},0).wait(1).to({rotation:-15.9363,x:766.9,y:69.4,startPosition:15},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-14.9989,x:765.85,y:74.55,startPosition:16},0).wait(1).to({rotation:-14.7989,x:765.6,y:79.75,startPosition:17},0).wait(1).to({rotation:-14.5989,x:765.35,y:85.05,startPosition:18},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-14.3989,x:765.2,y:90.25,startPosition:19},0).wait(1).to({rotation:-14.199,x:764.95,y:95.45,startPosition:20},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-13.999,x:764.7,y:100.75,startPosition:21},0).wait(1).to({rotation:-13.799,x:764.5,y:105.9,startPosition:22},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-13.599,x:764.25,y:111.2,startPosition:23},0).wait(1).to({rotation:-13.399,x:764.05,y:116.4,startPosition:24},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-13.199,x:763.8,y:121.65,startPosition:25},0).wait(1).to({rotation:-12.999,x:763.55,y:126.85,startPosition:26},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-12.7991,x:763.35,y:132.1,startPosition:27},0).wait(1).to({rotation:-12.5991,x:763.1,y:137.35,startPosition:28},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-12.3991,x:762.9,y:142.55,startPosition:29},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-12.1991,x:762.7,y:147.75,startPosition:30},0).wait(1).to({rotation:-11.9991,x:762.45,y:153,startPosition:31},0).wait(1).to({rotation:-11.7991,x:762.25,y:155.3,startPosition:32},0).wait(1).to({rotation:-11.5991,x:762,y:157.7,startPosition:33},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-11.3992,x:761.8,y:160,startPosition:34},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-11.1992,x:761.55,y:162.4,startPosition:35},0).wait(1).to({rotation:-10.9992,x:761.35,y:164.8,startPosition:36},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-10.7992,x:761.1,y:167.1,startPosition:37},0).wait(1).to({rotation:-10.5992,x:760.9,y:169.45,startPosition:38},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-10.3992,x:760.7,y:171.85,startPosition:39},0).wait(1).to({rotation:-10.1993,x:760.45,y:174.15,startPosition:40},0).wait(1).to({rotation:-9.9993,x:760.2,y:176.5,startPosition:41},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-9.7993,x:760,y:178.9,startPosition:42},0).wait(1).to({rotation:-9.5993,x:759.8,y:181.2,startPosition:43},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-9.3993,x:759.6,y:183.55,startPosition:44},0).wait(1).to({rotation:-9.1993,x:759.35,y:185.9,startPosition:45},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-8.9993,x:759.1,y:188.25,startPosition:46},0).wait(1).to({rotation:-8.7994,x:758.95,y:190.6,startPosition:47},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-8.5994,x:758.65,y:192.95,startPosition:48},0).wait(1).to({rotation:-8.3994,x:758.5,y:195.3,startPosition:49},0).wait(1).to({rotation:-8.1994,x:758.25,y:197.55,startPosition:50},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-7.9994,x:758,y:199.9,startPosition:51},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-7.7994,x:757.85,y:202.3,startPosition:52},0).wait(1).to({rotation:-7.5994,x:757.6,y:204.65,startPosition:53},0).wait(1).to({rotation:-7.3995,x:757.35,y:206.95,startPosition:54},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-7.1995,x:757.2,y:209.3,startPosition:55},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-6.9995,x:756.95,y:211.6,startPosition:56},0).wait(1).to({rotation:-6.7995,x:756.7,y:214,startPosition:57},0).wait(1).to({rotation:-6.5995,x:756.5,y:216.3,startPosition:58},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-6.3995,x:756.25,y:218.65,startPosition:59},0).wait(1).to({rotation:-6.1995,x:756.05,y:220.95,startPosition:60},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-5.9996,x:755.8,y:223.25,startPosition:61},0).wait(1).to({rotation:-5.7996,x:755.65,y:225.6,startPosition:62},0).wait(1).to({rotation:-5.5996,x:755.4,y:227.9,startPosition:63},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-5.3996,x:755.15,y:230.25,startPosition:64},0).wait(1).to({rotation:-5.1996,x:754.95,y:232.6,startPosition:65},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-4.9996,x:754.8,y:234.95,startPosition:66},0).wait(1).to({rotation:-4.7996,x:754.5,y:237.3,startPosition:67},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-4.5997,x:754.3,y:239.6,startPosition:68},0).wait(1).to({rotation:-4.3997,x:754.05,y:241.9,startPosition:69},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-4.1997,x:753.85,y:244.2,startPosition:70},0).wait(1).to({rotation:-3.9997,x:753.7,y:246.55,startPosition:71},0).wait(1).to({rotation:-3.7997,x:753.45,y:248.9,startPosition:0},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-3.5997,x:753.2,y:251.2,startPosition:1},0).wait(1).to({rotation:-3.3998,x:753,y:253.5,startPosition:2},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-3.1998,x:752.75,y:255.85,startPosition:3},0).wait(1).to({rotation:-2.9998,x:752.6,y:258.2,startPosition:4},0).wait(1).to({rotation:-2.7998,x:752.35,y:260.5,startPosition:5},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-2.5998,x:752.15,y:262.85,startPosition:6},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-2.3998,x:751.95,y:265.15,startPosition:7},0).wait(1).to({rotation:-2.1998,x:751.7,y:267.45,startPosition:8},0).wait(1).to({rotation:-1.9999,x:751.45,y:269.8,startPosition:9},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-1.7999,x:751.3,y:272.05,startPosition:10},0).wait(1).to({rotation:-1.5999,x:751.05,y:274.35,startPosition:11},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-1.3999,x:750.85,y:276.7,startPosition:12},0).wait(1).to({rotation:-1.1999,x:750.65,y:278.95,startPosition:13},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:-0.9999,x:750.4,y:281.3,startPosition:14},0).wait(1).to({scaleX:2.6376,scaleY:2.6376,rotation:-0.7999,x:750.2,y:283.6,startPosition:15},0).wait(1).to({rotation:-0.6,x:750.05,y:285.9,startPosition:16},0).wait(1).to({rotation:-0.4,x:749.8,y:288.2,startPosition:17},0).wait(1).to({rotation:-0.2,x:749.6,y:290.5,startPosition:18},0).wait(1).to({scaleX:2.6375,scaleY:2.6375,rotation:0,x:749.35,y:292.85,startPosition:19},0).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(642.3,-105.2,239.20000000000005,468.4);
+p.nominalBounds = new cjs.Rectangle(642.3,-105.2,239.30000000000007,468.4);
 // stage content:
 (lib.InteractiveComic = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
@@ -22204,6 +22308,7 @@ if (reversed == null) { reversed = false; }
 		let mute = new lib.mute(); 
 		let unmute = new lib.unmute(); 
 		let restart = new lib.restart(); 
+		let CurtainsMoving = new lib.CurtainsMoving();
 		let dead = false;
 		let alphaFade;
 		let crashed;
@@ -22299,6 +22404,8 @@ if (reversed == null) { reversed = false; }
 			stage.addChild(newspaper);
 			newspaper.gotoAndStop(0);
 			background.alpha = 0; 
+			stage.addChild(CurtainsMoving);
+			CurtainsMoving.gotoAndStop(0);
 			character.x = -500;
 			character.y = 690;
 			character.alpha = 1;
@@ -22314,6 +22421,9 @@ if (reversed == null) { reversed = false; }
 			showedFinalMessage = false;
 		}
 		setUp();
+		CurtainsMoving.addEventListener('click', function(){
+			CurtainsMoving.gotoAndPlay(0);
+		})
 		ball_BW.addEventListener('click', function () {
 			createjs.Sound.play("tapSpikes");
 			ball.x = 939;
@@ -22802,158 +22912,158 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/BMP_00e27f44_8dd7_4b3e_8318_8712e750da20.png", id:"BMP_00e27f44_8dd7_4b3e_8318_8712e750da20"},
-		{src:"images/BMP_01227e54_2d12_428c_b16d_5d784fafb768.png", id:"BMP_01227e54_2d12_428c_b16d_5d784fafb768"},
-		{src:"images/BMP_015493b3_e654_49ad_94d7_ebafd965dd84.png", id:"BMP_015493b3_e654_49ad_94d7_ebafd965dd84"},
-		{src:"images/BMP_01a6cceb_9a5a_4460_aa6d_f54c78f95d19.png", id:"BMP_01a6cceb_9a5a_4460_aa6d_f54c78f95d19"},
-		{src:"images/BMP_0225a578_a5cd_4163_9057_1093e4941df3.png", id:"BMP_0225a578_a5cd_4163_9057_1093e4941df3"},
-		{src:"images/BMP_02b494b3_4dcc_4597_b0d5_a4d5e2736577.png", id:"BMP_02b494b3_4dcc_4597_b0d5_a4d5e2736577"},
-		{src:"images/BMP_036f24ca_8880_4226_9de7_a9d6c4ea8c63.png", id:"BMP_036f24ca_8880_4226_9de7_a9d6c4ea8c63"},
-		{src:"images/BMP_047b1544_53b7_4d32_96e9_ff17795f5482.png", id:"BMP_047b1544_53b7_4d32_96e9_ff17795f5482"},
-		{src:"images/BMP_050b0aa5_f432_47a4_abda_ac63b421d6ba.png", id:"BMP_050b0aa5_f432_47a4_abda_ac63b421d6ba"},
-		{src:"images/BMP_05a032b8_2f04_4605_9c26_1b5a93d4d320.png", id:"BMP_05a032b8_2f04_4605_9c26_1b5a93d4d320"},
-		{src:"images/BMP_05b6bf3c_f311_490f_bdfa_c422727ef320.png", id:"BMP_05b6bf3c_f311_490f_bdfa_c422727ef320"},
-		{src:"images/BMP_07eef410_bf5d_4112_bf59_45c6b3b8c228.png", id:"BMP_07eef410_bf5d_4112_bf59_45c6b3b8c228"},
-		{src:"images/BMP_0b3cf72c_7f36_447c_92cd_d99d1b699b4d.png", id:"BMP_0b3cf72c_7f36_447c_92cd_d99d1b699b4d"},
-		{src:"images/BMP_0b4a73f1_8789_40af_9b11_8c66300dc587.png", id:"BMP_0b4a73f1_8789_40af_9b11_8c66300dc587"},
-		{src:"images/BMP_0b543a47_0050_4588_a708_771a1dde4c2b.png", id:"BMP_0b543a47_0050_4588_a708_771a1dde4c2b"},
-		{src:"images/BMP_0b58928e_0454_416d_bf72_9ca18c508f9b.png", id:"BMP_0b58928e_0454_416d_bf72_9ca18c508f9b"},
-		{src:"images/BMP_0c4ae931_1f99_42d2_825e_18dfc88a919e.png", id:"BMP_0c4ae931_1f99_42d2_825e_18dfc88a919e"},
-		{src:"images/BMP_10e1652d_5212_48f6_9837_c700b65039cc.png", id:"BMP_10e1652d_5212_48f6_9837_c700b65039cc"},
-		{src:"images/BMP_12fd156a_c055_47a1_a01e_a0596ecb1f69.png", id:"BMP_12fd156a_c055_47a1_a01e_a0596ecb1f69"},
-		{src:"images/BMP_13ee6329_78b9_4f82_bc6e_e55ee8a9d9bd.png", id:"BMP_13ee6329_78b9_4f82_bc6e_e55ee8a9d9bd"},
-		{src:"images/BMP_16396348_49f6_439b_adf1_ee414b838979.png", id:"BMP_16396348_49f6_439b_adf1_ee414b838979"},
-		{src:"images/BMP_166844eb_3716_4693_b309_128541cfc70e.png", id:"BMP_166844eb_3716_4693_b309_128541cfc70e"},
-		{src:"images/BMP_17e583bb_c178_4816_91c9_1c5fa50272ae.png", id:"BMP_17e583bb_c178_4816_91c9_1c5fa50272ae"},
-		{src:"images/BMP_22813483_33a4_4b27_bc4b_4eee86f5c384.png", id:"BMP_22813483_33a4_4b27_bc4b_4eee86f5c384"},
-		{src:"images/BMP_23ddd47a_129f_4177_ada8_a80fbc511657.png", id:"BMP_23ddd47a_129f_4177_ada8_a80fbc511657"},
-		{src:"images/BMP_240ff96f_86ec_4364_94b6_7a40ff06164f.png", id:"BMP_240ff96f_86ec_4364_94b6_7a40ff06164f"},
-		{src:"images/BMP_266dbae3_b8af_4922_b1e3_76eb907d7ea9.png", id:"BMP_266dbae3_b8af_4922_b1e3_76eb907d7ea9"},
-		{src:"images/BMP_26e4f250_05ac_45a4_a84e_d6cb4f871ad6.png", id:"BMP_26e4f250_05ac_45a4_a84e_d6cb4f871ad6"},
-		{src:"images/BMP_28bb6e3b_696f_428b_bff9_288d96215fcf.png", id:"BMP_28bb6e3b_696f_428b_bff9_288d96215fcf"},
-		{src:"images/BMP_29ad7632_b274_40bc_af44_bd9a8d794e8d.png", id:"BMP_29ad7632_b274_40bc_af44_bd9a8d794e8d"},
-		{src:"images/BMP_2a0cb1a3_b2ab_42f0_b764_034cf7b54360.png", id:"BMP_2a0cb1a3_b2ab_42f0_b764_034cf7b54360"},
-		{src:"images/BMP_2ac54338_93b5_4a22_8112_519472e91d44.png", id:"BMP_2ac54338_93b5_4a22_8112_519472e91d44"},
-		{src:"images/BMP_2af62c64_8bfa_4326_921c_bd1e875d1967.png", id:"BMP_2af62c64_8bfa_4326_921c_bd1e875d1967"},
-		{src:"images/BMP_2b485636_2921_4550_9043_b2776d504784.png", id:"BMP_2b485636_2921_4550_9043_b2776d504784"},
-		{src:"images/BMP_2e93c18b_2b94_42b7_8152_c7aa7aaa36f4.png", id:"BMP_2e93c18b_2b94_42b7_8152_c7aa7aaa36f4"},
-		{src:"images/BMP_30fabe71_94a5_4ac3_a05c_e851cd1402d4.png", id:"BMP_30fabe71_94a5_4ac3_a05c_e851cd1402d4"},
-		{src:"images/BMP_329d0096_5d10_4f21_994e_c7c778f4d52d.png", id:"BMP_329d0096_5d10_4f21_994e_c7c778f4d52d"},
-		{src:"images/BMP_35916021_e3e6_486c_b46d_051b4c18bb87.png", id:"BMP_35916021_e3e6_486c_b46d_051b4c18bb87"},
-		{src:"images/BMP_39a5ba90_46c2_4633_a3b2_84e5e5cd0ee0.png", id:"BMP_39a5ba90_46c2_4633_a3b2_84e5e5cd0ee0"},
-		{src:"images/BMP_3ae965ba_5b7f_413e_b455_9d2eda2eca81.png", id:"BMP_3ae965ba_5b7f_413e_b455_9d2eda2eca81"},
-		{src:"images/BMP_3f03f4f5_5a16_4c8a_8e1c_8e959f09089d.png", id:"BMP_3f03f4f5_5a16_4c8a_8e1c_8e959f09089d"},
-		{src:"images/BMP_3f19969c_0f08_4963_9e3c_037a86779d5e.png", id:"BMP_3f19969c_0f08_4963_9e3c_037a86779d5e"},
-		{src:"images/BMP_41b7e8f7_a416_490a_bd32_4f80e06a9480.png", id:"BMP_41b7e8f7_a416_490a_bd32_4f80e06a9480"},
-		{src:"images/BMP_446c865f_178b_4139_a917_d90ea343dbbf.png", id:"BMP_446c865f_178b_4139_a917_d90ea343dbbf"},
-		{src:"images/BMP_488b6b85_5c3a_47b3_8b9d_c6de60b2b7df.png", id:"BMP_488b6b85_5c3a_47b3_8b9d_c6de60b2b7df"},
-		{src:"images/BMP_49229ed8_1c3f_4f64_973a_207f4fbb1bfa.png", id:"BMP_49229ed8_1c3f_4f64_973a_207f4fbb1bfa"},
-		{src:"images/BMP_4b03283c_1515_4b6c_a37e_96570b6e5039.png", id:"BMP_4b03283c_1515_4b6c_a37e_96570b6e5039"},
-		{src:"images/BMP_4e17a591_56f6_4814_9a72_f155e4fd43b4.png", id:"BMP_4e17a591_56f6_4814_9a72_f155e4fd43b4"},
-		{src:"images/BMP_4e25e066_0af8_457e_9193_6d9d3aea643c.png", id:"BMP_4e25e066_0af8_457e_9193_6d9d3aea643c"},
-		{src:"images/BMP_4feafe0c_73c2_4cfd_a98a_a6d1393a0509.png", id:"BMP_4feafe0c_73c2_4cfd_a98a_a6d1393a0509"},
-		{src:"images/BMP_51cb26a9_4d72_4dff_a153_7d1617d8168c.png", id:"BMP_51cb26a9_4d72_4dff_a153_7d1617d8168c"},
-		{src:"images/BMP_53901e70_c200_4ad1_abb6_a9b69cdb69f8.png", id:"BMP_53901e70_c200_4ad1_abb6_a9b69cdb69f8"},
-		{src:"images/BMP_548c8e8a_3c25_439c_a3c6_e855b31f80f0.png", id:"BMP_548c8e8a_3c25_439c_a3c6_e855b31f80f0"},
-		{src:"images/BMP_55400050_07cd_4a46_a498_9eaf9e8d6ff7.png", id:"BMP_55400050_07cd_4a46_a498_9eaf9e8d6ff7"},
-		{src:"images/BMP_5563b1a3_bdb3_4df6_82d9_f8c048548312.png", id:"BMP_5563b1a3_bdb3_4df6_82d9_f8c048548312"},
-		{src:"images/BMP_56e8841c_5ceb_4d75_b1df_5385a8a0d1d9.png", id:"BMP_56e8841c_5ceb_4d75_b1df_5385a8a0d1d9"},
-		{src:"images/BMP_574a5ce1_d8da_47b9_97f1_a235067f3b8a.png", id:"BMP_574a5ce1_d8da_47b9_97f1_a235067f3b8a"},
-		{src:"images/BMP_5c79d07a_eadb_4b10_a015_2416232dd423.png", id:"BMP_5c79d07a_eadb_4b10_a015_2416232dd423"},
-		{src:"images/BMP_5e07561c_9fba_4c29_8d9a_4b2dd8cb50c0.png", id:"BMP_5e07561c_9fba_4c29_8d9a_4b2dd8cb50c0"},
-		{src:"images/BMP_5ff2811c_0e15_4515_9d01_73b3841e1420.png", id:"BMP_5ff2811c_0e15_4515_9d01_73b3841e1420"},
-		{src:"images/BMP_6462ddfc_db29_4e7d_ba65_92d02c37e0f4.png", id:"BMP_6462ddfc_db29_4e7d_ba65_92d02c37e0f4"},
-		{src:"images/BMP_6467192f_cb91_4529_a256_575478ad43f7.png", id:"BMP_6467192f_cb91_4529_a256_575478ad43f7"},
-		{src:"images/BMP_6516efa4_198d_4619_9d1c_39ed4b2f3751.png", id:"BMP_6516efa4_198d_4619_9d1c_39ed4b2f3751"},
-		{src:"images/BMP_679ee30a_9371_431f_85ac_7e302df8056f.png", id:"BMP_679ee30a_9371_431f_85ac_7e302df8056f"},
-		{src:"images/BMP_69107159_d06f_4662_8944_7d41ca8eb14c.png", id:"BMP_69107159_d06f_4662_8944_7d41ca8eb14c"},
-		{src:"images/BMP_69cde0a9_240a_4c70_bb3d_245efd4bdcff.png", id:"BMP_69cde0a9_240a_4c70_bb3d_245efd4bdcff"},
-		{src:"images/BMP_6b25f8eb_2bcc_4b3d_a31d_80ceb13f82cd.png", id:"BMP_6b25f8eb_2bcc_4b3d_a31d_80ceb13f82cd"},
-		{src:"images/BMP_6b8e026d_f150_4484_87b5_a65349e91f7d.png", id:"BMP_6b8e026d_f150_4484_87b5_a65349e91f7d"},
-		{src:"images/BMP_6c12913c_2cb4_42d0_bf6c_b65168fee97e.png", id:"BMP_6c12913c_2cb4_42d0_bf6c_b65168fee97e"},
-		{src:"images/BMP_73276533_66b3_466e_aa1e_509f3e0cc241.png", id:"BMP_73276533_66b3_466e_aa1e_509f3e0cc241"},
-		{src:"images/BMP_75925805_abc5_480f_9af7_29755a21cd5f.png", id:"BMP_75925805_abc5_480f_9af7_29755a21cd5f"},
-		{src:"images/BMP_795d8743_c8fc_4098_b550_f36e08b353c0.png", id:"BMP_795d8743_c8fc_4098_b550_f36e08b353c0"},
-		{src:"images/BMP_79f9d6ea_615c_40e3_8c57_f19999c0acd5.png", id:"BMP_79f9d6ea_615c_40e3_8c57_f19999c0acd5"},
-		{src:"images/BMP_7b32f657_6e6d_4d24_9d74_a0278c1427cc.png", id:"BMP_7b32f657_6e6d_4d24_9d74_a0278c1427cc"},
-		{src:"images/BMP_7da6b254_0189_4ee6_8933_e6e5be800ed3.png", id:"BMP_7da6b254_0189_4ee6_8933_e6e5be800ed3"},
-		{src:"images/BMP_7e4e38ae_4e21_4aeb_8097_105a319c911d.png", id:"BMP_7e4e38ae_4e21_4aeb_8097_105a319c911d"},
-		{src:"images/BMP_7f6e1500_21f2_4831_8970_ce1099680558.png", id:"BMP_7f6e1500_21f2_4831_8970_ce1099680558"},
-		{src:"images/BMP_81a1f10d_d03c_4366_99b5_a93d0b2ca199.png", id:"BMP_81a1f10d_d03c_4366_99b5_a93d0b2ca199"},
-		{src:"images/BMP_8254f00a_bec3_40fa_861f_6b62bf0bb11d.png", id:"BMP_8254f00a_bec3_40fa_861f_6b62bf0bb11d"},
-		{src:"images/BMP_829a256c_955a_4396_a303_1a7eaa74d318.png", id:"BMP_829a256c_955a_4396_a303_1a7eaa74d318"},
-		{src:"images/BMP_832346ac_2a79_4ab5_96c1_06824a7e357d.png", id:"BMP_832346ac_2a79_4ab5_96c1_06824a7e357d"},
-		{src:"images/BMP_8324d277_d5fb_43cf_a5e5_3b1ccd52a3ab.png", id:"BMP_8324d277_d5fb_43cf_a5e5_3b1ccd52a3ab"},
-		{src:"images/BMP_83270492_6328_4a8e_8b3d_a75f125f474c.png", id:"BMP_83270492_6328_4a8e_8b3d_a75f125f474c"},
-		{src:"images/BMP_8866bf19_2ef9_4d68_a774_ffd548f3112c.png", id:"BMP_8866bf19_2ef9_4d68_a774_ffd548f3112c"},
-		{src:"images/BMP_8945983e_80be_425c_9bbe_94993f801a6f.png", id:"BMP_8945983e_80be_425c_9bbe_94993f801a6f"},
-		{src:"images/BMP_8d81915b_6e3f_4a93_ba76_7e071c949318.png", id:"BMP_8d81915b_6e3f_4a93_ba76_7e071c949318"},
-		{src:"images/BMP_9000059b_94e4_4028_94a1_bb61f76743ec.png", id:"BMP_9000059b_94e4_4028_94a1_bb61f76743ec"},
-		{src:"images/BMP_92e91306_307e_4d3f_acb2_5a58375672c2.png", id:"BMP_92e91306_307e_4d3f_acb2_5a58375672c2"},
-		{src:"images/BMP_9636b7a0_97db_4097_821d_347dc374c293.png", id:"BMP_9636b7a0_97db_4097_821d_347dc374c293"},
-		{src:"images/BMP_97e9de2a_ab83_43b6_bedd_7782b747a649.png", id:"BMP_97e9de2a_ab83_43b6_bedd_7782b747a649"},
-		{src:"images/BMP_9824de2f_7b0c_4dbf_87ea_f3f9ffbe099f.png", id:"BMP_9824de2f_7b0c_4dbf_87ea_f3f9ffbe099f"},
-		{src:"images/BMP_9c493a87_5104_47dc_b662_6e8dbe7a2ffe.png", id:"BMP_9c493a87_5104_47dc_b662_6e8dbe7a2ffe"},
-		{src:"images/BMP_a1a2986f_8ba0_44fc_b0db_0353904327c3.png", id:"BMP_a1a2986f_8ba0_44fc_b0db_0353904327c3"},
-		{src:"images/BMP_a2b2e800_e25a_49eb_a713_4904c74b67c5.png", id:"BMP_a2b2e800_e25a_49eb_a713_4904c74b67c5"},
-		{src:"images/BMP_a5c1052c_6315_4e5c_8fac_1d807a6d8be0.png", id:"BMP_a5c1052c_6315_4e5c_8fac_1d807a6d8be0"},
-		{src:"images/BMP_a5cc5558_97a8_4eab_9216_121ed03b2b5c.png", id:"BMP_a5cc5558_97a8_4eab_9216_121ed03b2b5c"},
-		{src:"images/BMP_a5f858a8_34ef_4706_8cf6_61a1e77dad73.png", id:"BMP_a5f858a8_34ef_4706_8cf6_61a1e77dad73"},
-		{src:"images/BMP_a6891c40_bc45_4036_a1ae_22cc272e2b41.png", id:"BMP_a6891c40_bc45_4036_a1ae_22cc272e2b41"},
-		{src:"images/BMP_ab87c9bc_81ee_4d12_835d_e7cf30c13b0f.png", id:"BMP_ab87c9bc_81ee_4d12_835d_e7cf30c13b0f"},
-		{src:"images/BMP_ad9689dd_72cc_4c02_9b0c_377896c3ed0b.png", id:"BMP_ad9689dd_72cc_4c02_9b0c_377896c3ed0b"},
-		{src:"images/BMP_ade67792_50ab_4f4c_a5eb_e08dd167fc54.png", id:"BMP_ade67792_50ab_4f4c_a5eb_e08dd167fc54"},
-		{src:"images/BMP_ae1fec38_175f_4d28_a7e5_cf9154ddea85.png", id:"BMP_ae1fec38_175f_4d28_a7e5_cf9154ddea85"},
-		{src:"images/BMP_aecb1cc7_306c_4b9f_a836_2cb076f28cf6.png", id:"BMP_aecb1cc7_306c_4b9f_a836_2cb076f28cf6"},
-		{src:"images/BMP_b0b85401_de88_4b2d_aadb_f532248fe4e0.png", id:"BMP_b0b85401_de88_4b2d_aadb_f532248fe4e0"},
-		{src:"images/BMP_b0ef910f_8a55_44de_b5b3_c5834c625625.png", id:"BMP_b0ef910f_8a55_44de_b5b3_c5834c625625"},
-		{src:"images/BMP_b1e00ab8_2205_413d_a050_54d2c78040cc.png", id:"BMP_b1e00ab8_2205_413d_a050_54d2c78040cc"},
-		{src:"images/BMP_b26aa273_4d35_4b84_8388_6db0082224bb.png", id:"BMP_b26aa273_4d35_4b84_8388_6db0082224bb"},
-		{src:"images/BMP_b6ef83c9_d15d_4b2e_982e_422fb9b75269.png", id:"BMP_b6ef83c9_d15d_4b2e_982e_422fb9b75269"},
-		{src:"images/BMP_b84c70ce_fabd_4cbf_b942_3465ec9a0c7e.png", id:"BMP_b84c70ce_fabd_4cbf_b942_3465ec9a0c7e"},
-		{src:"images/BMP_b9cdfea6_450e_4e0f_a2ae_28bfeddc4ac3.png", id:"BMP_b9cdfea6_450e_4e0f_a2ae_28bfeddc4ac3"},
-		{src:"images/BMP_bf33e066_838b_4d7e_a3bf_bdaa1af36f69.png", id:"BMP_bf33e066_838b_4d7e_a3bf_bdaa1af36f69"},
-		{src:"images/BMP_bf99584b_1bae_4209_8a89_1f75a303e02c.png", id:"BMP_bf99584b_1bae_4209_8a89_1f75a303e02c"},
-		{src:"images/BMP_c0c359eb_3d10_4122_8c9f_bd96a9ad4007.png", id:"BMP_c0c359eb_3d10_4122_8c9f_bd96a9ad4007"},
-		{src:"images/BMP_c432c02b_3ddb_44be_b8e3_85585dc7eb3f.png", id:"BMP_c432c02b_3ddb_44be_b8e3_85585dc7eb3f"},
-		{src:"images/BMP_c79203c5_ad76_421a_899b_ba86969c6b5c.png", id:"BMP_c79203c5_ad76_421a_899b_ba86969c6b5c"},
-		{src:"images/BMP_c7e90f02_60b2_48c9_8fba_f41b05219382.png", id:"BMP_c7e90f02_60b2_48c9_8fba_f41b05219382"},
-		{src:"images/BMP_c8d98eaa_ad77_453c_936e_6cb785c217ad.png", id:"BMP_c8d98eaa_ad77_453c_936e_6cb785c217ad"},
-		{src:"images/BMP_c917d0e5_b8a9_4fca_afd1_bf318ace7266.png", id:"BMP_c917d0e5_b8a9_4fca_afd1_bf318ace7266"},
-		{src:"images/BMP_ca230660_57f7_457d_963d_50d1b1a17d5c.png", id:"BMP_ca230660_57f7_457d_963d_50d1b1a17d5c"},
-		{src:"images/BMP_cd340c32_a64d_45d0_b9bf_ec9d387ee5fb.png", id:"BMP_cd340c32_a64d_45d0_b9bf_ec9d387ee5fb"},
-		{src:"images/BMP_ceb42b02_4768_48f5_a285_5acf51fe5c50.png", id:"BMP_ceb42b02_4768_48f5_a285_5acf51fe5c50"},
-		{src:"images/BMP_cee70e7c_4069_4179_8b64_13e95651e955.png", id:"BMP_cee70e7c_4069_4179_8b64_13e95651e955"},
-		{src:"images/BMP_d13baa14_16f9_45b7_9a65_1d7eaa453a6f.png", id:"BMP_d13baa14_16f9_45b7_9a65_1d7eaa453a6f"},
-		{src:"images/BMP_d20a4c6e_4686_4782_95d2_1e04f62af692.png", id:"BMP_d20a4c6e_4686_4782_95d2_1e04f62af692"},
-		{src:"images/BMP_d46ea5e8_434a_4980_a928_ba4b44845694.png", id:"BMP_d46ea5e8_434a_4980_a928_ba4b44845694"},
-		{src:"images/BMP_d517cf65_fa2b_4233_a979_5643f08fbf40.png", id:"BMP_d517cf65_fa2b_4233_a979_5643f08fbf40"},
-		{src:"images/BMP_d68d3b36_684e_4f06_82e2_b0cb0fddcb57.png", id:"BMP_d68d3b36_684e_4f06_82e2_b0cb0fddcb57"},
-		{src:"images/BMP_d75f4899_3204_433d_8d28_466dd67c26ef.png", id:"BMP_d75f4899_3204_433d_8d28_466dd67c26ef"},
-		{src:"images/BMP_d92296ae_2ef0_4a59_97cb_2905a62781a0.png", id:"BMP_d92296ae_2ef0_4a59_97cb_2905a62781a0"},
-		{src:"images/BMP_d932069d_7e3d_499e_8b22_034174ed2d64.png", id:"BMP_d932069d_7e3d_499e_8b22_034174ed2d64"},
-		{src:"images/BMP_d994f805_7393_4ff6_aa13_ce83a7c93d4a.png", id:"BMP_d994f805_7393_4ff6_aa13_ce83a7c93d4a"},
+		{src:"images/BMP_0162b842_91de_48ec_8da2_438cdbc8a99a.png", id:"BMP_0162b842_91de_48ec_8da2_438cdbc8a99a"},
+		{src:"images/BMP_0178bf7a_9cf9_4ecf_8ea8_b30613cde6f1.png", id:"BMP_0178bf7a_9cf9_4ecf_8ea8_b30613cde6f1"},
+		{src:"images/BMP_035ba339_93c0_4366_823b_20e8ef113832.png", id:"BMP_035ba339_93c0_4366_823b_20e8ef113832"},
+		{src:"images/BMP_0530041e_1c4c_4ee5_997b_307c50e4011b.png", id:"BMP_0530041e_1c4c_4ee5_997b_307c50e4011b"},
+		{src:"images/BMP_061c4eb2_7099_4f77_b234_e2d0749ba454.png", id:"BMP_061c4eb2_7099_4f77_b234_e2d0749ba454"},
+		{src:"images/BMP_06256582_d60e_4ee2_9e41_7d7b574f1823.png", id:"BMP_06256582_d60e_4ee2_9e41_7d7b574f1823"},
+		{src:"images/BMP_07d768aa_3b51_4f96_8a9b_2ef2f7776d75.png", id:"BMP_07d768aa_3b51_4f96_8a9b_2ef2f7776d75"},
+		{src:"images/BMP_07d9fbc6_729c_4048_ae1e_1cdb93804749.png", id:"BMP_07d9fbc6_729c_4048_ae1e_1cdb93804749"},
+		{src:"images/BMP_0a8edf71_87e8_4af7_aac9_ad6007d37b87.png", id:"BMP_0a8edf71_87e8_4af7_aac9_ad6007d37b87"},
+		{src:"images/BMP_0b5ea16f_8cc0_4e98_b6df_8960fece1f18.png", id:"BMP_0b5ea16f_8cc0_4e98_b6df_8960fece1f18"},
+		{src:"images/BMP_0e2b6eb9_4f0d_4b1f_9bd8_3ab4e9d15941.png", id:"BMP_0e2b6eb9_4f0d_4b1f_9bd8_3ab4e9d15941"},
+		{src:"images/BMP_0ef76598_23ef_4cab_a297_60beba3d26a6.png", id:"BMP_0ef76598_23ef_4cab_a297_60beba3d26a6"},
+		{src:"images/BMP_0fd0f583_34d4_4ff7_afaa_d88f775b0ac4.png", id:"BMP_0fd0f583_34d4_4ff7_afaa_d88f775b0ac4"},
+		{src:"images/BMP_111cab29_6ba9_4c6b_a020_097b500a21a5.png", id:"BMP_111cab29_6ba9_4c6b_a020_097b500a21a5"},
+		{src:"images/BMP_11b36620_9ccf_4015_a5d9_40c9803ea4a5.png", id:"BMP_11b36620_9ccf_4015_a5d9_40c9803ea4a5"},
+		{src:"images/BMP_14f604cb_5f0d_402b_bbc1_ed14b9a3f151.png", id:"BMP_14f604cb_5f0d_402b_bbc1_ed14b9a3f151"},
+		{src:"images/BMP_166a759d_fdb0_42c9_9d6f_7f2982890a82.png", id:"BMP_166a759d_fdb0_42c9_9d6f_7f2982890a82"},
+		{src:"images/BMP_172157ba_887b_4597_92aa_1b35de726372.png", id:"BMP_172157ba_887b_4597_92aa_1b35de726372"},
+		{src:"images/BMP_1790ec33_7ec6_4f35_bf07_a7bdf7174281.png", id:"BMP_1790ec33_7ec6_4f35_bf07_a7bdf7174281"},
+		{src:"images/BMP_18314a37_9c0a_44a0_9100_3768cc2432b4.png", id:"BMP_18314a37_9c0a_44a0_9100_3768cc2432b4"},
+		{src:"images/BMP_18a005b1_9ff0_43ee_9b4a_79d53b4af427.png", id:"BMP_18a005b1_9ff0_43ee_9b4a_79d53b4af427"},
+		{src:"images/BMP_19875f97_3a13_4e59_b057_8d52ed98d6c2.png", id:"BMP_19875f97_3a13_4e59_b057_8d52ed98d6c2"},
+		{src:"images/BMP_1a2372a5_9775_4697_814d_7706aff9a5d4.png", id:"BMP_1a2372a5_9775_4697_814d_7706aff9a5d4"},
+		{src:"images/BMP_1af5df60_1b3b_4200_8c66_42fd0ee7a604.png", id:"BMP_1af5df60_1b3b_4200_8c66_42fd0ee7a604"},
+		{src:"images/BMP_1af9dc8a_b6c7_4699_98ef_4244e3ec2065.png", id:"BMP_1af9dc8a_b6c7_4699_98ef_4244e3ec2065"},
+		{src:"images/BMP_1c84c9e9_6561_4666_9fb1_05d7c6feb5c9.png", id:"BMP_1c84c9e9_6561_4666_9fb1_05d7c6feb5c9"},
+		{src:"images/BMP_1e26a599_ae95_406f_aeb6_8cc410fc39bb.png", id:"BMP_1e26a599_ae95_406f_aeb6_8cc410fc39bb"},
+		{src:"images/BMP_1ed8e844_66ab_4d01_a5ed_36ba30b42a0d.png", id:"BMP_1ed8e844_66ab_4d01_a5ed_36ba30b42a0d"},
+		{src:"images/BMP_1fe29378_e9a2_4137_85d7_384f28c6694a.png", id:"BMP_1fe29378_e9a2_4137_85d7_384f28c6694a"},
+		{src:"images/BMP_257124d6_0392_413d_94a6_44a6c8449cd7.png", id:"BMP_257124d6_0392_413d_94a6_44a6c8449cd7"},
+		{src:"images/BMP_262b48d8_5f6f_4138_891d_c773aa9829da.png", id:"BMP_262b48d8_5f6f_4138_891d_c773aa9829da"},
+		{src:"images/BMP_274f26e9_d97e_43de_aeb3_ad5c700443ab.png", id:"BMP_274f26e9_d97e_43de_aeb3_ad5c700443ab"},
+		{src:"images/BMP_27effba8_b4be_42f4_aa45_14edbccc647c.png", id:"BMP_27effba8_b4be_42f4_aa45_14edbccc647c"},
+		{src:"images/BMP_2a88aa43_4f5c_4c8d_b064_19ca79216861.png", id:"BMP_2a88aa43_4f5c_4c8d_b064_19ca79216861"},
+		{src:"images/BMP_2b24a2c2_cb89_4306_8a0c_51542c0fa717.png", id:"BMP_2b24a2c2_cb89_4306_8a0c_51542c0fa717"},
+		{src:"images/BMP_2c353ac7_670b_40f0_90cf_d6eeb5011cf8.png", id:"BMP_2c353ac7_670b_40f0_90cf_d6eeb5011cf8"},
+		{src:"images/BMP_2ef39d8e_5d66_45a9_9b5c_bb2484a46842.png", id:"BMP_2ef39d8e_5d66_45a9_9b5c_bb2484a46842"},
+		{src:"images/BMP_32df0f17_68c6_40ce_800b_6ee881512016.png", id:"BMP_32df0f17_68c6_40ce_800b_6ee881512016"},
+		{src:"images/BMP_37a0dcde_1482_4453_b6ab_6c311c654fe2.png", id:"BMP_37a0dcde_1482_4453_b6ab_6c311c654fe2"},
+		{src:"images/BMP_3c87206f_acd6_4b97_bb8a_8bd178b838b4.png", id:"BMP_3c87206f_acd6_4b97_bb8a_8bd178b838b4"},
+		{src:"images/BMP_3d69b7f1_f038_4aa0_b794_0c0748126411.png", id:"BMP_3d69b7f1_f038_4aa0_b794_0c0748126411"},
+		{src:"images/BMP_3e90a64a_43a8_40e5_ab10_586d315f24a2.png", id:"BMP_3e90a64a_43a8_40e5_ab10_586d315f24a2"},
+		{src:"images/BMP_41978e07_bec1_49d4_b885_8c9cedff7707.png", id:"BMP_41978e07_bec1_49d4_b885_8c9cedff7707"},
+		{src:"images/BMP_42711924_0097_4002_9d9f_8b46335bec07.png", id:"BMP_42711924_0097_4002_9d9f_8b46335bec07"},
+		{src:"images/BMP_42e7571c_ce0f_465f_819c_04693f4997d3.png", id:"BMP_42e7571c_ce0f_465f_819c_04693f4997d3"},
+		{src:"images/BMP_43d288c4_85dc_492a_8f66_e42a94a82d54.png", id:"BMP_43d288c4_85dc_492a_8f66_e42a94a82d54"},
+		{src:"images/BMP_4581042b_14ba_46b4_b1cd_eb6646a75646.png", id:"BMP_4581042b_14ba_46b4_b1cd_eb6646a75646"},
+		{src:"images/BMP_458bf4d6_a410_4e9b_a5e5_923dc0b48001.png", id:"BMP_458bf4d6_a410_4e9b_a5e5_923dc0b48001"},
+		{src:"images/BMP_466b9520_7812_4046_b757_b43f0edcb4e9.png", id:"BMP_466b9520_7812_4046_b757_b43f0edcb4e9"},
+		{src:"images/BMP_47728ce9_aa2b_4c0a_a5a9_f55e7648c925.png", id:"BMP_47728ce9_aa2b_4c0a_a5a9_f55e7648c925"},
+		{src:"images/BMP_487df19f_b467_41b5_8e95_3ac0a29356c4.png", id:"BMP_487df19f_b467_41b5_8e95_3ac0a29356c4"},
+		{src:"images/BMP_48d6861b_fb86_4313_8ae5_48f9d18c3742.png", id:"BMP_48d6861b_fb86_4313_8ae5_48f9d18c3742"},
+		{src:"images/BMP_48e7de50_c104_4ce1_86c1_b8a386f048d3.png", id:"BMP_48e7de50_c104_4ce1_86c1_b8a386f048d3"},
+		{src:"images/BMP_49e4e701_ad78_4dca_83cd_8c5e33d6d6c6.png", id:"BMP_49e4e701_ad78_4dca_83cd_8c5e33d6d6c6"},
+		{src:"images/BMP_4b201453_d76c_4714_b915_f3ac5a8769a0.png", id:"BMP_4b201453_d76c_4714_b915_f3ac5a8769a0"},
+		{src:"images/BMP_4ccffb6c_9559_44db_9a9d_eea0d95c710b.png", id:"BMP_4ccffb6c_9559_44db_9a9d_eea0d95c710b"},
+		{src:"images/BMP_4d3ce136_0824_42aa_b8f0_e84f9fd704d9.png", id:"BMP_4d3ce136_0824_42aa_b8f0_e84f9fd704d9"},
+		{src:"images/BMP_512dd26a_a747_442a_911c_2b7adb52eea1.png", id:"BMP_512dd26a_a747_442a_911c_2b7adb52eea1"},
+		{src:"images/BMP_52f07ac1_04f9_4daa_8f61_b5ab26ce6aa2.png", id:"BMP_52f07ac1_04f9_4daa_8f61_b5ab26ce6aa2"},
+		{src:"images/BMP_544d0992_1fe9_402d_a5ec_3e8da50b2a9e.png", id:"BMP_544d0992_1fe9_402d_a5ec_3e8da50b2a9e"},
+		{src:"images/BMP_54e8812b_72a2_45e0_b34c_4d3888a1e6dd.png", id:"BMP_54e8812b_72a2_45e0_b34c_4d3888a1e6dd"},
+		{src:"images/BMP_556879df_6e18_4b31_9333_651d19bf234b.png", id:"BMP_556879df_6e18_4b31_9333_651d19bf234b"},
+		{src:"images/BMP_57a5cb91_8476_4496_90a2_8811114815b8.png", id:"BMP_57a5cb91_8476_4496_90a2_8811114815b8"},
+		{src:"images/BMP_596050af_693f_44c1_bfcd_c9bcbe5872e8.png", id:"BMP_596050af_693f_44c1_bfcd_c9bcbe5872e8"},
+		{src:"images/BMP_5dc93a6a_2a8b_4dac_ad08_658de4ad5aa2.png", id:"BMP_5dc93a6a_2a8b_4dac_ad08_658de4ad5aa2"},
+		{src:"images/BMP_5fdebdc6_4302_453d_a99c_cdcc8c7ffeec.png", id:"BMP_5fdebdc6_4302_453d_a99c_cdcc8c7ffeec"},
+		{src:"images/BMP_640eb1b6_727d_48f6_9878_3e135de0858e.png", id:"BMP_640eb1b6_727d_48f6_9878_3e135de0858e"},
+		{src:"images/BMP_65acce37_bc86_4416_a2b2_d390e09c5b44.png", id:"BMP_65acce37_bc86_4416_a2b2_d390e09c5b44"},
+		{src:"images/BMP_685c7813_9f38_4441_a19e_ec2e1de4a2f5.png", id:"BMP_685c7813_9f38_4441_a19e_ec2e1de4a2f5"},
+		{src:"images/BMP_6fa5f0ec_b1b6_4d7f_ba63_132ffc31d475.png", id:"BMP_6fa5f0ec_b1b6_4d7f_ba63_132ffc31d475"},
+		{src:"images/BMP_71bffcbf_c79f_4b0c_875b_68cd616f4aca.png", id:"BMP_71bffcbf_c79f_4b0c_875b_68cd616f4aca"},
+		{src:"images/BMP_72e5582d_2d54_427a_bc16_004bd2a3ec36.png", id:"BMP_72e5582d_2d54_427a_bc16_004bd2a3ec36"},
+		{src:"images/BMP_734a0f5a_6a84_419f_80f2_91485c2d073e.png", id:"BMP_734a0f5a_6a84_419f_80f2_91485c2d073e"},
+		{src:"images/BMP_750ebcf5_352d_4d36_923c_f833f8409311.png", id:"BMP_750ebcf5_352d_4d36_923c_f833f8409311"},
+		{src:"images/BMP_7773869c_1c80_4da3_84c8_4544e3f2e73b.png", id:"BMP_7773869c_1c80_4da3_84c8_4544e3f2e73b"},
+		{src:"images/BMP_77d6f2a4_2ad8_479e_815e_d8329c2da0a9.png", id:"BMP_77d6f2a4_2ad8_479e_815e_d8329c2da0a9"},
+		{src:"images/BMP_793d5956_44ff_481d_bcd1_31f7fe6a8908.png", id:"BMP_793d5956_44ff_481d_bcd1_31f7fe6a8908"},
+		{src:"images/BMP_7a140cf0_e795_4e7b_a1fd_6248da36cf2f.png", id:"BMP_7a140cf0_e795_4e7b_a1fd_6248da36cf2f"},
+		{src:"images/BMP_7a475611_46c7_4a24_a3e1_9d3fae9006c4.png", id:"BMP_7a475611_46c7_4a24_a3e1_9d3fae9006c4"},
+		{src:"images/BMP_7aa13c8e_e7f3_4236_b6a6_9b1d8e4b51c6.png", id:"BMP_7aa13c8e_e7f3_4236_b6a6_9b1d8e4b51c6"},
+		{src:"images/BMP_7cfd5d30_f94a_4b88_8cb6_a98f9cf39510.png", id:"BMP_7cfd5d30_f94a_4b88_8cb6_a98f9cf39510"},
+		{src:"images/BMP_7d28c196_b4d4_4bba_b53d_c89e8810c44f.png", id:"BMP_7d28c196_b4d4_4bba_b53d_c89e8810c44f"},
+		{src:"images/BMP_7f550613_bab9_47c1_973f_e70cb218c695.png", id:"BMP_7f550613_bab9_47c1_973f_e70cb218c695"},
+		{src:"images/BMP_81da43f2_3189_468d_ba36_4534347ee10d.png", id:"BMP_81da43f2_3189_468d_ba36_4534347ee10d"},
+		{src:"images/BMP_8621ef06_fe47_49d4_aad4_ed7162487cd2.png", id:"BMP_8621ef06_fe47_49d4_aad4_ed7162487cd2"},
+		{src:"images/BMP_8884eb25_7497_4c0c_b10d_611d0505bc16.png", id:"BMP_8884eb25_7497_4c0c_b10d_611d0505bc16"},
+		{src:"images/BMP_88a21dd6_aec1_4746_9013_35649dc08042.png", id:"BMP_88a21dd6_aec1_4746_9013_35649dc08042"},
+		{src:"images/BMP_8fda2aee_2aaf_426f_9019_aa91d4f02070.png", id:"BMP_8fda2aee_2aaf_426f_9019_aa91d4f02070"},
+		{src:"images/BMP_929c1e0e_47b6_443f_ae37_6576023c3548.png", id:"BMP_929c1e0e_47b6_443f_ae37_6576023c3548"},
+		{src:"images/BMP_9386ba6e_209c_4201_b647_a6942bc135bf.png", id:"BMP_9386ba6e_209c_4201_b647_a6942bc135bf"},
+		{src:"images/BMP_94cc5a31_301d_4212_a3cd_3d5cb0d350d4.png", id:"BMP_94cc5a31_301d_4212_a3cd_3d5cb0d350d4"},
+		{src:"images/BMP_9566f8b3_9915_4ced_843d_71746f158286.png", id:"BMP_9566f8b3_9915_4ced_843d_71746f158286"},
+		{src:"images/BMP_961b5fe4_845b_4941_bc29_86566fe65fa0.png", id:"BMP_961b5fe4_845b_4941_bc29_86566fe65fa0"},
+		{src:"images/BMP_962d8bbb_4eb6_4c07_b7d9_0cc2cf7d7951.png", id:"BMP_962d8bbb_4eb6_4c07_b7d9_0cc2cf7d7951"},
+		{src:"images/BMP_98db79e0_8a8b_4283_b71a_8cec4136cf68.png", id:"BMP_98db79e0_8a8b_4283_b71a_8cec4136cf68"},
+		{src:"images/BMP_9b9920e0_dd6e_4904_9d06_41909cdb3847.png", id:"BMP_9b9920e0_dd6e_4904_9d06_41909cdb3847"},
+		{src:"images/BMP_9dfe4cc7_e6ec_4f4a_be72_e0fa21446ce0.png", id:"BMP_9dfe4cc7_e6ec_4f4a_be72_e0fa21446ce0"},
+		{src:"images/BMP_a1c2ffbd_5c9b_4c0a_8d9c_6b77d659741b.png", id:"BMP_a1c2ffbd_5c9b_4c0a_8d9c_6b77d659741b"},
+		{src:"images/BMP_a1ef7fba_b69f_41b0_b8e0_fa4db9007682.png", id:"BMP_a1ef7fba_b69f_41b0_b8e0_fa4db9007682"},
+		{src:"images/BMP_a22b7e2e_0abc_4749_bd99_9b58604ced4a.png", id:"BMP_a22b7e2e_0abc_4749_bd99_9b58604ced4a"},
+		{src:"images/BMP_a771713e_8bb1_4dd8_87dd_bfe9f7ea73c9.png", id:"BMP_a771713e_8bb1_4dd8_87dd_bfe9f7ea73c9"},
+		{src:"images/BMP_a7859688_c855_4f6e_9a35_8f0fa5698d3f.png", id:"BMP_a7859688_c855_4f6e_9a35_8f0fa5698d3f"},
+		{src:"images/BMP_a8575f9b_6bfb_4ce0_bdaa_280a00ae1706.png", id:"BMP_a8575f9b_6bfb_4ce0_bdaa_280a00ae1706"},
+		{src:"images/BMP_ac84fda0_9ccf_4c22_b7ed_1f43d30cea0a.png", id:"BMP_ac84fda0_9ccf_4c22_b7ed_1f43d30cea0a"},
+		{src:"images/BMP_ae83bc86_28c9_4f2f_a5c8_855809d8fbfd.png", id:"BMP_ae83bc86_28c9_4f2f_a5c8_855809d8fbfd"},
+		{src:"images/BMP_b21817e7_18dd_49b2_a686_3df723b527d1.png", id:"BMP_b21817e7_18dd_49b2_a686_3df723b527d1"},
+		{src:"images/BMP_b3e565be_d217_46b3_ab40_4b291873fdf0.png", id:"BMP_b3e565be_d217_46b3_ab40_4b291873fdf0"},
+		{src:"images/BMP_b74411e5_d5ca_4b67_b7f7_e7571cfa5858.png", id:"BMP_b74411e5_d5ca_4b67_b7f7_e7571cfa5858"},
+		{src:"images/BMP_b9a2a4a4_b501_4570_a7b0_c67452e27810.png", id:"BMP_b9a2a4a4_b501_4570_a7b0_c67452e27810"},
+		{src:"images/BMP_bac4e16c_b01b_48a0_99d1_99796dac8098.png", id:"BMP_bac4e16c_b01b_48a0_99d1_99796dac8098"},
+		{src:"images/BMP_baf956ae_95cf_4e45_8614_4684a5aaa854.png", id:"BMP_baf956ae_95cf_4e45_8614_4684a5aaa854"},
+		{src:"images/BMP_bdb8e5f6_6812_4966_8c77_d4206b2466ed.png", id:"BMP_bdb8e5f6_6812_4966_8c77_d4206b2466ed"},
+		{src:"images/BMP_c0b9a123_156e_4d4e_83ed_2f15b273e381.png", id:"BMP_c0b9a123_156e_4d4e_83ed_2f15b273e381"},
+		{src:"images/BMP_c1dd1ab9_5757_478c_b9a5_34fe041aaf7b.png", id:"BMP_c1dd1ab9_5757_478c_b9a5_34fe041aaf7b"},
+		{src:"images/BMP_c3c426b8_ca37_46e1_b108_c673ea6b6b0d.png", id:"BMP_c3c426b8_ca37_46e1_b108_c673ea6b6b0d"},
+		{src:"images/BMP_c544578a_5249_4dc0_b85f_70e7c9719ffd.png", id:"BMP_c544578a_5249_4dc0_b85f_70e7c9719ffd"},
+		{src:"images/BMP_c8a82ed4_57c0_48bf_8450_708e9112f7d3.png", id:"BMP_c8a82ed4_57c0_48bf_8450_708e9112f7d3"},
+		{src:"images/BMP_c9b2d973_3ddd_4a02_947f_bb15de837b41.png", id:"BMP_c9b2d973_3ddd_4a02_947f_bb15de837b41"},
+		{src:"images/BMP_cb043d3c_39c3_47fa_b2b1_97d2c59dcd0c.png", id:"BMP_cb043d3c_39c3_47fa_b2b1_97d2c59dcd0c"},
+		{src:"images/BMP_cd124573_a026_4b02_8d8b_33283e3d4035.png", id:"BMP_cd124573_a026_4b02_8d8b_33283e3d4035"},
+		{src:"images/BMP_cdaaced7_60cd_49db_9d74_38c2d36b3a9e.png", id:"BMP_cdaaced7_60cd_49db_9d74_38c2d36b3a9e"},
+		{src:"images/BMP_cf43f49d_8361_43f2_9bcd_006967f98396.png", id:"BMP_cf43f49d_8361_43f2_9bcd_006967f98396"},
+		{src:"images/BMP_cf55cdeb_4df6_4f7a_b63d_8716bd69b718.png", id:"BMP_cf55cdeb_4df6_4f7a_b63d_8716bd69b718"},
+		{src:"images/BMP_d0ae5407_561c_4eb0_9f8a_909e7953c542.png", id:"BMP_d0ae5407_561c_4eb0_9f8a_909e7953c542"},
+		{src:"images/BMP_d157937a_6106_4f76_b8a4_acc2411f915a.png", id:"BMP_d157937a_6106_4f76_b8a4_acc2411f915a"},
+		{src:"images/BMP_d399d0f2_e66a_44e3_8947_880d6476b07b.png", id:"BMP_d399d0f2_e66a_44e3_8947_880d6476b07b"},
+		{src:"images/BMP_d8f5721c_aec5_416d_a4a7_cad213a158e6.png", id:"BMP_d8f5721c_aec5_416d_a4a7_cad213a158e6"},
+		{src:"images/BMP_d9654eab_de9f_4baa_8e95_bf1ff070e3b2.png", id:"BMP_d9654eab_de9f_4baa_8e95_bf1ff070e3b2"},
+		{src:"images/BMP_dab7635b_e4ee_4cb0_af60_edcd13d82b44.png", id:"BMP_dab7635b_e4ee_4cb0_af60_edcd13d82b44"},
 		{src:"images/BMP_dac03e00_cdb5_4c97_bf2a_c45e285d1cf1.png", id:"BMP_dac03e00_cdb5_4c97_bf2a_c45e285d1cf1"},
-		{src:"images/BMP_dcdf7999_6c7b_4fb1_844c_43f2085e9061.png", id:"BMP_dcdf7999_6c7b_4fb1_844c_43f2085e9061"},
-		{src:"images/BMP_de3ce22f_2870_46f1_9c2f_171d894fe7bb.png", id:"BMP_de3ce22f_2870_46f1_9c2f_171d894fe7bb"},
-		{src:"images/BMP_df179efc_044e_46b1_9389_70f58273e72f.png", id:"BMP_df179efc_044e_46b1_9389_70f58273e72f"},
-		{src:"images/BMP_e21f984a_282a_4712_9d87_9c36d30205b3.png", id:"BMP_e21f984a_282a_4712_9d87_9c36d30205b3"},
-		{src:"images/BMP_e49d875a_54e0_47f5_b869_165508f1f4bd.png", id:"BMP_e49d875a_54e0_47f5_b869_165508f1f4bd"},
-		{src:"images/BMP_e5d397bb_fa1f_4015_b2e9_68ed1c29987d.png", id:"BMP_e5d397bb_fa1f_4015_b2e9_68ed1c29987d"},
-		{src:"images/BMP_e7f2603e_481f_4aac_aad6_a50bb70eda4a.png", id:"BMP_e7f2603e_481f_4aac_aad6_a50bb70eda4a"},
-		{src:"images/BMP_e95403db_8df2_4aa3_947b_220c6ea17d8f.png", id:"BMP_e95403db_8df2_4aa3_947b_220c6ea17d8f"},
-		{src:"images/BMP_ed5d0e1c_101a_48c2_b8bc_03a179c934cb.png", id:"BMP_ed5d0e1c_101a_48c2_b8bc_03a179c934cb"},
-		{src:"images/BMP_f15d9a13_ff8c_43b7_945b_454d87aa1719.png", id:"BMP_f15d9a13_ff8c_43b7_945b_454d87aa1719"},
-		{src:"images/BMP_f1cfbebd_c6f9_4ce5_9906_e422e9911b3d.png", id:"BMP_f1cfbebd_c6f9_4ce5_9906_e422e9911b3d"},
-		{src:"images/BMP_f4927c00_bc9d_4b9c_9911_e56b2432eb1e.png", id:"BMP_f4927c00_bc9d_4b9c_9911_e56b2432eb1e"},
-		{src:"images/BMP_f7b12907_3778_4788_a5ea_1f3dbdbf7ae1.png", id:"BMP_f7b12907_3778_4788_a5ea_1f3dbdbf7ae1"},
-		{src:"images/BMP_fa372121_2261_4a50_8be3_6fb3cdfc3580.png", id:"BMP_fa372121_2261_4a50_8be3_6fb3cdfc3580"},
-		{src:"images/BMP_fb3a060b_c42c_4e1c_9208_7b40c6cdb23f.png", id:"BMP_fb3a060b_c42c_4e1c_9208_7b40c6cdb23f"},
-		{src:"images/BMP_fbba40e6_523e_4a30_9660_6707e5a2311a.png", id:"BMP_fbba40e6_523e_4a30_9660_6707e5a2311a"},
-		{src:"images/BMP_fc234705_f0db_41aa_9472_b47f7577f713.png", id:"BMP_fc234705_f0db_41aa_9472_b47f7577f713"},
-		{src:"images/BMP_fcf6fb66_3f6a_441b_8d51_54e41febb080.png", id:"BMP_fcf6fb66_3f6a_441b_8d51_54e41febb080"},
-		{src:"images/BMP_fd0a476d_6f48_4d51_90c0_3b88fdb9379a.png", id:"BMP_fd0a476d_6f48_4d51_90c0_3b88fdb9379a"},
-		{src:"images/BMP_fe281bdf_36fc_46bf_aaa5_2817236b4999.png", id:"BMP_fe281bdf_36fc_46bf_aaa5_2817236b4999"},
+		{src:"images/BMP_dac73940_737d_4c34_8ea9_33e1d8af4b38.png", id:"BMP_dac73940_737d_4c34_8ea9_33e1d8af4b38"},
+		{src:"images/BMP_de6a008e_cb8b_481e_b603_d052daf36b6e.png", id:"BMP_de6a008e_cb8b_481e_b603_d052daf36b6e"},
+		{src:"images/BMP_e3b4123a_2cd7_46d9_ad86_93b3bd506632.png", id:"BMP_e3b4123a_2cd7_46d9_ad86_93b3bd506632"},
+		{src:"images/BMP_e521ce5a_5a46_4b12_b8a6_69b42e947568.png", id:"BMP_e521ce5a_5a46_4b12_b8a6_69b42e947568"},
+		{src:"images/BMP_e6330d1d_f54d_4a10_90da_686ef11c4b0e.png", id:"BMP_e6330d1d_f54d_4a10_90da_686ef11c4b0e"},
+		{src:"images/BMP_e663f67a_605c_4701_90d3_70d110986c24.png", id:"BMP_e663f67a_605c_4701_90d3_70d110986c24"},
+		{src:"images/BMP_e7d5dfd9_b947_47e7_94cb_2476fdb55450.png", id:"BMP_e7d5dfd9_b947_47e7_94cb_2476fdb55450"},
+		{src:"images/BMP_e8a0cc6a_a0d0_41a6_8136_432075013940.png", id:"BMP_e8a0cc6a_a0d0_41a6_8136_432075013940"},
+		{src:"images/BMP_edfe6710_23b2_4103_afcd_3b06d6b801b3.png", id:"BMP_edfe6710_23b2_4103_afcd_3b06d6b801b3"},
+		{src:"images/BMP_ee6dcf4a_a387_4b6d_99dd_9229e03aea7f.png", id:"BMP_ee6dcf4a_a387_4b6d_99dd_9229e03aea7f"},
+		{src:"images/BMP_ef50c097_f84e_4d58_9a09_96717c36d76e.png", id:"BMP_ef50c097_f84e_4d58_9a09_96717c36d76e"},
+		{src:"images/BMP_f079b05d_db75_4bcf_9d13_4c5117809df7.png", id:"BMP_f079b05d_db75_4bcf_9d13_4c5117809df7"},
+		{src:"images/BMP_f206ae00_0148_428a_a1b5_b3d8f5e02d23.png", id:"BMP_f206ae00_0148_428a_a1b5_b3d8f5e02d23"},
+		{src:"images/BMP_f22ce7db_0ee1_4ac5_99d8_ad04e7e2e49d.png", id:"BMP_f22ce7db_0ee1_4ac5_99d8_ad04e7e2e49d"},
+		{src:"images/BMP_f49cd9e8_a3a5_4384_bcd9_6b65ef7baf1b.png", id:"BMP_f49cd9e8_a3a5_4384_bcd9_6b65ef7baf1b"},
+		{src:"images/BMP_f5f28788_1f2b_4be0_8260_c6e1d9ef5ba0.png", id:"BMP_f5f28788_1f2b_4be0_8260_c6e1d9ef5ba0"},
+		{src:"images/BMP_f6c22216_0510_4fca_b4de_1cbe801bfd85.png", id:"BMP_f6c22216_0510_4fca_b4de_1cbe801bfd85"},
+		{src:"images/BMP_f7379364_67ad_477f_808b_3187df23448c.png", id:"BMP_f7379364_67ad_477f_808b_3187df23448c"},
+		{src:"images/BMP_fc183212_86e9_46a4_9ef7_00a3e77810b3.png", id:"BMP_fc183212_86e9_46a4_9ef7_00a3e77810b3"},
+		{src:"images/BMP_fc2f7961_44bc_4403_a4fa_b6d7cbccb255.png", id:"BMP_fc2f7961_44bc_4403_a4fa_b6d7cbccb255"},
+		{src:"images/BMP_fc778c1b_9a2d_465b_bfd8_110efdad278e.png", id:"BMP_fc778c1b_9a2d_465b_bfd8_110efdad278e"},
+		{src:"images/BMP_ff4b484d_8a6c_40e6_ab11_f26433b3f60d.png", id:"BMP_ff4b484d_8a6c_40e6_ab11_f26433b3f60d"},
 		{src:"images/title.png", id:"title"}
 	],
 	preloads: []
@@ -23088,9 +23198,6 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	var preloaderDiv = document.getElementById("_preload_div_");
-	preloaderDiv.style.display = 'none';
-	canvas.style.display = 'block';
 	exportRoot = new lib.InteractiveComic();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
@@ -23100,37 +23207,11 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(false,'both',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
 </script>
-<!-- 1: paste this code -->
-
-  </head>
-  <body onload="init();">
-
-  <div id="root"></div>
-
-	<!----------- TRAILER ----------->
-
-  
-	<div id="stage">
-
-		<!-- 2: paste this code -->
-	
-		<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00);">
-		  <canvas id="canvas"  style=" background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		  <div id="dom_overlay_container">
-		  </div>
-		</div>
-		<div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:60%; width: 60%; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
-	
-		<!-- 2: paste this code -->
-	
-	</div>
-
-  <!-------------------------------> 
-
-  </body>
+<!-- write your code here -->
+</body>
 </html>
