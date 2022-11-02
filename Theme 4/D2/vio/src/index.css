@@ -20,6 +20,19 @@ code {
 
 
 #stage {
-  display: flex;
-  justify-content: center;
+  margin-left: 25%;
+  margin-top: 350px;
+}
+
+#stageWrapper {
+  position: relative;
+}
+
+#stageOutline {
+  position: absolute;
+  margin-left:  25%;
+  top: -223px;
+  left: -156px;
+  width: 2259px;
+  pointer-events: none;
 }
