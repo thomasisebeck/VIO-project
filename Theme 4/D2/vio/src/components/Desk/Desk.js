@@ -8,7 +8,9 @@ export class  Desk extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bookOpen: false
+      bookOpen: false, 
+      hat: 'images_website/desk/hat.png', 
+      hatClass: 'hat'
     }
   }
 
@@ -23,13 +25,22 @@ export class  Desk extends React.Component {
     })
   }
 
+  hatFalling() {
+    this.setState({
+      hat: 'images_website/desk/hat.gif',
+      hatClass: 'hat fade'
+    })
+
+  }
+
   render() {
     return (
       <div className="Desk">
           <div className='innerDesk'>
             <img className='desk' src="images_website/desk/desk.png" />
             <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
-            <img className='hat' src='images_website/desk/hat.png' />
+            <img className='key' src='images_website/desk/key.png' />
+            <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
             <img className='letter' src='images_website/desk/letter.png' />
           </div>
 

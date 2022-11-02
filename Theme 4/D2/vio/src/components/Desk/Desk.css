@@ -31,8 +31,23 @@
 
 .hat {
     position: absolute;
-    left: 637px;
-    width: 344px;
+    left: 621px;
+    width: 706px;
+    top: -104px;
+    transition: opacity;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.key {
+    position: absolute;
+    left: 814px;
+    top: 54px;
+    width: 74px;
 }
 
 .letter {
