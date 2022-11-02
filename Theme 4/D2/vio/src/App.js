@@ -4,6 +4,7 @@ import ParkScene from './components/ParkScene/ParkScene';
 import Desk from './components/Desk/Desk';
 
 //npx generate-react-cli component MyComponent
+//serve with: http://localhost:3000
 
 function App() {
   
@@ -16,3 +17,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

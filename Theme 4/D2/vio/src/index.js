@@ -10,4 +10,10 @@ root.render(
   </React.StrictMode>
 );
 
+let canvas = document.getElementById('canvas');
+canvas.style.minWidth = '0';
+canvas.style.minHeight = '0';
+canvas.style.width = '0px !important';
+canvas.style.height = '0px !important'; 
+
 

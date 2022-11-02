@@ -9,6 +9,10 @@ body {
   background-size: 250px;
 }
 
+#animation_container {
+  width: 100px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
