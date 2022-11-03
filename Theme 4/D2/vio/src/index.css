@@ -30,3 +30,56 @@ code {
   left: -152px;
   pointer-events: none;
 }
+
+#MCSitting {
+  position: absolute;
+  left: 819px;
+  top: 1014px;
+}
+
+.row {
+  position: absolute;
+  width: 1984px;
+}
+
+#row1 {
+  top: 1391px;
+  left: -45px;
+}
+
+#row2 {
+  top: 1524px;
+  left: 51px;
+}
+
+#row3 {
+  top: 1675px;
+  left: -44px;
+}
+
+#floor {
+  background: rgb(21,27,31);
+  background: linear-gradient(0deg, rgba(21,27,31,0) 0%, rgba(17,21,20,1) 10%, rgba(17,21,20,1) 100%);
+  height: 700px;
+  width: 2261px;
+  display: block;
+  left: -151px;
+  position: absolute;
+  z-index: -1;
+  top: 1515px;
+}
+
+#womanSitting {
+  position: absolute;
+left: 408px;
+top: 1035px;
+}
+
+#stageBottom {
+  position: absolute;
+  width: 2262px;
+  top: 1196px;
+  left: -152px;
+  pointer-events: none;
+  z-index: 3;
+}
