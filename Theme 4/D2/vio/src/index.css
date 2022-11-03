@@ -9,30 +9,24 @@ body {
   background-size: 250px;
 }
 
-#animation_container {
-  width: 100px !important;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-
 #stage {
-  margin-left: 25%;
-  margin-top: 350px;
-}
-
-#stageWrapper {
+  transform: scale(0.5) translateY(250px) translateX(-140px);
   position: relative;
+}
+#animation_container {
+  display: flex;
+  justify-content: center;
 }
 
 #stageOutline {
   position: absolute;
-  margin-left:  25%;
-  top: -223px;
-  left: -156px;
-  width: 2259px;
+  width: 2262px;
+  top: -230px;
+  left: -152px;
   pointer-events: none;
 }
