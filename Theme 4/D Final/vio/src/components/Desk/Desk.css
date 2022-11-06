@@ -1,0 +1,59 @@
+.Desk {
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgb(115,115,115);
+    background: linear-gradient(90deg, rgba(115,115,115,0.7) 0%, rgba(238,238,238,0.7) 60%); 
+    margin-bottom: 100px;
+}
+
+.desk {
+    width: 950px;
+    height: auto;
+}
+
+.innerDesk {
+    position: relative;
+}
+
+.rotated {
+    transform: rotate(15deg);
+}
+
+.comic {
+    position: absolute;
+    left: 316px;
+    top: 33px;
+    width: 344px;
+}
+
+.hat {
+    position: absolute;
+    left: 621px;
+    width: 706px;
+    top: -104px;
+    transition: opacity;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.key {
+    position: absolute;
+    left: 814px;
+    top: 54px;
+    width: 74px;
+}
+
+.letter {
+    position: absolute;
+    left: 52px;
+    top: 28px;
+    width: 344px;
+}
