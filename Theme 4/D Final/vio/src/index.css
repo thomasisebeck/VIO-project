@@ -16,7 +16,6 @@ code {
 
 #stage {
   transform: scale(0.5) translateY(250px) translateX(calc(50% - (960px)));
-  /*transform: scale(0.5) translateY(250px) translateX(-140px);*/
   position: relative;
 }
 #animation_container {
