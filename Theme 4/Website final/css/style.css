@@ -1,0 +1,436 @@
+@font-face {
+font-family: comicFont;
+/*src: url("comicfontRegular.ttf");*/
+}
+
+#mainCharacter {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 64%);
+}
+
+#mainCharacter h2 {
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  color: white;
+}
+
+#backstory {
+  padding-top: 50px;
+}
+
+#backstory div {
+  position: relative;
+}
+
+#backstory p {
+  font-size: 1.6rem;
+  height: 100px;
+  padding-top: 40px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#backstory img:nth-child(2) {
+  width: 160px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+#backstory img:nth-child(3) {
+  width: 160px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 390px;
+}
+
+#backstory img:nth-child(4) {
+  height: 160px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 720px;
+}
+
+#backstory img:nth-child(5) {
+  height: 180px;
+  width: auto;
+  position: absolute;
+  top: 210px;
+  left: 560px;
+}
+
+#backstory img:nth-child(6) {
+  height: 180px;
+  width: auto;
+  position: absolute;
+  top: 180px;
+  left: 250px;
+}
+
+#backstory .background {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#characters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#characters > * , #mainCharacter div #image{
+    outline: 5px solid #777777;
+    outline-offset: -5px;
+}
+
+#eyes img {
+  height: 409px;
+}
+
+#MCGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#characters #characDescr {
+  font-size: 1.6rem;
+}
+
+#characters div, #mainCharacter #image {
+  margin: 20px;
+  background-color: #58585a;
+  color: white;
+}
+
+#mainCharacter #image {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+
+#mainCharacter #image img {
+  width: 100%;
+  padding: 0;
+}
+
+#mainCharacter div img {
+  width: 80%;
+  padding: 10%;
+}
+
+#mainCharacter div .bottom{
+  align-self: end;
+}
+
+#mainCharacter #image {
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+#characters div h2 {
+  margin: 20px;
+  font-size: 2rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+ul li {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding-right: 5px;
+}
+
+#characters div p {
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+#characterIcons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#characterIcons img:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+
+#information b {
+  background-color: #8f8f8f;
+  color: white;
+  padding: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#information b:hover {
+  background-color: #8b3d55;
+}
+
+#characterIcons img {
+  cursor: pointer;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+#characterImage img{
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 500px;
+}
+
+div#characterImage {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#characterIcons img:nth-child(1){width: 70%;}
+
+#characterIcons img:nth-child(2){width: 70%;}
+
+#characterIcons img:nth-child(3){width: 40%;}
+
+
+#eyes img {
+  padding: 10px;
+}
+
+#eyes img:nth-child(2) {
+  transform: scaleX(-1);
+}
+
+#center {
+  display: flex;
+  align-items: center;
+}
+
+#center img {
+  max-height: 327.8px;
+}
+
+#information {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#information img {
+  width: 300px;
+  max-height: 288px;
+  padding: 20px;
+
+}
+
+#information div:nth-child(1) {
+  background: rgb(222,222,222);
+  background: linear-gradient(180deg, rgba(222,222,222,1) 0%, rgba(255,255,255,1) 64%);
+  padding: 10px;
+}
+
+#information p b {
+  cursor: pointer;
+}
+
+h1, h2, h3, p, li {
+    font-family: comicFont;
+    font-weight: lighter;
+}
+
+h1 {
+  color: white;
+  background-color: #680a1c;
+  text-align: center;
+  margin: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 50px;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+
+.visible {
+  display: block !important;
+}
+
+#setting p {
+  font-size: 1.5rem;
+  width: 200px;
+  background-color: rgba(95, 96, 98, 0.9);
+  color: white;
+  padding: 5px;
+  box-shadow: 10px 10px rgba(117, 120, 122, 0.2);
+  border-radius: 7px;
+  position: absolute;
+  display: none;
+  z-index: 100;
+}
+#author img {
+  width: 300px;
+  height: auto;
+}
+
+#author img:nth-child(1), #author img:nth-child(3)  {
+  justify-self: end;
+}
+
+
+
+#author div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  transform: rotate(45deg);
+}
+
+#author div img:nth-child(1):hover {
+  transform: scale(1.08);
+  transform-origin: bottom right;
+}
+
+#author div img:nth-child(2):hover {
+  transform: scale(1.08);
+  transform-origin: bottom left;
+}
+
+#author div img:nth-child(3):hover {
+  transform: scale(1.08);
+  transform-origin: top right;
+}
+
+#author div img:nth-child(4):hover {
+  transform: scale(1.08);
+  transform-origin: top left;
+}
+
+#setting {
+  position: relative;
+}
+
+#setting .background {
+  width: 900px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+#setting #bench {
+  position: absolute;
+  top: 252px;
+  transform: scale(0.5);
+  left: 700px;
+}
+
+#setting #cloud {
+  width: 900px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+#setting #sun {
+  width: 900px;
+  position: absolute;
+  top: 80px;
+}
+
+#setting {
+  height: 1230px;
+}
+
+#stats {
+  width: 900px;
+  height: 754.5px;
+}
+
+#stats img:nth-child(1) {
+  position: relative;
+  left: 200px;
+  top: -100px;
+  z-index: 2;
+}
+
+#stats img:nth-child(2) {
+  position: relative;
+  left: 130px;
+  top: 55px;
+  z-index: 1;
+}
+
+#stats img:nth-child(3) {
+  position: relative;
+  left: -500px;
+  top: 261px;
+  z-index: 1;
+}
+
+#stats img:nth-child(4) {
+  position: relative;
+  left: 530px;
+  top: -330px;
+  z-index: 1;
+}
+
+#stats img:nth-child(5) {
+  position: relative;
+  left: 300px;
+  top: 35px;
+}
+
+#bookstore {
+  position: relative;
+  transform: scale(0.8);
+  top: -1010px;
+  left: 110px;
+}
+
+#mcHouse {
+  position: relative;
+  top: -1880px;
+  right: 160px;
+  transform: scale(0.4);
+}
+
+#authorArticle p {
+  text-align: center;
+  font-size: 3rem;
+  margin: 50px;
+  margin-bottom: 10px;
+  height: 62px;
+}

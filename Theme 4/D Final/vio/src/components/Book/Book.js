@@ -1,6 +1,7 @@
 import React from 'react';
 import './Book.css';
-import Panel, { Frame } from '../Frame/Frame';
+import Frame from '../Frame/Frame';
+import ChangingImage from '../ChangingImage/ChangingImage';
 
 export class Book extends React.Component {
 
@@ -37,6 +38,8 @@ export class Book extends React.Component {
 
               let b1 = document.querySelector('#p1');
               b1.style.zIndex = '-1';
+
+              
 
               setTimeout(() => {
                 document.querySelector('#f4p').classList.remove('hidden');
@@ -148,6 +151,9 @@ export class Book extends React.Component {
           <div className="front hidden" id="f3p">
             <div id="f3" className="front-content">
               <img className="panel" src="images_website/comic/5.jpg" alt=""/>
+
+              <Frame staticImage="panel4/p4f4.png" movingImage="panel4/p4f4.gif" sound="p4f4" left="283px" top="87px" width="133px"/>
+              <Frame staticImage="panel4/p4f9.png" movingImage="panel4/p4f9.gif" sound="p4f9" left="223px" top="362px" width="194px"/>
             </div>
           </div>
 
@@ -163,14 +169,19 @@ export class Book extends React.Component {
 
             <div className="front"  id="f2p">
               <div id="f2" className="front-content">
-                
                 <img className="panel" src="images_website/comic/3.jpg" alt=""/>
+
+                <Frame staticImage="panel2/p2f3.png" movingImage="panel2/p2f3.gif" sound="p2f3" left="9px" top="200px" width="202px"/>
+                <Frame staticImage="panel2/p2f6.png" movingImage="panel2/p2f6.gif" sound="p2f6" left="223px" top="428px" width="193px"/>
               </div>
             </div>
 
             <div className="back"  id="b2p">
               <div id="b2" className="back-content">
                 <img className="panel" src="images_website/comic/4.jpg" alt=""/>
+
+                <Frame staticImage="panel3/p3f1.png" movingImage="panel3/p3f1.gif" sound="p3f1" left="256px" top="6px" width="155px"/>
+                <Frame staticImage="panel3/p3f9.png" movingImage="panel3/p3f9.gif" sound="p3f9" left="5px" top="498px" width="212px"/>
               </div>
             </div>
 
@@ -181,17 +192,17 @@ export class Book extends React.Component {
             <div className="front"  id="f1p">
               <div id="f1" className="front-content">
                 <img className="panel" src="images_website/comic/1.jpg" alt=""/>
-
-                <div id="f1-panels">
-                  <Panel static="images_website/comic/panel1/p1f1.png" moving="images_website/comic/panel1/p1f1.gif" left="100px" top="100px"/>
-                </div>
               </div>
             </div>
 
             <div className="back" id="b1p">
               <div id="b1" className="back-content">
                 <img className="panel" src="images_website/comic/2.jpg" alt=""/>
-              </div>
+
+                <Frame staticImage="panel1/p1f1.png" movingImage="panel1/p1f1.gif" sound="p1f1" left="240px" top="7px" width="175px"/>
+                <Frame staticImage="panel1/p1f2.png" movingImage="panel1/p1f2.gif" sound="p1f2" left="7px" top="9px" width="226px"/>
+                <Frame staticImage="panel1/p1f3.png" movingImage="panel1/p1f3.gif" sound="p1f3" left="7px" top="118px" width="226px"/>
+              </div>                                                                      
             </div>
 
           </div>

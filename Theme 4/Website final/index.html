@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More about the comic</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>More about the comic</h1>
+    <article id="mainCharacter">
+      <h2>The heroine</h2>
+      <div id="MCGrid">
+        <div id="image">
+          <img src='images/MCProfile.png'/>
+        </div>
+        <img onmouseover="changeImage(this, 'images/swirl.gif'); changeCharaterLooking(1);" onmouseout="changeImage(this, 'images/swirl.png'); changeCharaterLooking(0);" src='images/swirl.png' />
+        <img onmouseover="changeImage(this, 'images/lightGlowing.png'); changeCharaterLooking(2);" onmouseout="changeImage(this, 'images/lightbulb.png'); changeCharaterLooking(0);" src='images/lightbulb.png' />
+        <img onmouseover="changeImage(this, 'images/butterflies.gif'); changeCharaterLooking(3);" onmouseout="changeImage(this, 'images/butterflies.png'); changeCharaterLooking(0);" class='bottom' src='images/butterflies.png' />
+        <img onmouseover="changeImage(this, 'images/ying.gif'); changeCharaterLooking(4);" onmouseout="changeImage(this, 'images/ying.png'); changeCharaterLooking(0);" class='bottom' src='images/ying.png' />
+      </div>
+    </article>
+
+    <h2>Side Characters</h2>
+    <article id="characters">
+      <div>
+        <h2>The antagonist</h2>
+        <div id="characterImage"><img src='images/cactusProfile.png'/></div>
+      </div>
+      <div>
+        <h2>Description</h2>
+          <ul id="characDescr">
+            <li>A menacing succlent with nefarious motives</li>
+            <li>Plant stalker!</li>
+            <li>Follows Stacey around and prowls in the shadows</li>
+          </ul>
+      </div>
+    </article>
+
+    <article id="characterIcons">
+      <img class="dropIn" src="images/cactus.svg" onclick="changeIconImage(2)"/>
+      <img class="dropIn"  src="images/boy.svg" onclick="changeIconImage(3)"/>
+      <img class="dropIn"  src="images/dress.svg" onclick="changeIconImage(4)"/>
+    </article>
+
+    <article id="eyes">
+      <h2>Can you trust your eyes?</h2>
+      <img src="images/eye_normal.svg"/>
+      <img src="images/dog.svg"/>
+    </article>
+
+    <article>
+      <h2>Important character information</h2>
+      <div  id="information">
+        <div>
+          <p onclick="changeInfoImage(1)"><b>Name:</b> Stacey</p>
+          <p onclick="changeInfoImage(2)"><b>Job:</b> Therapist</p>
+          <p onclick="changeInfoImage(3)"><b>Core Desire:</b> To love someone fully and be accepted.</p>
+          <p onclick="changeInfoImage(4)"><b>Core Motivation:</b> To become competent in what she does.</p>
+          <p onclick="changeInfoImage(5)"><b>Greatest Fear:</b> To never find a suitible companion.</p>
+          <p onclick="changeInfoImage(6)"><b>Greatest Accomplishment:</b> Winning a spelling B.</p>
+        </div>
+        <div id="center">
+          <img src="images/name.svg"/>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <h2>So What are the stats</h2>
+      <div  id="stats">
+        <img src="images/blocks/confidence.png"/>
+        <img src="images/blocks/dexterity.png"/>
+        <img src="images/blocks/intelligence.png"/>
+        <img src="images/blocks/luck.png"/>
+        <img src="images/blocks/peopleSkills.png"/>
+      </div>
+    </article>
+
+    <article id="setting">
+      <h2>And what about the setting?</h2>
+
+      <p>Your treasured apartment</p>
+      <p>Go here if you're in a contemplative mood.</p>
+      <p>Your treasured apartment</p>
+      <p>Better get home before the sun sets</p>
+      <p>One can never have enough books!</p>
+      <p>5</p>
+
+
+      <img class="background" src="images/background.png"/>
+
+      <img onmouseover="glowAndToolTip(this, 'images/benchGlowing.png', 1)"
+           onmouseout="removeGlowAndToolTip(this, 'images/bench.png', 1)"
+      id="bench" src="images/bench.png"/>
+
+      <img onmouseover="glowAndToolTip(this, 'images/sunGlowing.png', 3)"
+           onmouseout="removeGlowAndToolTip(this, 'images/sun.png', 3)"
+      id="sun" src="images/sun.png"/>
+
+
+
+      <img onmouseover="glowAndToolTip(this, 'images/bookstoreGlowing.png', 4)"
+           onmouseout="removeGlowAndToolTip(this, 'images/bookstore.png', 4)"
+      id="bookstore" src="images/bookstore.png"/>
+
+
+      <img onmouseover="glowAndToolTip(this, 'images/houseGlowing.png', 2)"
+           onmouseout="removeGlowAndToolTip(this, 'images/house.png', 2)"
+       id="mcHouse"  src="images/house.png"/>
+
+
+    </article>
+
+    <article id="backstory">
+      <h2>Character backstory</h2>
+
+
+      <div class="images">
+        <img class="background" src="images/backstory.png"/>
+
+        <img src="images/clock.png" onmouseover="changeImageAndBackPara(this, 'images/clock.gif',  'During a strange time...');" onmouseout="changeImageAndRemoveBackPara(this, 'images/clock.png');"/>
+        <img src="images/bang.png" onmouseover="changeImageAndBackPara(this, 'images/bang.gif', 'A hero was born from the clutches of doom!');" onmouseout="changeImageAndRemoveBackPara(this, 'images/bang.png');"/>
+        <img src="images/eye.png" onmouseover="changeImageAndBackPara(this, 'images/eye.gif', 'So misunderstood, that not even she can comprehend her power');" onmouseout="changeImageAndRemoveBackPara(this, 'images/eye.png');"/>
+        <img src="images/dress.png" onmouseover="changeImageAndBackPara(this, 'images/dress.gif',  'All she knows is that her life will be at peace only when she finds someone to share it with.');" onmouseout="changeImageAndRemoveBackPara(this, 'images/dress.png');"/>
+        <img src="images/cigarette.png" onmouseover="changeImageAndBackPara(this, 'images/cigarette.gif',  'But what sacrifices is she willing to make along the way?');" onmouseout="changeImageAndRemoveBackPara(this, 'images/cigarette.png');"/>
+      </div>
+
+      <p id="backstory-para">
+      </p>
+
+
+    </article>
+
+    <article id="authorArticle">
+      <h2>About the author</h2>
+      <div  id="author">
+        <div>
+          <img src="images/author_camera.png"
+            onmouseover="changeAuthorPara('Photography')"
+            onmouseout="changeAuthorPara('')"/>
+          <img src="images/author_plant.png"
+            onmouseover="changeAuthorPara('Nature')"
+            onmouseout="changeAuthorPara('')"/>
+          <img src="images/author_caribena.png"
+            onmouseover="changeAuthorPara('Climbing')"
+            onmouseout="changeAuthorPara('')"/>
+          <img src="images/author_pen.png"
+            onmouseover="changeAuthorPara('Writing')"
+            onmouseout="changeAuthorPara('')" />
+        </div>
+      </div>
+
+      <p> </p>
+    </article>
+
+	   <script src="script.js"></script>
+  </body>
+</html>
