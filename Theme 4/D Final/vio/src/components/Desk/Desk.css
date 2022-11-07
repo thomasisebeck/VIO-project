@@ -57,3 +57,25 @@
     top: 28px;
     width: 344px;
 }
+
+.AuthorCircleAndLetter {
+    display: flex;
+    position: absolute;
+}
+
+#background {
+    position: relative;
+    width: 25vw;
+    left: 25vw;
+}
+
+#authorCircleDiv {
+    display: flex;
+    align-items: center;
+}
+
+.letterOpened {
+    position: relative;
+    width: 500px;
+    left: -10vw;
+}

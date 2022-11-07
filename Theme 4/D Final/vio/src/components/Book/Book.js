@@ -108,24 +108,6 @@ export class Book extends React.Component {
     }
   }
 
-  /*
-
-  render() {
-
-    const myStyle = {
-      left: this.props.left, 
-      top: this.props.top, 
-      position: absolute
-    }
-
-    return (
-      <img className="Panel" style={myStyle} src={this.props.source}></img>
-    )
-
-  
-
-  */
-
   render() {
 
     return (

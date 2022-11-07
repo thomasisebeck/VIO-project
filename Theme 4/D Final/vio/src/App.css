@@ -2,3 +2,9 @@
   background-image: url("images_website/background.jpg");
   background-size: 150px;
 }
+
+#outline {
+  outline: 10000px solid rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
