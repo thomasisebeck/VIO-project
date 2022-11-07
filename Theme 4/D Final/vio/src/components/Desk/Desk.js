@@ -34,6 +34,13 @@ export class  Desk extends React.Component {
 
   }
 
+  showStage() {
+    window.scrollTo({
+      top: 1000,
+      behavior: 'smooth',
+    })
+  }
+
   authorCircle() {
     this.setState({
       showComic: false,
@@ -53,7 +60,7 @@ export class  Desk extends React.Component {
           <div className='innerDesk'>
             <img className='desk' src="images_website/desk/desk.png" />
             <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
-            <img className='key' src='images_website/desk/key.png' />
+            <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
             <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
             <img className='letter'onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
           </div>
