@@ -27,7 +27,7 @@ export class Book extends React.Component {
               }, 500); 
               
               this.setState({
-                currentLocation: this.state.currentLocation + 1
+                currentLocation: 2
               })
               
               break;
@@ -51,7 +51,7 @@ export class Book extends React.Component {
               }, 1000); 
 
               this.setState({
-                currentLocation: this.state.currentLocation + 1
+                currentLocation: 3
               })
 
               break;
@@ -82,8 +82,9 @@ export class Book extends React.Component {
           document.querySelector('#b2p').classList.remove('hidden');
           document.querySelector('#p3').classList.add('flipBack');
           document.querySelector('#p3').classList.remove('flipped');
+
           this.setState({
-            currentLocation: this.state.currentLocation - 1
+            currentLocation: 2
           })
           break;
         case 2: 
@@ -99,7 +100,7 @@ export class Book extends React.Component {
   
 
           this.setState({
-            currentLocation: this.state.currentLocation + 1
+            currentLocation: 1
           })
           break;
           
