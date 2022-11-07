@@ -64,6 +64,7 @@ export class  Desk extends React.Component {
                 </div>
               </div>
               
+              <div className='DarkBackground' onClick={() => { this.setState({ showAuthorCircle: false })}}></div>
             </React.Fragment>
           }
       </div>

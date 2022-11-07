@@ -19,6 +19,8 @@
 #bottomText {
     top: 499px;
     position: absolute;
+    width: 300px;
+    text-align: center;
     font-size: 1.5rem;
 }
 
