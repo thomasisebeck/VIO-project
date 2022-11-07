@@ -41,6 +41,12 @@ export class  Desk extends React.Component {
     })
   }
 
+  hideBook = () => {
+    this.setState({
+      showComic: false
+    })
+  }
+
   render() {
     return (
       <div className="Desk">
@@ -53,7 +59,7 @@ export class  Desk extends React.Component {
           </div>
 
           {this.state.showComic && 
-              <Book/>
+              <Book hideBook={this.hideBook}/>
           }
           {this.state.showAuthorCircle && 
             <React.Fragment>

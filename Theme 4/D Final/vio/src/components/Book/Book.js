@@ -10,7 +10,8 @@ export class Book extends React.Component {
     this.state = {
       currentLocation: 1, 
       numPapers: 3, 
-      maxLocation: 4
+      maxLocation: 4, 
+      end: false
     }
 
   }
@@ -27,7 +28,8 @@ export class Book extends React.Component {
               }, 500); 
               
               this.setState({
-                currentLocation: 2
+                currentLocation: 2, 
+                end: false
               })
               
               break;
@@ -51,8 +53,11 @@ export class Book extends React.Component {
               }, 1000); 
 
               this.setState({
-                currentLocation: 3
+                currentLocation: 3,
+                end: false
               })
+
+              document.querySelector('#next').setAttribute('src', 'images_website/comic/arrow.png');
 
               break;
           case 3:
@@ -68,6 +73,10 @@ export class Book extends React.Component {
               setTimeout(() => {
                 document.querySelector('#b2p').classList.add('hidden');
               }, 1000); 
+
+              this.setState({
+                end: true
+              })
 
           default: 
               
@@ -198,7 +207,12 @@ export class Book extends React.Component {
 
         </div>
 
-        <img id="next" onClick={() => this.nextPage()} src="images_website/comic/arrow.png" alt=""/>
+        <img id="next" onClick={() => {
+          if (!this.state.end)
+            this.nextPage()
+          else 
+            this.props.hideBook()
+        }} src={this.state.end ? "images_website/comic/exit.png" : "images_website/comic/arrow.png" } alt=""/>
 
       </div>
     )
