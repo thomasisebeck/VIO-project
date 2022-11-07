@@ -124,6 +124,9 @@ export class Book extends React.Component {
           <div className="front hidden" id="f4p">
             <div id="f4" className="front-content">
               <img className="panel" src="images_website/comic/7.jpg" alt=""/>
+
+              <Frame staticImage="panel6/p6f4.png" movingImage="panel6/p6f4.gif" sound="p6f4" left="217px" top="144px" width="200px"/>
+              <Frame staticImage="panel6/p6f11.png" movingImage="panel6/p6f11.gif" sound="p6f11" left="308px" top="428px" width="110px"/>
             </div>
           </div>
 
@@ -143,6 +146,9 @@ export class Book extends React.Component {
           <div className="back" id="b3p">
             <div id="b3" className="back-content">
               <img className="panel" src="images_website/comic/6.jpg" alt=""/>
+
+              <Frame staticImage="panel5/p5f4.png" movingImage="panel5/p5f4.gif" sound="p5f4" left="122px" top="135px" width="143px"/>
+              <Frame staticImage="panel5/p5f8.png" movingImage="panel5/p5f8.gif" sound="p5f8" left="263px" top="416px" width="153px"/>
             </div>
           </div>
 

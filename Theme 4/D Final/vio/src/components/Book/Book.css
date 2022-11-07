@@ -111,3 +111,10 @@
 .hidden {
     display: none;
 }
+
+.position {
+    left: "122px" !important;
+    top: "135px" !important;
+    width: "143px" !important;
+    position: absolute;
+}
