@@ -240,9 +240,9 @@ export class Book extends React.Component {
 
             <div className="back" id="b1p">
               <div id="b1" className="back-content">
-                <img className="panel" src="images_website/comic/2.jpg" alt=""/>
+                <img className="panel" src="images_website/comic/2.jpg" alt=""/> 
 
-                <Frame staticImage="panel1/p1f1.png" movingImage="panel1/p1f1.gif" sound="p1f1" left="57%" top="1.3%" width="41%"/>
+                <Frame staticImage="panel1/p1f1.png" movingImage="panel1/p1f1.gif" sound="p1f1" left="57%" top="1%" width="41%"/>
                 <Frame staticImage="panel1/p1f2.png" movingImage="panel1/p1f2.gif" sound="p1f2" left="1.7%" top="1.5%" width="53.5%"/>
                 <Frame staticImage="panel1/p1f3.png" movingImage="panel1/p1f3.gif" sound="p1f3" left="1.7%" top="19.7%" width="53.5%"/>
               </div>                                                                      
