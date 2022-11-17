@@ -1,0 +1,120 @@
+#prev,
+#next {
+    cursor: pointer;
+    width: 80px;
+}
+
+.arrowContainer {
+    position: relative;
+    top: -205px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#prev {
+    transform: rotate(180deg) translateX(300px);
+}
+
+#next {
+    transform: translateX(300px) translateY(-200px);
+}
+
+/* paper flip effect */
+.flipped .front,
+.flipped .back {
+    transition: transform 1s;
+    transform: rotateY(-180deg);
+}
+
+.flipBack .front, 
+.flipBack .back {
+    transition: transform 1s;
+    transform: rotateY(180);
+}
+
+.Book {
+    height: 60vh;
+    padding-top: 5%;
+    
+    height: 0;
+    width: calc(((2 * (500px / 1.414)) + (48px * 2))*0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1000px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 400px;
+    position: absolute;
+}
+
+
+.book {
+    position: relative;
+    height: 70vh;
+    width: 700px;
+    margin: 10px;
+    top: -150px;
+}
+
+.flipped {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(210px);
+    }
+}
+
+.shiftRight {
+    animation-name: shift;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5;
+    border-radius: 5px;
+}
+
+.back img {
+    transform: scaleX(-1);
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.position {
+    left: "122px" !important;
+    top: "135px" !important;
+    width: "143px" !important;
+    position: absolute;
+}
