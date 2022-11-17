@@ -1,18 +1,19 @@
 .Desk {
     margin: 0 auto;
     height: 100vh;
-    padding-top: 200px;
     position: relative;
     display: flex;
     justify-content: center;
     background: rgb(115,115,115);
     background: linear-gradient(90deg, rgba(115,115,115,0.7) 0%, rgba(238,238,238,0.7) 60%); 
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .desk {
-    width: 950px;
+    width: 1550px;
     height: auto;
+    overflow: hidden;
 }
 
 .innerDesk {
@@ -25,19 +26,26 @@
 
 .comic {
     position: absolute;
-    left: 316px;
-    top: 33px;
-    width: 344px;
+    left: 41.5%;
+    top: 33%;
+    width: 15%;
 }
 
 .hat {
     position: absolute;
-    left: 621px;
-    width: 706px;
-    top: -104px;
+    left: 55%;
+    width: 35%;
+    top: 17%;
     transition: opacity;
     transition-delay: 0.3s;
     transition-duration: 1s;
+}
+
+.letter {
+    position: absolute;
+    left: 28%;
+    top: 35%;
+    width: 15%;
 }
 
 .fade {
@@ -46,17 +54,12 @@
 
 .key {
     position: absolute;
-    left: 814px;
-    top: 54px;
-    width: 85px;
+    left: 64%;
+    top: 35%;
+    width: 3%;
 }
 
-.letter {
-    position: absolute;
-    left: 52px;
-    top: 28px;
-    width: 344px;
-}
+
 
 .AuthorCircleAndLetter {
     display: flex;
