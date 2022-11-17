@@ -5,6 +5,11 @@
     width: 80px;
 }
 
+#prev {
+    z-index: 2;
+}
+
+
 .arrowContainer {
     position: relative;
     top: -205px;
@@ -14,11 +19,11 @@
 }
 
 #prev {
-    transform: rotate(180deg) translateX(300px);
+    transform: rotate(180deg) translateX(300px) translateY(450px);
 }
 
 #next {
-    transform: translateX(300px) translateY(-200px);
+    transform: translateX(300px) translateY(-650px);
 }
 
 /* paper flip effect */

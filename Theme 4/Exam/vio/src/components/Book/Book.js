@@ -30,11 +30,11 @@ export class Book extends React.Component {
     //calc(120vh/1.41)
 
     const OFFSET_X = 200;
-    const OFFSET_Y = 440;
+    const OFFSET_Y = 800;
 
     this.setState({
       x: ((width/2) - (width*1.2/1.41/2) - (event.clientX*0.3) + OFFSET_X) + "px",
-      y: ((height/2) - (event.clientY*0.4) - OFFSET_Y) + "px",
+      y: ((height/2) - (event.clientY*0.5) - OFFSET_Y) + "px",
     })
   }
 
@@ -147,6 +147,7 @@ export class Book extends React.Component {
         onMouseMove={this.handleMouseMove}
         style={{
             outline: "1000px solid rgba(0, 0, 0, 0.5)",
+            border: "500px solid rgba(0,0,0,0)",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             margin: "0 auto",
             position: "absolute",
@@ -241,9 +242,9 @@ export class Book extends React.Component {
               <div id="b1" className="back-content">
                 <img className="panel" src="images_website/comic/2.jpg" alt=""/>
 
-                <Frame staticImage="panel1/p1f1.png" movingImage="panel1/p1f1.gif" sound="p1f1" left="240px" top="7px" width="175px"/>
-                <Frame staticImage="panel1/p1f2.png" movingImage="panel1/p1f2.gif" sound="p1f2" left="7px" top="9px" width="226px"/>
-                <Frame staticImage="panel1/p1f3.png" movingImage="panel1/p1f3.gif" sound="p1f3" left="7px" top="118px" width="226px"/>
+                <Frame staticImage="panel1/p1f1.png" movingImage="panel1/p1f1.gif" sound="p1f1" left="57%" top="1.3%" width="41%"/>
+                <Frame staticImage="panel1/p1f2.png" movingImage="panel1/p1f2.gif" sound="p1f2" left="1.7%" top="1.5%" width="53.5%"/>
+                <Frame staticImage="panel1/p1f3.png" movingImage="panel1/p1f3.gif" sound="p1f3" left="1.7%" top="19.7%" width="53.5%"/>
               </div>                                                                      
             </div>
 
