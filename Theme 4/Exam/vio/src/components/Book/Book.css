@@ -1,3 +1,4 @@
+
 #prev,
 #next {
     cursor: pointer;
@@ -31,31 +32,6 @@
 .flipBack .back {
     transition: transform 1s;
     transform: rotateY(180);
-}
-
-.Book {
-    height: 60vh;
-    padding-top: 5%;
-    
-    height: 0;
-    width: calc(((2 * (500px / 1.414)) + (48px * 2))*0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 1000px solid rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-    margin-top: 400px;
-    position: absolute;
-}
-
-
-.book {
-    position: relative;
-    height: 70vh;
-    width: 700px;
-    margin: 10px;
-    top: -150px;
 }
 
 .flipped {

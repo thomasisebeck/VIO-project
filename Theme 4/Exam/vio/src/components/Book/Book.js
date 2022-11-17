@@ -13,7 +13,29 @@ export class Book extends React.Component {
       maxLocation: 4, 
       end: false
     }
+  }
 
+  handleMouseMove = event => {
+    console.log(event.clientX);
+    console.log(event.clientY);
+
+    let width = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+
+    let height = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+
+    //calc(120vh/1.41)
+
+    const OFFSET_X = 200;
+    const OFFSET_Y = 440;
+
+    this.setState({
+      x: ((width/2) - (width*1.2/1.41/2) - (event.clientX*0.3) + OFFSET_X) + "px",
+      y: ((height/2) - (event.clientY*0.4) - OFFSET_Y) + "px",
+    })
   }
 
   nextPage() {
@@ -117,16 +139,38 @@ export class Book extends React.Component {
     }
   }
 
+
   render() {
 
     return (
-      <div className="Book">
+      <div className="Book" 
+        onMouseMove={this.handleMouseMove}
+        style={{
+            outline: "1000px solid rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            margin: "0 auto",
+            position: "absolute",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+        }}
+      >
 
         <div className='arrowContainer'>
           <img id="prev" onClick={() => this.prevPage()} src="images_website/comic/arrow.png" alt=""/>
         </div>
 
-        <div id="book" className="book">
+        <div id="book" 
+          style={{
+            position: "relative",
+            width: "calc(120vh/1.41)",
+            height: "120vh",
+            margin: "10px",
+            top: this.state.y,
+            left: this.state.x
+          }}
+        className="book">
 
         <div id="p4" className="paper">
 
