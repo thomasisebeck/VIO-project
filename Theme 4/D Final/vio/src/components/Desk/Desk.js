@@ -11,7 +11,8 @@ export class  Desk extends React.Component {
     this.state = {
       bookOpen: false, 
       hat: 'images_website/desk/hat.png', 
-      hatClass: 'hat'
+      hatClass: 'hat', 
+      showHat: true
     }
   }
 
@@ -32,11 +33,17 @@ export class  Desk extends React.Component {
       hatClass: 'hat fade'
     })
 
+    setTimeout(() => {
+      this.setState({
+        showHat: false
+      })
+    }, 1000)
+
   }
 
   showStage() {
     window.scrollTo({
-      top: 1000,
+      top: 2000,
       behavior: 'smooth',
     })
   }
@@ -61,7 +68,9 @@ export class  Desk extends React.Component {
             <img className='desk' src="images_website/desk/desk.png" />
             <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
             <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
-            <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
+            {this.state.showHat &&
+              <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
+            }
             <img className='letter'onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
           </div>
 
