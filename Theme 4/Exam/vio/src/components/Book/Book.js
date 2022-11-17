@@ -34,7 +34,7 @@ export class Book extends React.Component {
 
     this.setState({
       x: ((width/2) - (width*1.2/1.41/2) - (event.clientX*0.3) + OFFSET_X) + "px",
-      y: ((height/2) - (event.clientY*0.5) - OFFSET_Y) + "px",
+      y: ((height/2) - (event.clientY*0.6) - OFFSET_Y) + "px",
     })
   }
 
@@ -166,7 +166,7 @@ export class Book extends React.Component {
           style={{
             position: "relative",
             width: "calc(120vh/1.41)",
-            height: "120vh",
+            height: "150vh",
             margin: "10px",
             top: this.state.y,
             left: this.state.x
@@ -214,8 +214,8 @@ export class Book extends React.Component {
               <div id="f2" className="front-content">
                 <img className="panel" src="images_website/comic/3.jpg" alt=""/>
 
-                <Frame staticImage="panel2/p2f3.png" movingImage="panel2/p2f3.gif" sound="p2f3" left="9px" top="200px" width="202px"/>
-                <Frame staticImage="panel2/p2f6.png" movingImage="panel2/p2f6.gif" sound="p2f6" left="223px" top="428px" width="193px"/>
+                <Frame staticImage="panel2/p2f3.png" movingImage="panel2/p2f3.gif" sound="p2f3" left="2%" top="33.5%" width="48%"/>
+                <Frame staticImage="panel2/p2f6.png" movingImage="panel2/p2f6.gif" sound="p2f6" left="52.5%" top="72%" width="45.5%"/>
               </div>
             </div>
 
@@ -223,8 +223,8 @@ export class Book extends React.Component {
               <div id="b2" className="back-content">
                 <img className="panel" src="images_website/comic/4.jpg" alt=""/>
 
-                <Frame staticImage="panel3/p3f1.png" movingImage="panel3/p3f1.gif" sound="p3f1" left="256px" top="6px" width="155px"/>
-                <Frame staticImage="panel3/p3f9.png" movingImage="panel3/p3f9.gif" sound="p3f9" left="5px" top="498px" width="212px"/>
+                <Frame staticImage="panel3/p3f1.png" movingImage="panel3/p3f1.gif" sound="p3f1" left="60%" top="1.2%" width="37%"/>
+                <Frame staticImage="panel3/p3f9.png" movingImage="panel3/p3f9.gif" sound="p3f9" left="1.4%" top="83.5%" width="50%"/>
               </div>
             </div>
 

@@ -3,6 +3,7 @@
     overflow: hidden;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(202,202,202,1) 22%, rgba(255,255,255,1) 48%); 
+    z-index: -1;
 }
 
 .ParkScene img {
