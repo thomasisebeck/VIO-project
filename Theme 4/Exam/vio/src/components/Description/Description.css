@@ -16,7 +16,91 @@
     align-items: center;
 }
 
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    12.5% {
+        transform: translateX(3px);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    37.5% {
+        transform: translateX(7px);
+    }
+    50% {
+        transform: translateX(-7px);
+    }
+    62.5% {
+        transform: translateX(9px);
+    }
+    75% {
+        transform: translateX(-9px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shakereverse {
+    0% {
+        transform: translateX(0);
+    }
+    12.5% {
+        transform: translateX(-3px);
+    }
+    25% {
+        transform: translateX(3px);
+    }
+    37.5% {
+        transform: translateX(-7px);
+    }
+    50% {
+        transform: translateX(7px);
+    }
+    62.5% {
+        transform: translateX(-9px);
+    }
+    75% {
+        transform: translateX(9px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .imageContainer img {
     width: 80%;
     padding: 10%;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.imageContainer img:nth-child(1) {
+    animation-name: shakereverse;
+}
+
+.pulse {
+    animation-duration: 2s !important;
+    animation-name: pulse !important; 
 }
