@@ -4,15 +4,18 @@ import './Description.css';
 
 export class  Description extends React.Component {
 
-  comicPara = 'The Comic'; 
-  trailerPara = 'The trailer showcases the game ';
+  comicPara1 = 'A story is told of a deeply troubled heroine searching for love.';
+  comicPara2 = 'The book was made interactive adding sound and animation throughout the story.';
+  trailerPara1 = 'The trailer showcases the game in an interactive and playful way.';
+  trailerPara2 = 'It is a subtle introduction to the protagonist and antagonist of the story, but also a test of dexterity.';
 
   constructor(props) {
     super(props);
     this.state = {
       img: 'images_website/descriptions/cactusRight.gif',
       heading: 'The Trailer', 
-      para: this.trailerPara, 
+      para1: this.trailerPara1, 
+      para2: this.trailerPara2,
       play: false,
       comic: false
     }
@@ -28,12 +31,14 @@ export class  Description extends React.Component {
     if (trailer) 
       this.setState({
         heading: 'The Trailer', 
-        para: this.trailerPara
+        para1: this.trailerPara1, 
+        para2: this.trailerPara2
       })
     else 
       this.setState({
         heading: 'The Comic', 
-        para: this.comicPara
+        para1: this.comicPara1,
+        para2: this.comicPara2
       })
 
     console.log('comic para');
@@ -42,7 +47,7 @@ export class  Description extends React.Component {
   render() {
     return (
       <div className="Description">
-        <h1>So what's in the box?</h1>
+        <h1>So what's it all about?</h1>
         <div id='descriptions'>
           <div className='imageContainer'>
             <img 
@@ -62,7 +67,10 @@ export class  Description extends React.Component {
             <div>
               <h2>{this.state.heading}</h2>
               <div className='descrItems'>
-                <p>{this.state.para}</p>
+                <div className='paragraphs'>
+                  <p>{this.state.para1}</p>
+                  <p>{this.state.para2}</p>
+                </div>
               </div>
             </div>
           </div>

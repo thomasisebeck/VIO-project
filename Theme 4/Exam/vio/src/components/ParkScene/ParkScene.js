@@ -69,15 +69,16 @@ export class  ParkScene extends React.Component {
   }
 
   scrollToComic() {
+    console.log(document.getElementById('Desk'));
     window.scrollTo({
-      top: 1100,
+      top: document.getElementById('Desk').offsetTop,
       behavior: 'smooth',
     });
   }
 
   scrollToTrailer() {
     window.scrollTo({
-      top: 2600,
+      top: document.getElementById('stageWrapper').offsetTop + 250,
       behavior: 'smooth',
     });
   }

@@ -63,7 +63,7 @@ export class  Desk extends React.Component {
 
   render() {
     return (
-      <div className="Desk">
+      <div className="Desk" id="Desk">
           <div className='innerDesk'>
             <img className='desk' src="images_website/desk/room.svg"></img>
             <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />

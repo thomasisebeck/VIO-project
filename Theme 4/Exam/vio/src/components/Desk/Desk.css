@@ -76,6 +76,7 @@
 .AuthorCircleAndLetter {
     display: flex;
     position: absolute;
+    margin-top: 200px;
 }
 
 #background {

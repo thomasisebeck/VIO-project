@@ -1,7 +1,7 @@
 .Description {
     width: 100%;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 154px;
 }
 
 .descrContainer {
@@ -13,7 +13,7 @@ h1, h2, p {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.343);
     margin-left: 30px;
@@ -21,17 +21,19 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
+    padding-left: 50px;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #descriptions {
     display: grid;
     grid-template-columns: 200px 1fr;
+    padding-left: 50px;
 }
 .bottomBar {
     width: 100%;
@@ -39,7 +41,8 @@ p {
 
 .descrItems {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 150px;
+    padding-left: 50px;
 }
 
 .imageContainer {
@@ -120,6 +123,11 @@ p {
     }
 }
 
+.paragraphs {
+    height: 300px;
+    overflow-y: scroll;
+}
+
 .imageContainer img {
     width: 80%;
     padding: 10%;
@@ -135,4 +143,16 @@ p {
 .pulse {
     animation-duration: 2s !important;
     animation-name: pulse !important; 
+}
+
+@media only screen and (min-width: 1000px) {
+    .descrItems {
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .descrItems {
+        padding-right: 40%;
+    }
 }

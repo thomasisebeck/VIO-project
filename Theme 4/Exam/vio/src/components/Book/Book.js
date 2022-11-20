@@ -143,7 +143,7 @@ export class Book extends React.Component {
   render() {
 
     return (
-      <div className="Book" 
+      <div className="Book"
         onMouseMove={this.handleMouseMove}
         style={{
             outline: "1000px solid rgba(0, 0, 0, 0.5)",
