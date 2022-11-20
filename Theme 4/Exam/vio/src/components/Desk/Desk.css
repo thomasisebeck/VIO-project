@@ -11,7 +11,7 @@
 }
 
 .desk {
-    width: 1550px;
+    width: 3500px;
     height: auto;
     overflow-x: hidden;
 }
@@ -59,8 +59,22 @@
     width: 48px;
 }
 
+#logos {
+    position: relative;
+    top: 565px;
+    left: -135px;
+    z-index: 10;
+    background-color: #f9fafa;
+    height: 66px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    cursor: pointer;
+}
 
-
+#logos img {
+    width: 50px;
+    padding: 5px;
+}
 .AuthorCircleAndLetter {
     display: flex;
     position: absolute;

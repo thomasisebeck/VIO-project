@@ -81,6 +81,10 @@ export class  Desk extends React.Component {
             <React.Fragment>
               <div className='AuthorCircleAndLetter'>
                 <img className='letterOpened' src='images_website/desk/letter_opened.png' />
+                <div id="logos">
+                  <a href="https://www.instagram.com/" target="_blank"><img src="images_website/infographic/instagram.png"/></a>
+                  <a href="mailto:thomasisebeck@gmail.com" target="_blank"><img src="images_website/infographic/gmail.png" /></a>
+                </div>
                 <div id="authorCircleDiv">
                   <AuthorCircle />
                 </div>

@@ -99,6 +99,7 @@ export class AuthorCircle extends React.Component {
           <p>{this.state.text}</p>
         </div>
       }
+      
       <div id="background" onClick={() => { this.props.hideAuthorCircle(); }}></div>
       </React.Fragment>
     )
