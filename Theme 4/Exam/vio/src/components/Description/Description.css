@@ -1,5 +1,24 @@
 .Description {
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.descrContainer {
+    padding-left: 20px;
+}
+
+h2, p {
+    font-family: 'ComicFont';
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 #descriptions {
@@ -8,6 +27,11 @@
 }
 .bottomBar {
     width: 100%;
+}
+
+.descrItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .imageContainer {
@@ -21,22 +45,22 @@
         transform: translateX(0);
     }
     12.5% {
-        transform: translateX(3px);
+        transform: translateX(2px);
     }
     25% {
-        transform: translateX(-3px);
+        transform: translateX(-2px);
     }
     37.5% {
-        transform: translateX(7px);
+        transform: translateX(5px);
     }
     50% {
-        transform: translateX(-7px);
+        transform: translateX(-5px);
     }
     62.5% {
-        transform: translateX(9px);
+        transform: translateX(5px);
     }
     75% {
-        transform: translateX(-9px);
+        transform: translateX(-5px);
     }
     100% {
         transform: translateX(0);
@@ -48,22 +72,22 @@
         transform: translateX(0);
     }
     12.5% {
-        transform: translateX(-3px);
+        transform: translateX(-2px);
     }
     25% {
-        transform: translateX(3px);
+        transform: translateX(2px);
     }
     37.5% {
-        transform: translateX(-7px);
+        transform: translateX(-5px);
     }
     50% {
-        transform: translateX(7px);
+        transform: translateX(5px);
     }
     62.5% {
-        transform: translateX(-9px);
+        transform: translateX(-5px);
     }
     75% {
-        transform: translateX(9px);
+        transform: translateX(5px);
     }
     100% {
         transform: translateX(0);

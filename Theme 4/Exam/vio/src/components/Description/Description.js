@@ -4,23 +4,37 @@ import './Description.css';
 
 export class  Description extends React.Component {
 
+  comicPara = 'The Comic'; 
+  trailerPara = 'The trailer showcases the game ';
+
   constructor(props) {
     super(props);
     this.state = {
       img: 'images_website/descriptions/cactusRight.gif',
-      heading: 'The Comic', 
-      para: 'Things about the comic...', 
+      heading: 'The Trailer', 
+      para: this.trailerPara, 
       play: false,
       comic: false
     }
   }
 
   changePara = (trailer) => {
-    if (this.state.img == 'images_website/descriptions/cactusRight.gif')
+    if (this.state.img == 'images_website/descriptions/cactusRight.gif') 
       this.setState({ img: 'images_website/descriptions/cactusLeft.gif'})
     else 
     this.setState({ img: 'images_website/descriptions/cactusRight.gif' })
 
+
+    if (trailer) 
+      this.setState({
+        heading: 'The Trailer', 
+        para: this.trailerPara
+      })
+    else 
+      this.setState({
+        heading: 'The Comic', 
+        para: this.comicPara
+      })
 
     console.log('comic para');
   }
@@ -46,7 +60,9 @@ export class  Description extends React.Component {
           <div className='descrContainer'>
             <div>
               <h2>{this.state.heading}</h2>
-              <p>{this.state.para}</p>
+              <div className='descrItems'>
+                <p>{this.state.para}</p>
+              </div>
             </div>
           </div>
         </div>
