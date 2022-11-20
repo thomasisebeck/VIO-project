@@ -1,0 +1,22 @@
+.Description {
+    width: 100%;
+}
+
+#descriptions {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.bottomBar {
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: 80%;
+    padding: 10%;
+}
