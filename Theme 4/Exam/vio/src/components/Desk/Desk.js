@@ -65,13 +65,14 @@ export class  Desk extends React.Component {
     return (
       <div className="Desk">
           <div className='innerDesk'>
-            <img className='desk' src="images_website/desk/room.svg" />
+            <img className='desk' src="images_website/desk/room.svg"></img>
             <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
             <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
             {this.state.showHat &&
               <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
             }
             <img className='letter'onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
+            
           </div>
 
           {this.state.showComic && 

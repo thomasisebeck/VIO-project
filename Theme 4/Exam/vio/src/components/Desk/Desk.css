@@ -26,14 +26,14 @@
     position: absolute;
     left: 46%;
     top: 28%;
-    width: 256px;
+    width: 9%;
 }
 
 .hat {
     position: absolute;
     left: 55%;
     top: 17.2%;
-    width: 516px;
+    width: 17%;
     transition: opacity;
     transition-delay: 0.3s;
     transition-duration: 1s;
@@ -43,7 +43,7 @@
     position: absolute;
     left: 38%;
     top: 28%;
-    width: 265px;
+    width: 8%;
 }
 
 .fade {
