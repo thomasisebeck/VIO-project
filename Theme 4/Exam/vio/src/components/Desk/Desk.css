@@ -4,9 +4,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background: rgb(115,115,115);
-    background: linear-gradient(90deg, rgba(115,115,115,0.7) 0%, rgba(238,238,238,0.7) 60%); 
-    overflow-x: hidden;
+    background: linear-gradient(90deg, rgb(115,115,115) 0%, rgb(238, 238, 238) 60%); 
+    overflow: hidden;
 }
 
 .desk {
@@ -25,16 +24,16 @@
 
 .comic {
     position: absolute;
-    left: 628px;
-    top: 240px;
-    width: 220px;
+    left: 1520px;
+    top: 292px;
+    width: 256px;
 }
 
 .hat {
     position: absolute;
-    left: 850px;
-    top: 135px;
-    width: 486px;
+    left: 1795px;
+    top: 182px;
+    width: 516px;
     transition: opacity;
     transition-delay: 0.3s;
     transition-duration: 1s;
@@ -42,9 +41,9 @@
 
 .letter {
     position: absolute;
-    left: 408px;
-    top: 258px;
-    width: 200px;
+    left: 1245px;
+    top: 298px;
+    width: 265px;
 }
 
 .fade {
@@ -53,8 +52,8 @@
 
 .key {
     position: absolute;
-    left: 997px;
-    top: 253px;
+    left: 1945px;
+    top: 309px;
     width: 48px;
 }
 
