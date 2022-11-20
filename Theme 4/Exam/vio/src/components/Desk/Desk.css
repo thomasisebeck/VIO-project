@@ -26,16 +26,16 @@
 
 .comic {
     position: absolute;
-    left: 41.5%;
-    top: 23%;
-    width: 15%;
+    left: 628px;
+    top: 240px;
+    width: 220px;
 }
 
 .hat {
     position: absolute;
-    left: 55%;
-    width: 35%;
-    top: 12%;
+    left: 850px;
+    top: 135px;
+    width: 486px;
     transition: opacity;
     transition-delay: 0.3s;
     transition-duration: 1s;
@@ -43,9 +43,9 @@
 
 .letter {
     position: absolute;
-    left: 26%;
-    top: 24%;
-    width: 15%;
+    left: 408px;
+    top: 258px;
+    width: 200px;
 }
 
 .fade {
@@ -54,9 +54,9 @@
 
 .key {
     position: absolute;
-    left: 64%;
-    top: 24%;
-    width: 3%;
+    left: 997px;
+    top: 253px;
+    width: 48px;
 }
 
 
