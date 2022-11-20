@@ -24,15 +24,15 @@
 
 .comic {
     position: absolute;
-    left: 1520px;
-    top: 292px;
+    left: 46%;
+    top: 28%;
     width: 256px;
 }
 
 .hat {
     position: absolute;
-    left: 1795px;
-    top: 182px;
+    left: 55%;
+    top: 17.2%;
     width: 516px;
     transition: opacity;
     transition-delay: 0.3s;
@@ -41,8 +41,8 @@
 
 .letter {
     position: absolute;
-    left: 1245px;
-    top: 298px;
+    left: 38%;
+    top: 28%;
     width: 265px;
 }
 
