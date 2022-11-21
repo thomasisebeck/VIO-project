@@ -4,10 +4,21 @@
     position: relative;
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background: linear-gradient(90deg, rgb(115,115,115) 0%, rgb(238, 238, 238) 60%); 
 }
+
+
+.innerDesk {
+    position: fixed;
+}
+.deskWrapper {
+    position: absolute; 
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
 
 .desk {
     width: auto;

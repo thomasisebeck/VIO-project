@@ -67,15 +67,17 @@ export class  Desk extends React.Component {
   render() {
     return (
       <div className="Desk" id="Desk">
-          <div className='innerDesk'>
-            <img className='desk' src="images_website/desk/room.svg"></img>
-            <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
-            <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
-            {this.state.showHat &&
-              <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
-            }
-            <img className='letter'onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
-            
+          <div className='deskWrapper'>
+            <div className='innerDesk'>
+              <img className='desk' src="images_website/desk/room.svg"></img>
+              <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
+              <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
+              {this.state.showHat &&
+                <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
+              }
+              <img className='letter'onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
+              
+            </div>
           </div>
 
           {this.state.showComic && 
