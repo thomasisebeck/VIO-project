@@ -12,7 +12,10 @@ export class  Desk extends React.Component {
       bookOpen: false, 
       hat: 'images_website/desk/hat.png', 
       hatClass: 'hat', 
-      showHat: true
+      showHat: true, 
+      comicBubble: false, 
+      keyBubble: false, 
+      authorBubble: false
     }
   }
 
@@ -70,12 +73,42 @@ export class  Desk extends React.Component {
           <div className='deskWrapper'>
             <div className='innerDesk'>
               <img className='desk' src="images_website/desk/room.svg"></img>
-              <img className="comic" onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
-              <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
-              {this.state.showHat &&
-                <img className={this.state.hatClass} onClick={() => { this.hatFalling(); }} src={this.state.hat} />
+
+              { this.state.comicBubble &&
+                <img id='comicBubble' src="images_website/desk/diveIntoTheStory.png" /> 
               }
-              <img className='letter'onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
+              <img 
+                className="comic" 
+                onMouseOver={() => { this.setState({comicBubble: true}) }}
+                onMouseLeave={() => { this.setState({comicBubble: false}) }}
+                onClick={() => { this.showComic(); }} src="images_website/desk/comic.png" />
+
+
+              { this.state.keyBubble && 
+                <img id='keyBubble' src="images_website/desk/hidingUnderThere.png" />
+              }
+              <img className='key' onClick={() => { this.showStage(); }} src='images_website/desk/key.png' />
+
+  
+              {this.state.showHat &&
+                <img 
+                  className={this.state.hatClass} 
+                  onMouseOver={() => { this.setState({keyBubble: true}) }}
+                  onMouseLeave={() => { this.setState({keyBubble: false}) }}
+                  onClick={() => { 
+                    this.hatFalling(); 
+                    this.setState({keyBubble: false});
+                  }} src={this.state.hat} />
+              }
+
+              { this.state.authorBubble && 
+                <img id='authorBubble' src="images_website/desk/somethingFromMe.png" />
+              }
+              <img 
+                className='letter'
+                onMouseOver={() => { this.setState({authorBubble: true}) }}
+                onMouseLeave={() => { this.setState({authorBubble: false}) }}
+                onClick={() => { this.authorCircle(); }} src='images_website/desk/letter.png' />
               
             </div>
           </div>
