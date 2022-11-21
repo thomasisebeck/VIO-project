@@ -49,7 +49,7 @@ export class  Desk extends React.Component {
 
   showStage() {
     window.scrollTo({
-      top: 2000,
+      top: document.getElementById('stageWrapper').offsetTop + 450,
       behavior: 'smooth',
     })
   }

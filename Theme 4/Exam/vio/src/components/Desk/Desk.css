@@ -90,7 +90,7 @@
 
 #logos {
     position: relative;
-    top: 565px;
+    top: 520px;
     left: -135px;
     z-index: 10;
     background-color: #f9fafa;
@@ -107,7 +107,7 @@
 .AuthorCircleAndLetter {
     display: flex;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 #background {
@@ -125,16 +125,16 @@
 
 .letterOpened {
     position: relative;
-    width: 500px;
+    width: 450px;
     z-index: 1;
 }
 
 .DarkBackground {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -2000px;
     width: 100vw;
-    height: 200vh;
+    height: 590vh;
     background-color: rgba(0, 0, 0, 0.643);
     z-index: 0;
 }
