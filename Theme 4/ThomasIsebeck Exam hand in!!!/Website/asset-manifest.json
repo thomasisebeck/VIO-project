@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c31e8012.css",
+    "main.js": "./static/js/main.0afa6080.js",
+    "index.html": "./index.html",
+    "static/media/background.jpg": "./static/media/background.88f845f72be171fa7578.jpg",
+    "static/media/comicfontRegular.ttf": "./static/media/comicfontRegular.2cda6bc6216f85f5139d.ttf",
+    "main.c31e8012.css.map": "./static/css/main.c31e8012.css.map",
+    "main.0afa6080.js.map": "./static/js/main.0afa6080.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c31e8012.css",
+    "static/js/main.0afa6080.js"
+  ]
+}

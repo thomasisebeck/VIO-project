@@ -5,11 +5,7 @@ import Desk from './components/Desk/Desk';
 import Description from './components/Description/Description';
 
 //npx generate-react-cli component MyComponent
-//serve with: http://localhost:3000
-
-//to publish to GH pages: 
-//npm run deploy
-//goto: https://thomasisebeck.github.io/
+//to create html: npm run build
 
 function App() {
   
