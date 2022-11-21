@@ -6,6 +6,21 @@
     width: 300px;
     position: absolute;
     z-index: 4;
+    top: 200px;
+}
+
+#skills {
+    position: relative;
+    top: -200px;
+    width: 300px;
+    z-index: 4;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#skills img {
+    width: calc(300px/5);
 }
 
 #bottomText {

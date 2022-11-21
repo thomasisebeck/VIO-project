@@ -22,19 +22,19 @@ export class AuthorCircle extends React.Component {
       <div id="author">
 
         <img 
-           onMouseOver={() => {
+          onMouseOver={() => {
             this.cameraSound.play();
             this.setState({
               text: "Photography", 
               hovering: true
             })
-           }} 
+          }} 
 
-           onMouseOut={() => {
+          onMouseOut={() => {
             this.setState({
               hovering: false
             })
-           }}
+          }}
 
             src="images_website/infographic/camera.png"
           />
@@ -52,7 +52,7 @@ export class AuthorCircle extends React.Component {
               this.setState({
                 hovering: false
               })
-             }}
+            }}
 
             src="images_website/infographic/plant.png"
           />
@@ -70,7 +70,7 @@ export class AuthorCircle extends React.Component {
               this.setState({
                 hovering: false
               })
-             }}
+            }}
 
             src="images_website/infographic/caribena.png"
           />
@@ -88,10 +88,23 @@ export class AuthorCircle extends React.Component {
               this.setState({
                 hovering: false
               })
-             }}
+            }}
 
             src="images_website/infographic/pen.png"
           />
+      </div>
+
+      <div id="skills">
+        <img src="images_website/desk/cpp.png" />
+        <img src="images_website/desk/java.png" />
+        <img src="images_website/desk/html.png" />
+        <img src="images_website/desk/css.png" />
+        <img src="images_website/desk/js.png" />
+        <img src="images_website/desk/php.png" />
+        <img src="images_website/desk/react.png" />
+
+        <img src="images_website/desk/ps.png" />
+        <img src="images_website/desk/illustrator.png" />
       </div>
 
       {this.state.hovering &&
