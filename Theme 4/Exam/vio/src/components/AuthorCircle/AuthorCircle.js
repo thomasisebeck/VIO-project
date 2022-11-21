@@ -13,7 +13,7 @@ export class AuthorCircle extends React.Component {
     this.cameraSound = new Audio("infographicSounds/camera.mp3");
     this.writingSound = new Audio("infographicSounds/pen.mp3");
     this.natureSound = new Audio("infographicSounds/plant.mp3");
-    this.climbingSound = new Audio("infographicSounds/carebena.mp3"); 
+    this.climbingSound = new Audio("infographicSounds/carabena.mp3"); 
   }
 
   render() {
