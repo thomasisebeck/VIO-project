@@ -30,7 +30,7 @@ export class Book extends React.Component {
     //calc(120vh/1.41)
 
     const OFFSET_X = 200;
-    const OFFSET_Y = 800;
+    const OFFSET_Y = 650;
 
     this.setState({
       x: ((width/2) - (width*1.2/1.41/2) - (event.clientX*0.3) + OFFSET_X) + "px",
