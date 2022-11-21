@@ -179,8 +179,9 @@ export class Book extends React.Component {
             <div id="f4" className="front-content">
               <img className="panel" src="images_website/comic/7.jpg" alt=""/>
 
-              <Frame staticImage="panel6/p6f4.png" movingImage="panel6/p6f4.gif" sound="p6f4" left="217px" top="144px" width="200px"/>
-              <Frame staticImage="panel6/p6f11.png" movingImage="panel6/p6f11.gif" sound="p6f11" left="308px" top="428px" width="110px"/>
+              <Frame staticImage="panel6/p6f4.png" movingImage="panel6/p6f4.gif" sound="p6f4" left="51.5%" top="19.4%" width="47.3%"/>
+              <Frame staticImage="panel6/p6f9.png" movingImage="panel6/p6f9.gif" sound="p6f9" left="1.8%" top="57.5%" width="35.7%" />
+              <Frame staticImage="panel6/p6f11.png" movingImage="panel6/p6f11.gif" sound="p6f11" left="72.8%" top="57.6%" width="25.6%"/>
             </div>
           </div>
 
@@ -192,8 +193,8 @@ export class Book extends React.Component {
             <div id="f3" className="front-content">
               <img className="panel" src="images_website/comic/5.jpg" alt=""/>
 
-              <Frame staticImage="panel4/p4f4.png" movingImage="panel4/p4f4.gif" sound="p4f4" left="283px" top="87px" width="133px"/>
-              <Frame staticImage="panel4/p4f9.png" movingImage="panel4/p4f9.gif" sound="p4f9" left="223px" top="362px" width="194px"/>
+              <Frame staticImage="panel4/p4f4.png" movingImage="panel4/p4f4.gif" sound="p4f4" left="67.3%" top="11.6%" width="31.2%"/>
+              <Frame staticImage="panel4/p4f9.png" movingImage="panel4/p4f9.gif" sound="p4f9" left="53%" top="48.6%" width="45%"/>
             </div>
           </div>
 
@@ -201,8 +202,8 @@ export class Book extends React.Component {
             <div id="b3" className="back-content">
               <img className="panel" src="images_website/comic/6.jpg" alt=""/>
 
-              <Frame staticImage="panel5/p5f4.png" movingImage="panel5/p5f4.gif" sound="p5f4" left="122px" top="135px" width="143px"/>
-              <Frame staticImage="panel5/p5f8.png" movingImage="panel5/p5f8.gif" sound="p5f8" left="263px" top="416px" width="153px"/>
+              <Frame staticImage="panel5/p5f4.png" movingImage="panel5/p5f4.gif" sound="p5f4" left="28.7%" top="18%" width="34%"/>
+              <Frame staticImage="panel5/p5f8.png" movingImage="panel5/p5f8.gif" sound="p5f8" left="62.5%" top="55.8%" width="36%"/>
             </div>
           </div>
 
@@ -214,8 +215,8 @@ export class Book extends React.Component {
               <div id="f2" className="front-content">
                 <img className="panel" src="images_website/comic/3.jpg" alt=""/>
 
-                <Frame staticImage="panel2/p2f3.png" movingImage="panel2/p2f3.gif" sound="p2f3" left="2%" top="33.5%" width="48%"/>
-                <Frame staticImage="panel2/p2f6.png" movingImage="panel2/p2f6.gif" sound="p2f6" left="52.5%" top="72%" width="45.5%"/>
+                <Frame staticImage="panel2/p2f3.png" movingImage="panel2/p2f3.gif" sound="p2f3" left="1.5%" top="26.9%" width="49%"/>
+                <Frame staticImage="panel2/p2f6.png" movingImage="panel2/p2f6.gif" sound="p2f6" left="52.5%" top="57.3%" width="46.1%"/>
               </div>
             </div>
 
@@ -223,8 +224,8 @@ export class Book extends React.Component {
               <div id="b2" className="back-content">
                 <img className="panel" src="images_website/comic/4.jpg" alt=""/>
 
-                <Frame staticImage="panel3/p3f1.png" movingImage="panel3/p3f1.gif" sound="p3f1" left="60%" top="1.2%" width="37%"/>
-                <Frame staticImage="panel3/p3f9.png" movingImage="panel3/p3f9.gif" sound="p3f9" left="1.4%" top="83.5%" width="50%"/>
+                <Frame staticImage="panel3/p3f1.png" movingImage="panel3/p3f1.gif" sound="p3f1" left="60.6%" top="0.8%" width="37.1%"/>
+                <Frame staticImage="panel3/p3f9.png" movingImage="panel3/p3f9.gif" sound="p3f9" left="1.2%" top="66.8%" width="51%"/>
               </div>
             </div>
 

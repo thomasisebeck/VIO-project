@@ -52,7 +52,7 @@ export class  Description extends React.Component {
   render() {
     return (
       <div className="Description">
-        <h1>So what's it all about?</h1>
+        <h1>So what's included?</h1>
         <div id='descriptions'>
           <div className='imageContainer'>
             <img 
