@@ -132,7 +132,7 @@
 .DarkBackground {
     position: absolute;
     left: 0;
-    top: -2000px;
+    top: -1000px;
     width: 100vw;
     height: 590vh;
     background-color: rgba(0, 0, 0, 0.643);

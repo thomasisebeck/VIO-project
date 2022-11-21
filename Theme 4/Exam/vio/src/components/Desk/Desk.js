@@ -19,6 +19,20 @@ export class  Desk extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.setState({
+      showComic: true
+    })
+
+    setTimeout(() => {
+      this.setState({
+      showComic: false
+    })
+    }, 1000);
+
+    
+  }
+
   showComic() {
     console.log('showing');
 
@@ -114,8 +128,10 @@ export class  Desk extends React.Component {
           </div>
 
           {this.state.showComic && 
+            
               <Book hideBook={this.hideBook}/>
           }
+
           {this.state.showAuthorCircle && 
             <React.Fragment>
               <div className='AuthorCircleAndLetter'>
