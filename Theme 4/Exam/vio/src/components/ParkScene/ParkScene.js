@@ -20,6 +20,25 @@ export class  ParkScene extends React.Component {
         this.loopDialogue();
     }, 2500);
 
+    this.handleScroll = this.handleScroll.bind(this);
+
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
+  };
+
+  handleScroll(event)  {
+    console.log('scrolling up');
+    let bottom = document.getElementById('bottom');
+    let scroll = window.pageYOffset;
+
+    console.log(scroll);
+    bottom.style.left = (60 + scroll) + "px";
+
+    let top = document.getElementById('top');
+    top.style.left = (120 - scroll) + "px";
   }
 
   loopDialogue() {    
@@ -119,8 +138,12 @@ export class  ParkScene extends React.Component {
         </div>
 
         <div className="Title">
-          <img src='images_website/splash/bottomTitleCard.png' alt=""/>
-          <img src='images_website/splash/topTitleCard.png' alt=""/>
+          <img 
+            id="top"
+            src='images_website/splash/bottomTitleCard.png' alt=""/>
+          <img 
+            id="bottom"
+            src='images_website/splash/topTitleCard.png' alt=""/>
         </div>
 
       </div>
