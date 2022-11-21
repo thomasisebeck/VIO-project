@@ -9,7 +9,7 @@ export class  Description extends React.Component {
   trailerPara1 = 'The trailer showcases the game in an interactive and playful way.';
   trailerPara2 = 'It is a subtle introduction to the protagonist and antagonist of the story, but also a test of dexterity.';
   factTrailer = 'The trailer was made using Adobe Animate, and the logic for the game was coded using JavaScript.'
-  factComic = 'The comic was both designed and animated using Adobe Photoshop.'
+  factComic = 'The comic was both designed and animated in Adobe Photoshop.'
 
   constructor(props) {
     super(props);

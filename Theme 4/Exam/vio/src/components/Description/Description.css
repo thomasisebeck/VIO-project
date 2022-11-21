@@ -136,7 +136,6 @@ p {
 
 .paragraphs {
     height: 300px;
-    overflow-y: scroll;
 }
 
 .imageContainer img {
