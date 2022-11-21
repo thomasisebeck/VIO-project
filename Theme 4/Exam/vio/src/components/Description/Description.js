@@ -8,6 +8,8 @@ export class  Description extends React.Component {
   comicPara2 = 'The book was made interactive adding sound and animation throughout the story.';
   trailerPara1 = 'The trailer showcases the game in an interactive and playful way.';
   trailerPara2 = 'It is a subtle introduction to the protagonist and antagonist of the story, but also a test of dexterity.';
+  factTrailer = 'The trailer was made using Adobe Animate, and the logic for the game was coded using JavaScript.'
+  factComic = 'The comic was both designed and animated using Adobe Photoshop.'
 
   constructor(props) {
     super(props);
@@ -16,6 +18,7 @@ export class  Description extends React.Component {
       heading: 'The Trailer', 
       para1: this.trailerPara1, 
       para2: this.trailerPara2,
+      fact: this.factTrailer,
       play: false,
       comic: false
     }
@@ -32,13 +35,15 @@ export class  Description extends React.Component {
       this.setState({
         heading: 'The Trailer', 
         para1: this.trailerPara1, 
-        para2: this.trailerPara2
+        para2: this.trailerPara2,
+        fact: this.factTrailer
       })
     else 
       this.setState({
         heading: 'The Comic', 
         para1: this.comicPara1,
-        para2: this.comicPara2
+        para2: this.comicPara2,
+        fact: this.factComic
       })
 
     console.log('comic para');
@@ -70,6 +75,10 @@ export class  Description extends React.Component {
                 <div className='paragraphs'>
                   <p>{this.state.para1}</p>
                   <p>{this.state.para2}</p>
+                </div>
+                <div className='funFact'>
+                  <p><b>How it was made:</b></p>
+                  <p>{this.state.fact}</p>
                 </div>
               </div>
             </div>
