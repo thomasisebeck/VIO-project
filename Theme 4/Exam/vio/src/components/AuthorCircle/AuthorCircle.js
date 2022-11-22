@@ -95,16 +95,16 @@ export class AuthorCircle extends React.Component {
       </div>
 
       <div id="skills">
-        <img src="images_website/desk/cpp.png" />
-        <img src="images_website/desk/java.png" />
-        <img src="images_website/desk/html.png" />
-        <img src="images_website/desk/css.png" />
-        <img src="images_website/desk/js.png" />
-        <img src="images_website/desk/php.png" />
-        <img src="images_website/desk/react.png" />
+        <a href="https://isocpp.org/"><img src="images_website/desk/cpp.png" /></a>
+        <a href="https://www.java.com/en/"><img src="images_website/desk/java.png" /></a>
+        <a href="https://html.spec.whatwg.org/multipage/"><img src="images_website/desk/html.png" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="images_website/desk/css.png" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="images_website/desk/js.png" /></a>
+        <a href="https://www.php.net/docs.php"><img src="images_website/desk/php.png" /></a>
+        <a href="https://reactjs.org/"><img src="images_website/desk/react.png" /></a>
 
-        <img src="images_website/desk/ps.png" />
-        <img src="images_website/desk/illustrator.png" />
+        <a href="https://www.adobe.com/africa/products/photoshop.html"><img src="images_website/desk/ps.png" /></a>
+        <a href="https://www.adobe.com/africa/products/illustrator.html"><img src="images_website/desk/illustrator.png" /></a>
       </div>
 
       {this.state.hovering &&
